@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Brand Colors */
+  --color-dama-green-50: #F4F9E6;
+  --color-dama-green-100: #E5F0C4;
+  --color-dama-green-200: #D1E49A;
+  --color-dama-green-300: #B8D462;
+  --color-dama-green-400: #A3C838;
+  --color-dama-green-500: #8DB600;
+  --color-dama-green-600: #749500;
+  --color-dama-green-700: #5A7300;
+  --color-dama-green-800: #415200;
+  --color-dama-green-900: #2A3500;
+
+  /* Neutrals */
+  --color-dama-cream: #FAF7F2;
+  --color-dama-ivory: #F5F0E8;
+  --color-dama-sand: #E8E0D4;
+  --color-dama-charcoal: #3D3830;
+  --color-dama-black: #1A1A1A;
+  --color-dama-white: #FFFFFF;
+
+  /* Semantic */
+  --color-dama-error: #C23B22;
+  --color-dama-success: #4A7C59;
+  --color-dama-warning: #D4A843;
+
+  /* Typography */
+  --font-cormorant: var(--font-cormorant);
+  --font-dm-sans: var(--font-dm-sans);
+  --font-noto-kr: var(--font-noto-kr);
+
+  /* Spacing */
+  --spacing-section: 96px;
+  --spacing-section-mobile: 64px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+}
+
+/* Prevent horizontal scroll from off-screen drawers/panels */
+html {
+  overflow-x: hidden;
+  overflow-x: clip;
+}
+
+body {
+  background-color: var(--color-dama-cream);
+  color: var(--color-dama-charcoal);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+}
+
+/* Focus styles */
+*:focus-visible {
+  outline: 2px solid var(--color-dama-green-400);
+  outline-offset: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-dama-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-dama-sand);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-dama-charcoal);
+}

@@ -1,0 +1,63 @@
+import type { Metadata } from 'next';
+import { cormorant, dmSans, notoSansKR } from '@/lib/fonts';
+import { Header } from '@/components/layout/Header';
+import { Footer } from '@/components/layout/Footer';
+import { AnnouncementBanner } from '@/components/layout/AnnouncementBanner';
+import { CartDrawer } from '@/components/ui/CartDrawer';
+import { SocialPopup } from '@/components/ui/SocialPopup';
+
+import { AuthProvider } from '@/context/AuthContext';
+import './globals.css';
+
+export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://damajc.com'),
+  title: {
+    default: 'DAM:A — Simply Wholesome | Korean Wellness Food in Jersey City',
+    template: '%s | DAM:A',
+  },
+  description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Fresh banchan and dosirak delivered to your building in Jersey City, NJ.',
+  keywords: ['Korean food', 'banchan', 'dosirak', 'Jersey City', 'Korean wellness food', 'meal delivery', 'healthy Korean food'],
+  authors: [{ name: 'DAM:A' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'DAM:A',
+    title: 'DAM:A — Simply Wholesome | Korean Wellness Food',
+    description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Delivered in Jersey City.',
+    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'DAM:A — Simply Wholesome Korean Meals',
+    description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Delivered in Jersey City.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" className={`${cormorant.variable} ${dmSans.variable} ${notoSansKR.variable}`}>
+      <body className="antialiased">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-white focus:px-4 focus:py-2 focus:rounded focus:shadow-lg focus:text-dama-green">
+          Skip to main content
+        </a>
+        <AuthProvider>
+          <AnnouncementBanner />
+          <Header />
+          <main id="main-content">{children}</main>
+          <Footer />
+          <CartDrawer />
+          <SocialPopup />
+
+        </AuthProvider>
+      </body>
+    </html>
+  );
+}
