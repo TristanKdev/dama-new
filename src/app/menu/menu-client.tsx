@@ -294,8 +294,8 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                               <span className="shrink-0 text-sm font-bold text-dama-green-600">{formatPrice(item.price)}</span>
                             </div>
                             <p className="mt-1 text-xs leading-snug text-dama-charcoal/50 line-clamp-2">{item.description}</p>
-                            <div className="mt-1.5 flex items-center gap-2">
-                              {item.badges && item.badges.slice(0, 2).map(b => (
+                            <div className="mt-1.5 flex flex-wrap items-center gap-1">
+                              {item.badges && item.badges.map(b => (
                                 <span key={b} className="rounded-full bg-dama-green-50 px-1.5 py-0.5 text-[10px] font-medium text-dama-green-700">{b}</span>
                               ))}
                               <button
