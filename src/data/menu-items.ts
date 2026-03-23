@@ -241,6 +241,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild'],
     ingredients: ['Burdock root (ueong)', 'soy sauce', 'grain syrup', 'sesame oil', 'sesame seeds'],
+    review: 'A traditional Korean table fixture. The earthy, caramelized flavor is unlike anything else on the tray.',
   },
   {
     id: 'haecho-muchim',
@@ -257,6 +258,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild', 'Gluten-Friendly'],
     ingredients: ['Sea vegetable (wakame)', 'vinegar', 'soy sauce', 'sesame oil', 'sesame seeds'],
+    review: 'Light and mineral-forward. A refreshing palate cleanser between richer bites.',
   },
   {
     id: 'mugeun-namul',
@@ -273,6 +275,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild'],
     ingredients: ['Mung bean sprouts', 'sesame oil', 'garlic', 'salt', 'sesame seeds'],
+    review: 'A wholesome, understated banchan. Simple seasoning lets the natural flavor come through.',
   },
   {
     id: 'odeng-muchim',
@@ -306,6 +309,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Mild', 'Kids Favorite'],
     ingredients: ['Potato', 'egg', 'carrot', 'cucumber', 'mayonnaise', 'salt', 'sugar'],
+    review: 'A Korean-style potato salad that appeals to every age. Creamy, satisfying, and universally loved.',
   },
   {
     id: 'sweet-corn-veggie-salad',
@@ -322,6 +326,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild', 'Kids Favorite'],
     ingredients: ['Sweet potato', 'corn', 'vegetables', 'dressing'],
+    review: 'A sweet, colorful addition to any dosirak. My kids ask for this one every time.',
   },
   {
     id: 'mandu',
@@ -338,6 +343,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['High Protein', 'Best Seller'],
     ingredients: ['Dumpling wrapper', 'pork', 'tofu', 'vegetables', 'garlic', 'soy sauce'],
+    review: 'Crispy skin with a juicy filling. Best eaten fresh — these disappear fast at gatherings.',
   },
   {
     id: 'gyeran-mari',
@@ -354,6 +360,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Mild', 'Kids Favorite'],
     ingredients: ['Eggs', 'scallion', 'carrot', 'salt', 'oil'],
+    review: 'A classic lunchbox staple that appeals to every age group. Soft layers with gentle firmness.',
   },
   {
     id: 'baechu-kimchi',
@@ -370,6 +377,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 2,
     badges: ['Vegan', 'Fermented', 'Spicy', 'Best Seller'],
     ingredients: ['Napa cabbage', 'gochugaru', 'garlic', 'ginger', 'fish sauce', 'salt'],
+    review: 'The foundation of the Korean table. Ferments over time for increasing depth — flavor deepens over 3–7 days.',
   },
   {
     id: 'kkakdugi',
@@ -386,6 +394,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 2,
     badges: ['Vegan', 'Fermented', 'Spicy'],
     ingredients: ['Korean radish', 'gochugaru', 'garlic', 'ginger', 'fish sauce', 'salt'],
+    review: 'Firm, juicy, and satisfying crunch. Especially good alongside rich, fatty dishes to cut through the richness.',
   },
   {
     id: 'baek-kimchi',
@@ -402,6 +411,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Fermented', 'Mild', 'Gluten-Friendly'],
     ingredients: ['Napa cabbage', 'salt', 'garlic', 'ginger', 'pear or apple', 'vegetable broth'],
+    review: 'Non-spicy kimchi for those who want probiotic depth without the heat. Elegant and versatile.',
   },
   {
     id: 'steamed-rice-cake',
@@ -418,6 +428,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild', 'Seasonal'],
     ingredients: ['Rice flour', 'water', 'salt'],
+    review: 'Soft and satisfying on their own or paired with a cup of Korean tea for a Dado Day moment.',
   },
   {
     id: 'assorted-rice-cakes',
@@ -434,6 +445,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Seasonal', 'Best Seller'],
     ingredients: ['Rice flour', 'red bean', 'sesame', 'mugwort', 'honey'],
+    review: 'Beautiful on a platter and ideal for gifting, events, and Dado Day presentations. Each variety has a distinct bite.',
   },
   {
     id: 'dotori-muk',
@@ -450,6 +462,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild', 'Gluten-Friendly'],
     ingredients: ['Acorn starch', 'water', 'soy sauce', 'sesame oil', 'sesame seeds', 'scallion'],
+    review: 'A uniquely earthy profile unlike any other banchan. Silky, firm, and takes on seasoning beautifully.',
   },
   {
     id: 'yuzu-salad',
@@ -466,6 +479,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Seasonal', 'Mild'],
     ingredients: ['Mixed greens', 'yuzu juice', 'sesame oil', 'salt', 'sugar'],
+    review: 'Fragrant and elegant — a perfect opener for a curated Korean table. Bright, citrusy, refreshing.',
   },
   {
     id: 'tofu-veggie-salad',
@@ -482,6 +496,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Vegan', 'Mild', 'High Protein'],
     ingredients: ['Tofu', 'mixed vegetables', 'sesame dressing', 'sesame seeds'],
+    review: 'A clean, protein-forward banchan for lighter meals. Soft tofu with crunchy vegetables — balanced contrast.',
   },
   {
     id: 'jeon',
@@ -498,6 +513,7 @@ export const banchanItems: MenuItem[] = [
     spiceLevel: 1,
     badges: ['Best Seller', 'Anju', 'Drink Pairing'],
     ingredients: ['Flour', 'egg', 'scallion', 'kimchi or seafood', 'soy-vinegar dipping sauce'],
+    review: 'A quintessential Korean anju. Crispy on the outside, soft and filled inside. Pairs perfectly with makgeolli.',
   },
 ];
 
@@ -553,6 +569,7 @@ export const mainDishItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['Best Seller', 'Kids Favorite'],
     ingredients: ['Rice', 'seaweed', 'egg', 'spinach', 'carrot', 'radish', 'sesame oil'],
+    review: 'Hand-rolled and sliced to order. Best enjoyed fresh, same day. Each slice holds its shape cleanly.',
   },
   {
     id: 'jorim-saengseon',
@@ -569,6 +586,7 @@ export const mainDishItems: MenuItem[] = [
     spiceLevel: 2,
     badges: ['High Protein', 'Spicy'],
     ingredients: ['Mackerel', 'gochujang', 'radish', 'garlic', 'soy sauce', 'ginger', 'scallion'],
+    review: 'The braising sauce soaks into the fish for a deeply seasoned bite. Excellent over rice.',
   },
   {
     id: 'dwaeji-galbi',
@@ -585,6 +603,7 @@ export const mainDishItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['High Protein', 'Best Seller'],
     ingredients: ['Pork ribs', 'soy sauce', 'garlic', 'ginger', 'sugar', 'rice wine', 'sesame oil'],
+    review: 'Fall-off-the-bone tender with a sticky, caramelized exterior. A hearty crowd-pleaser for gatherings.',
   },
   {
     id: 'dak-galbi',
@@ -601,6 +620,7 @@ export const mainDishItems: MenuItem[] = [
     spiceLevel: 2,
     badges: ['Spicy', 'High Protein', 'Best Seller'],
     ingredients: ['Chicken', 'gochujang', 'rice cakes', 'cabbage', 'sweet potato', 'scallion', 'garlic'],
+    review: 'Chuncheon-style — spicy-sweet, bold, and deeply satisfying. Tender chicken with a slight char.',
   },
   {
     id: 'tteok-galbi',
@@ -617,6 +637,7 @@ export const mainDishItems: MenuItem[] = [
     spiceLevel: 0,
     badges: ['High Protein', 'Signature', 'Best Seller'],
     ingredients: ['Beef short rib', 'soy sauce', 'garlic', 'sesame oil', 'onion', 'sugar', 'black pepper'],
+    review: 'A premium, refined main — ideal for Party DAM:A event boxes. Dense, satisfying, and deeply umami.',
   },
 ];
 
