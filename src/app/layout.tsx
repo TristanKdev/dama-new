@@ -16,7 +16,15 @@ export const metadata: Metadata = {
     template: '%s | DAM:A',
   },
   description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Fresh banchan and dosirak delivered to your building in Jersey City, NJ.',
-  keywords: ['Korean food', 'banchan', 'dosirak', 'Jersey City', 'Korean wellness food', 'meal delivery', 'healthy Korean food'],
+  keywords: [
+    'Korean food Jersey City', 'banchan delivery', 'dosirak meal box', 'Korean meal delivery NJ',
+    'Korean wellness food', 'healthy Korean food', 'Korean side dishes delivery',
+    'banchan Jersey City', 'Korean lunch box delivery', 'dosirak box NJ',
+    'Korean catering Jersey City', 'bibimbap banchan', 'Korean food near me',
+    'Korean meal prep', 'authentic Korean food delivery', 'Korean food 07302',
+    'DAM:A', 'damajc', 'Korean restaurant Jersey City', 'banchan subscription',
+    'weekly Korean meals', 'Korean office lunch delivery', 'building delivery Korean food',
+  ],
   authors: [{ name: 'DAM:A' }],
   openGraph: {
     type: 'website',

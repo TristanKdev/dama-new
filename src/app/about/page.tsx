@@ -4,8 +4,17 @@ import Link from 'next/link';
 import { VesselDivider } from '@/components/ui/VesselDivider';
 
 export const metadata: Metadata = {
-  title: 'About DAM:A',
-  description: 'DAM:A (담아) means "to contain" — we contain wellness in every bite. Thoughtfully prepared Korean meals for modern life in Jersey City.',
+  title: 'About DAM:A — Korean Wellness Food in Jersey City',
+  description:
+    'DAM:A (담아) means "to contain" — we contain wellness in every bite. Founded by Sylvia Kim, DAM:A brings thoughtfully prepared Korean dosirak and banchan to Jersey City buildings. Learn about our mission, the chilcheopbansang tradition, and Party DAM:A catering.',
+  openGraph: {
+    title: 'About DAM:A — Our Story & Mission',
+    description: 'Korean wellness food rooted in the chilcheopbansang tradition. Fresh dosirak and banchan delivered to your building in Jersey City.',
+    images: [{ url: '/images/brand/storefront-new.jpg', width: 1200, height: 630, alt: 'DAM:A storefront at 16 Bright Street, Jersey City' }],
+  },
+  alternates: {
+    canonical: '/about',
+  },
 };
 
 const values = [
@@ -15,9 +24,43 @@ const values = [
   { title: 'Community', description: 'Curated for Jersey City. We believe good food brings neighbors together and builds belonging.' },
 ];
 
+// Static JSON-LD for organization structured data — hardcoded, no user input
+const aboutJsonLd = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'DAM:A',
+  alternateName: '담아',
+  url: 'https://damajc.com',
+  logo: 'https://damajc.com/images/logo/logo-green.png',
+  description: 'Handcrafted Korean dosirak meal boxes and banchan delivered to your building in Jersey City, NJ.',
+  foundingDate: '2024',
+  founder: { '@type': 'Person', name: 'Sylvia Kim' },
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '16 Bright Street Unit H',
+    addressLocality: 'Jersey City',
+    addressRegion: 'NJ',
+    postalCode: '07302',
+    addressCountry: 'US',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+1-201-630-0530',
+    email: 'hello@damajc.com',
+    contactType: 'customer service',
+  },
+  sameAs: [
+    'https://instagram.com/dama.jc',
+    'https://facebook.com/damajc',
+    'https://tiktok.com/@dama.jc',
+  ],
+});
+
 export default function AboutPage() {
   return (
     <div className="bg-dama-cream">
+      {/* JSON-LD: Static hardcoded organization data, safe to inline */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: aboutJsonLd }} />
       {/* Text-only hero */}
       <div className="py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-6">

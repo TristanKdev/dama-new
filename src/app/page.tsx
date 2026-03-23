@@ -19,6 +19,8 @@ const jsonLd = {
   url: 'https://damajc.com',
   telephone: '(201) 630-0530',
   email: 'hello@damajc.com',
+  image: 'https://damajc.com/images/food/dosirak-box-layout.jpg',
+  logo: 'https://damajc.com/images/logo/logo-green.png',
   address: {
     '@type': 'PostalAddress',
     streetAddress: '16 Bright Street Unit H',
@@ -27,19 +29,43 @@ const jsonLd = {
     postalCode: '07302',
     addressCountry: 'US',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: 40.7178,
+    longitude: -74.0431,
+  },
   servesCuisine: 'Korean',
   priceRange: '$$',
   openingHours: ['Tu 11:00-18:00', 'Th 11:00-18:00', 'Sa 11:00-18:00'],
+  hasMenu: {
+    '@type': 'Menu',
+    url: 'https://damajc.com/menu',
+  },
+  areaServed: {
+    '@type': 'City',
+    name: 'Jersey City',
+    sameAs: 'https://en.wikipedia.org/wiki/Jersey_City,_New_Jersey',
+  },
+  sameAs: [
+    'https://instagram.com/dama.jc',
+    'https://facebook.com/damajc',
+    'https://tiktok.com/@dama.jc',
+  ],
+};
+
+const siteLinksSearchBox = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'DAM:A',
+  url: 'https://damajc.com',
 };
 
 export default function HomePage() {
   return (
     <>
-      {/* JSON-LD: Static hardcoded business data, safe to inline */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      {/* JSON-LD: Static hardcoded business + website data, safe to inline (no user input) */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(siteLinksSearchBox) }} />
       <Hero />
       <CredibilityBand />
       <VesselDivider />

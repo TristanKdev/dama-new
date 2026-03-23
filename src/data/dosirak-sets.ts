@@ -28,7 +28,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'The essential DAM:A experience. A balanced dosirak built on the chilcheopbansang tradition — rice, a protein centerpiece, and five curated banchan. Everything you need for a complete Korean meal.',
     price: 18,
-    imageUrl: '/images/food/dosirak-lunch.jpg',
+    imageUrl: '/images/food/dosirak-box-layout.jpg',
     badges: ['Best Seller', 'Signature'],
     setContents: [
       'Steamed white rice',
@@ -50,7 +50,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'Our premium meal box featuring Beef Short Rib Galbi (Tteokgalbi) — the Party DAM:A signature dish. Paired with six banchan, rice, and house kimchi. The Korean table, perfected.',
     price: 24,
-    imageUrl: '/images/food/dosirak-dinner-1.jpg',
+    imageUrl: '/images/photo/dosirak-overhead-full.jpg',
     badges: ['Premium', 'Signature'],
     setContents: [
       'Steamed white rice',
@@ -71,7 +71,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A fully plant-based dosirak celebrating the vegetable-forward side of Korean cuisine. Japchae, pan-fried tofu, seasonal namul, and white kimchi — wholesome, colorful, and satisfying.',
     price: 16,
-    imageUrl: '/images/food/dosirak-vegan-lunch.jpg',
+    imageUrl: '/images/photo/dosirak-closeup-warm.jpg',
     badges: ['Vegan', 'Plant-Based'],
     setContents: [
       'Steamed white rice',
