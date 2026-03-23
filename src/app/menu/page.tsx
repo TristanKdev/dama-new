@@ -1,14 +1,15 @@
 import type { Metadata } from 'next';
 import { getSquareCatalogItems } from '@/lib/square-catalog';
 import { menuItems as staticMenuItems } from '@/data/menu-items';
+import { dosirakSets } from '@/data/dosirak-sets';
 import MenuClient from './menu-client';
 
 export const metadata: Metadata = {
-  title: 'Menu — Dosirak Sets, Banchan & Appetizers',
-  description: 'Browse our full Korean menu: curated dosirak sets, 30 authentic banchan side dishes (build your own in sets of 4, 8, or 12), and Korean street-style appetizers. Delivered fresh in Jersey City.',
+  title: 'Menu — Dosirak Sets & Banchan Sides',
+  description: 'Choose your dosirak meal box and add banchan sides. 3 signature Korean meal boxes and 30 authentic banchan. Delivered fresh in Jersey City.',
 };
 
-export const revalidate = 300; // Revalidate menu every 5 minutes
+export const revalidate = 300;
 
 export default async function MenuPage() {
   let menuItems;
@@ -19,5 +20,5 @@ export default async function MenuPage() {
     menuItems = staticMenuItems;
   }
 
-  return <MenuClient menuItems={menuItems} />;
+  return <MenuClient menuItems={menuItems} dosirakSets={dosirakSets} />;
 }
