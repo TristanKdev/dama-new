@@ -82,13 +82,13 @@ export default function CartPage() {
       <div className="bg-dama-cream py-24">
         <div className="mx-auto max-w-lg px-4 text-center md:px-6">
           <h1 className="font-cormorant text-3xl font-semibold text-dama-charcoal">Your Cart is Empty</h1>
-          <p className="mt-3 text-base text-dama-charcoal/60">Add some delicious banchan to get started.</p>
+          <p className="mt-3 text-base text-dama-charcoal/60">Choose a dosirak set and add banchan sides to get started.</p>
           <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
             <Link href="/menu">
               <Button size="lg">Browse Menu</Button>
             </Link>
             <Link href="/build-your-own">
-              <Button size="lg" variant="secondary">Build Your Own Tray</Button>
+              <Button size="lg" variant="secondary">Build Your Own</Button>
             </Link>
           </div>
           <p className="mt-4 text-sm text-dama-charcoal/50">

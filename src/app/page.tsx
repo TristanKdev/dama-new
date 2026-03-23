@@ -15,7 +15,7 @@ const jsonLd = {
   '@type': ['LocalBusiness', 'FoodEstablishment'],
   name: 'DAM:A',
   alternateName: '담아',
-  description: 'Handcrafted Korean banchan (side dishes) delivered to your building in Jersey City, NJ.',
+  description: 'Handcrafted Korean dosirak meal boxes and banchan delivered to your building in Jersey City, NJ.',
   url: 'https://damajc.com',
   telephone: '(201) 630-0530',
   email: 'hello@damajc.com',
