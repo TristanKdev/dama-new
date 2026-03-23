@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
@@ -42,41 +42,17 @@ const INITIAL_COMPARTMENTS: Compartment[] = [
   { id: 'side-6', label: 'Side 6', type: 'side', gridArea: '3 / 3 / 4 / 4', menuItem: null },
 ];
 
-export function DosirakBoxBuilder() {
+interface DosirakBoxBuilderProps {
+  banchanItems: MenuItem[];
+  mainItems: MenuItem[];
+}
+
+export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilderProps) {
   const router = useRouter();
   const { addTray, openCart } = useCartStore();
   const [compartments, setCompartments] = useState<Compartment[]>(INITIAL_COMPARTMENTS);
   const [activeSlot, setActiveSlot] = useState<string | null>(null);
-  const [banchanItems, setBanchanItems] = useState<MenuItem[]>([]);
-  const [mainItems, setMainItems] = useState<MenuItem[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState('');
-
-  useEffect(() => {
-    async function fetchItems() {
-      try {
-        const { getSquareCatalogItems } = await import('@/lib/square-catalog');
-        const items = await getSquareCatalogItems();
-        if (items.length > 0) {
-          setBanchanItems(items.filter(i => i.category === 'banchan' && i.available && !i.soldOut));
-          setMainItems(items.filter(i => i.category === 'main' && i.available && !i.soldOut));
-        } else {
-          throw new Error('fallback');
-        }
-      } catch {
-        try {
-          const { banchanItems: staticBanchan, mainDishItems } = await import('@/data/menu-items');
-          setBanchanItems(staticBanchan.filter(i => i.available && !i.soldOut));
-          setMainItems(mainDishItems.filter(i => i.available && !i.soldOut));
-        } catch {
-          // ignore
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchItems();
-  }, []);
 
   const filledCount = compartments.filter(c => c.menuItem !== null).length;
   const isFull = filledCount === compartments.length;
@@ -157,14 +133,6 @@ export function DosirakBoxBuilder() {
   function handleClear() {
     setCompartments(INITIAL_COMPARTMENTS);
     setActiveSlot(null);
-  }
-
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center py-16">
-        <p className="text-sm text-dama-charcoal/60">Loading menu items...</p>
-      </div>
-    );
   }
 
   return (

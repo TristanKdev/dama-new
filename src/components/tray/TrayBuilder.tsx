@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { TrayGrid } from './TrayGrid';
 import { TrayItemPicker } from './TrayItemPicker';
@@ -24,7 +24,11 @@ function generateId() {
   return `tray-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
 }
 
-export function TrayBuilder() {
+interface TrayBuilderProps {
+  menuItems?: MenuItem[];
+}
+
+export function TrayBuilder({ menuItems: propItems }: TrayBuilderProps = {}) {
   const router = useRouter();
   const { addTray, openCart } = useCartStore();
   const [step, setStep] = useState<'size' | 'build'>('size');
@@ -32,35 +36,9 @@ export function TrayBuilder() {
   const [slots, setSlots] = useState<TraySlot[]>(createEmptySlots(4));
   const [selectedItem, setSelectedItem] = useState<MenuItem | null>(null);
   const [isDouble, setIsDouble] = useState(false);
-  const [menuItems, setMenuItems] = useState<MenuItem[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
+  const menuItems = propItems ?? [];
 
   const config = TRAY_CONFIGS.find((c) => c.size === traySize)!;
-
-  useEffect(() => {
-    async function fetchItems() {
-      try {
-        const { getSquareCatalogItems } = await import('@/lib/square-catalog');
-        const items = await getSquareCatalogItems('banchan');
-        if (items.length > 0) {
-          setMenuItems(items.filter(i => i.available && !i.soldOut));
-        } else {
-          const { allBanchanItems } = await import('@/data/menu-items');
-          setMenuItems(allBanchanItems.filter(i => i.available && !i.soldOut));
-        }
-      } catch {
-        try {
-          const { allBanchanItems } = await import('@/data/menu-items');
-          setMenuItems(allBanchanItems.filter(i => i.available && !i.soldOut));
-        } catch {
-          // ignore
-        }
-      } finally {
-        setIsLoading(false);
-      }
-    }
-    fetchItems();
-  }, []);
 
   const filledCount = useMemo(
     () => slots.filter((s) => s.menuItem !== null || s.isDoubleSecond).length,
@@ -170,13 +148,7 @@ export function TrayBuilder() {
     router.push('/cart');
   };
 
-  if (isLoading) {
-    return (
-      <div className="flex items-center justify-center py-16">
-        <p className="text-sm text-dama-charcoal/60">Loading menu items...</p>
-      </div>
-    );
-  }
+
 
   // Step 1: Size selection
   if (step === 'size') {
