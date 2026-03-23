@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
 
   // If searching, first check orders table for email matches to find guest customers
   // and profile-linked customers searchable by email
-  let emailMatchedUserIds: string[] = [];
+  const emailMatchedUserIds: string[] = [];
   let guestCustomers: { email: string; name: string; phone: string; orderCount: number; createdAt: string }[] = [];
 
   if (search) {
