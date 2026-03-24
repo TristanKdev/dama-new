@@ -21,25 +21,25 @@ export interface DosirakSet {
 
 export const dosirakSets: DosirakSet[] = [
   {
-    id: 'dosirak-chicken',
-    nameKo: '치킨 도시락',
-    nameEn: 'Sweet Chicken Dosirak',
-    subtitle: 'Crispy sweet & sour chicken',
+    id: 'dosirak-chicken-galbi',
+    nameKo: '닭갈비 도시락',
+    nameEn: 'Chicken Galbi Dosirak',
+    subtitle: 'Chuncheon-style spicy chicken',
     description:
-      'Crispy chicken in a sweet and savory sauce with steamed white rice and six curated banchan. A crowd-favorite dosirak that balances bold protein with fresh, seasonal sides.',
+      'Tender chicken stir-fried with rice cakes, cabbage, and sweet potato in a bold gochujang sauce. Chuncheon-style dakgalbi — spicy, satisfying, and deeply Korean.',
     price: 18,
     imageUrl: '/images/food/dosirak-classic-box.jpg',
-    badges: ['Best Seller', 'Kids Favorite'],
+    badges: ['Best Seller', 'Spicy'],
     setContents: [
       'Steamed white rice',
-      'Sweet & sour chicken',
+      'Chicken Galbi (닭갈비)',
       'Kabocha squash salad',
       'Burdock root stir-fry',
       'Kimchi',
       'Japchae (glass noodles)',
       'Mandu & egg roll',
     ],
-    dietaryTags: [],
+    dietaryTags: ['Spicy'],
     available: true,
     soldOut: false,
   },
@@ -50,7 +50,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Bold gochujang pork with multigrain rice',
     description:
       'Tender pork stir-fried in a fiery gochujang marinade, paired with Korean multigrain rice, pan-fried jeon, crispy mandu, and a full spread of banchan. The signature Korean working lunch.',
-    price: 20,
+    price: 18,
     imageUrl: '/images/food/dosirak-premium-box.jpg',
     badges: ['Spicy', 'Best Seller'],
     setContents: [
@@ -73,7 +73,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Classic marinated beef with fried rice',
     description:
       'Thinly sliced beef bulgogi marinated in soy, sesame, and Asian pear — the most universally loved Korean main. Served with vegetable fried rice, japchae, kabocha, and an array of seasonal banchan.',
-    price: 22,
+    price: 20,
     imageUrl: '/images/food/dosirak-bulgogi-box.jpg',
     badges: ['Signature', 'Kids Favorite'],
     setContents: [

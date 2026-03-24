@@ -47,9 +47,9 @@ const jsonLd = {
     sameAs: 'https://en.wikipedia.org/wiki/Jersey_City,_New_Jersey',
   },
   sameAs: [
-    'https://instagram.com/dama.jc',
-    'https://facebook.com/damajc',
-    'https://tiktok.com/@dama.jc',
+    'https://www.instagram.com/damajc2026/',
+    'https://facebook.com/damajc', // TODO: Update with correct Facebook URL from client
+    'https://tiktok.com/@dama.jc', // TODO: Update with correct TikTok URL from client
   ],
 };
 

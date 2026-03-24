@@ -344,8 +344,8 @@ export const banchanItems: MenuItem[] = [
   {
     id: 'odeng-muchim',
     nameKo: '오뎅무침',
-    nameEn: 'Seasoned Fish Cake / Odeng Muchim',
-    description: 'Gochujang-marinated seasoned fish cake. Bold, spicy. The classic Korean bar snack.',
+    nameEn: 'Seasoned Squid',
+    description: 'Gochujang-marinated squid. Bold, spicy. The classic Korean bar snack.',
     price: 6,
     category: 'banchan',
     dietaryTags: ['Spicy'],

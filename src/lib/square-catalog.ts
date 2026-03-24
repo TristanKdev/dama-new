@@ -291,7 +291,7 @@ const ENRICHMENT_DATA: Record<string, EnrichmentEntry> = {
     pairsWellWith: 'Korean lager, soju, makgeolli \u2014 the definitive Korean anju',
     chefsNote: 'Squid seasoned with a gochujang-based sauce, sesame, and aromatics. A beloved Korean bar snack (anju) that pairs perfectly with cold drinks.',
   },
-  'seasoned-fish-cake-odeng-muchim': {
+  'seasoned-squid-ojingeo-muchim': {
     dietaryTags: ['Spicy'],
     spiceLevel: 2,
     badges: ['Anju', 'Spicy', 'Drink Pairing'],

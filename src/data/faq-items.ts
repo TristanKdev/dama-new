@@ -80,7 +80,7 @@ export const faqItems: FAQItem[] = [
   {
     id: 'faq-13',
     question: 'How long does the food stay fresh?',
-    answer: 'All banchan are made fresh and packaged in sealed containers. Most items stay fresh for 5-7 days when refrigerated. Each container is labeled with a best-by date.',
+    answer: 'Most banchan stay fresh for 3\u20135 days when refrigerated and sealed. However, some items have shorter windows \u2014 always check the individual item card for specific freshness notes. Key exceptions: Japchae (glass noodles) should be eaten the same day as delivery; Gimbap is best enjoyed same day and does not refrigerate well after slicing; Tteok (rice cakes) are best within 24 hours of delivery. Kimchi continues to ferment and deepen in flavor over 3\u20137 days in the refrigerator \u2014 it only gets better.',
     category: 'Food & Quality',
   },
   {

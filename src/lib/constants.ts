@@ -60,9 +60,9 @@ export const SERVICE_AREA = {
 // Update these URLs to point to your social profiles.
 // ============================================================
 export const SOCIAL = {
-  instagram: 'https://www.instagram.com/dama.jc',
-  facebook: 'https://www.facebook.com/damajc',
-  tiktok: 'https://www.tiktok.com/@dama.jc',
+  instagram: 'https://www.instagram.com/damajc2026/',
+  facebook: 'https://www.facebook.com/damajc', // TODO: Update with correct Facebook URL from client
+  tiktok: 'https://www.tiktok.com/@dama.jc', // TODO: Update with correct TikTok URL from client
 } as const;
 
 // ============================================================

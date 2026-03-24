@@ -238,7 +238,7 @@ export default function CateringPage() {
                 <div>
                   <p className="text-xs font-medium text-dama-charcoal/50">What We Offer</p>
                   <p className="mt-0.5 text-sm text-dama-charcoal">
-                    Custom banchan spreads, dosirak boxes, and seasonal specialties tailored to your event.
+                    Custom banchan spreads, dosirak boxes, and seasonal specialties tailored to your event. Our Party DAM:A signature dish is the Beef Short Rib Galbi (Tteokgalbi / 떡갈비) — minced beef short rib patties, savory and juicy, ideal for events and gatherings. Available exclusively for catering orders.
                   </p>
                 </div>
                 <div>
