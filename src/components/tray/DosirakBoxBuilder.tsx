@@ -300,18 +300,38 @@ export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilder
                       key={item.id}
                       type="button"
                       onClick={() => handlePickItem(item)}
-                      className="flex w-full items-center gap-2.5 rounded-lg p-2 text-left transition-colors hover:bg-dama-green-50"
+                      className="w-full rounded-lg border border-dama-sand/30 p-2.5 text-left transition-colors hover:bg-dama-green-50"
                     >
-                      {item.imageUrl && (
-                        <div className="relative h-10 w-10 shrink-0 overflow-hidden rounded-md">
-                          <Image src={item.imageUrl} alt={item.nameEn} fill className="object-cover" sizes="40px" />
+                      <div className="flex items-start gap-2.5">
+                        {item.imageUrl && (
+                          <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-md">
+                            <Image src={item.imageUrl} alt={item.nameEn} fill className="object-cover" sizes="48px" />
+                          </div>
+                        )}
+                        <div className="min-w-0 flex-1">
+                          <div className="flex items-start justify-between gap-1">
+                            <p className="text-xs font-semibold text-dama-charcoal">{item.nameEn}</p>
+                            <span className="shrink-0 text-xs font-bold text-dama-green-600">{formatPrice(item.price)}</span>
+                          </div>
+                          <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{item.nameKo}</p>
+                          {item.badges && item.badges.length > 0 && (
+                            <div className="mt-1 flex flex-wrap gap-0.5">
+                              {item.badges.map(b => (
+                                <span key={b} className="rounded-full bg-dama-green-50 px-1 py-0.5 text-[8px] font-medium text-dama-green-700">{b}</span>
+                              ))}
+                            </div>
+                          )}
                         </div>
-                      )}
-                      <div className="min-w-0 flex-1">
-                        <p className="truncate text-xs font-semibold text-dama-charcoal">{item.nameEn}</p>
-                        <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{item.nameKo}</p>
                       </div>
-                      <span className="shrink-0 text-xs font-bold text-dama-green-600">{formatPrice(item.price)}</span>
+                      {item.flavorProfile && (
+                        <p className="mt-1.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Flavor:</span> {item.flavorProfile}</p>
+                      )}
+                      {item.chefsNote && (
+                        <p className="mt-0.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Chef:</span> {item.chefsNote}</p>
+                      )}
+                      {item.review && (
+                        <p className="mt-0.5 text-[10px] italic leading-snug text-dama-charcoal/40">&ldquo;{item.review}&rdquo;</p>
+                      )}
                     </button>
                   ))
                 )}

@@ -63,19 +63,43 @@ export function TrayItemPicker({
               onClick={() => !isSoldOut && onSelectItem(item)}
               disabled={isSoldOut}
               className={cn(
-                'flex w-full items-center gap-3 rounded-md border p-3 text-left transition-colors',
+                'w-full rounded-md border p-3 text-left transition-colors',
                 isSelected && 'border-dama-green-400 bg-dama-green-50',
                 !isSelected && !isSoldOut && 'border-dama-sand bg-white hover:border-dama-green-200',
                 isSoldOut && 'cursor-not-allowed border-dama-sand/50 bg-dama-ivory/50 opacity-50',
               )}
             >
-              <div className="flex-1">
-                <p className="text-sm font-medium text-dama-charcoal">{item.nameEn}</p>
-                <p className="text-xs text-dama-charcoal/50">{item.nameKo}</p>
+              <div className="flex items-start justify-between gap-2">
+                <div className="min-w-0 flex-1">
+                  <p className="text-sm font-medium text-dama-charcoal">{item.nameEn}</p>
+                  <p className="text-xs text-dama-charcoal/50">{item.nameKo}</p>
+                </div>
+                <span className="shrink-0 text-sm font-semibold text-dama-green-600">
+                  {isSoldOut ? 'Sold Out' : formatPrice(item.price)}
+                </span>
               </div>
-              <span className="text-sm font-semibold text-dama-green-600">
-                {isSoldOut ? 'Sold Out' : formatPrice(item.price)}
-              </span>
+              {item.badges && item.badges.length > 0 && (
+                <div className="mt-1 flex flex-wrap gap-0.5">
+                  {item.badges.map(b => (
+                    <span key={b} className="rounded-full bg-dama-green-50 px-1 py-0.5 text-[8px] font-medium text-dama-green-700">{b}</span>
+                  ))}
+                </div>
+              )}
+              {item.flavorProfile && (
+                <p className="mt-1.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Flavor:</span> {item.flavorProfile}</p>
+              )}
+              {item.texture && (
+                <p className="mt-0.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Texture:</span> {item.texture}</p>
+              )}
+              {item.pairsWellWith && (
+                <p className="mt-0.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Pairs with:</span> {item.pairsWellWith}</p>
+              )}
+              {item.chefsNote && (
+                <p className="mt-0.5 text-[10px] leading-snug text-dama-charcoal/50"><span className="font-semibold text-dama-green-600">Chef:</span> {item.chefsNote}</p>
+              )}
+              {item.review && (
+                <p className="mt-1 text-[10px] italic leading-snug text-dama-charcoal/40">&ldquo;{item.review}&rdquo;</p>
+              )}
             </button>
           );
         })}
