@@ -71,7 +71,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A fully plant-based dosirak celebrating the vegetable-forward side of Korean cuisine. Japchae, pan-fried tofu, seasonal namul, and white kimchi — wholesome, colorful, and satisfying.',
     price: 16,
-    imageUrl: '/images/food/dosirak-bulgogi-box.jpg',
+    imageUrl: '/images/food/dosirak-box-layout.jpg',
     badges: ['Vegan', 'Plant-Based'],
     setContents: [
       'Steamed white rice',
