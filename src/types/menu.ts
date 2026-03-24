@@ -24,6 +24,10 @@ export interface MenuItem {
   setContents?: string[];
   note?: string;
   review?: string;
+  flavorProfile?: string;
+  texture?: string;
+  pairsWellWith?: string;
+  chefsNote?: string;
 }
 
 export interface DeliveryDate {

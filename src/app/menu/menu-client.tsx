@@ -308,6 +308,35 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                             </div>
                           </div>
                         </div>
+                        {/* Detail fields */}
+                        {(item.flavorProfile || item.texture || item.pairsWellWith || item.chefsNote) && (
+                          <div className="border-t border-dama-sand/30 px-3 py-2 space-y-1.5">
+                            {item.flavorProfile && (
+                              <div>
+                                <p className="text-[10px] font-semibold uppercase tracking-wider text-dama-green-600">Flavor</p>
+                                <p className="text-[11px] leading-snug text-dama-charcoal/60">{item.flavorProfile}</p>
+                              </div>
+                            )}
+                            {item.texture && (
+                              <div>
+                                <p className="text-[10px] font-semibold uppercase tracking-wider text-dama-green-600">Texture</p>
+                                <p className="text-[11px] leading-snug text-dama-charcoal/60">{item.texture}</p>
+                              </div>
+                            )}
+                            {item.pairsWellWith && (
+                              <div>
+                                <p className="text-[10px] font-semibold uppercase tracking-wider text-dama-green-600">Pairs With</p>
+                                <p className="text-[11px] leading-snug text-dama-charcoal/60">{item.pairsWellWith}</p>
+                              </div>
+                            )}
+                            {item.chefsNote && (
+                              <div>
+                                <p className="text-[10px] font-semibold uppercase tracking-wider text-dama-green-600">Chef&apos;s Note</p>
+                                <p className="text-[11px] leading-snug text-dama-charcoal/60">{item.chefsNote}</p>
+                              </div>
+                            )}
+                          </div>
+                        )}
                         {/* Review */}
                         {item.review && (
                           <div className="border-t border-dama-sand/30 bg-dama-cream/40 px-3 py-2">
