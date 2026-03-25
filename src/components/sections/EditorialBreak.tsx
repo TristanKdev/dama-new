@@ -10,7 +10,7 @@ export function EditorialBreak() {
           <footer className="mt-8">
             <cite className="not-italic">
               <span className="text-sm font-medium text-dama-green-400">DAM:A</span>
-              <span className="mx-2 text-dama-cream/50">&middot;</span>
+              <span className="text-dama-cream/50"> &middot; </span>
               <span className="text-sm text-dama-cream/50">Contain Wellness</span>
             </cite>
           </footer>

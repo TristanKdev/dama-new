@@ -29,7 +29,7 @@ export const dosirakSets: DosirakSet[] = [
       'Tender chicken stir-fried with rice cakes, cabbage, and sweet potato in a bold gochujang sauce. Chuncheon-style dakgalbi — spicy, satisfying, and deeply Korean.',
     price: 18,
     imageUrl: '/images/food/dosirak-classic-box.jpg',
-    badges: ['Best Seller', 'Spicy'],
+    badges: ['Spicy', 'Best Seller', 'High Protein'],
     setContents: [
       'Steamed white rice',
       'Chicken Galbi (닭갈비)',
@@ -52,7 +52,7 @@ export const dosirakSets: DosirakSet[] = [
       'Tender pork stir-fried in a fiery gochujang marinade, paired with Korean multigrain rice, pan-fried jeon, crispy mandu, and a full spread of banchan. The signature Korean working lunch.',
     price: 18,
     imageUrl: '/images/food/dosirak-premium-box.jpg',
-    badges: ['Spicy', 'Best Seller'],
+    badges: ['Spicy', 'Best Seller', 'High Protein'],
     setContents: [
       'Multigrain rice (잡곡밥)',
       'Spicy pork stir-fry (Jeyuk Bokkeum)',
@@ -75,7 +75,7 @@ export const dosirakSets: DosirakSet[] = [
       'Thinly sliced beef bulgogi marinated in soy, sesame, and Asian pear — the most universally loved Korean main. Served with vegetable fried rice, japchae, kabocha, and an array of seasonal banchan.',
     price: 20,
     imageUrl: '/images/food/dosirak-bulgogi-box.jpg',
-    badges: ['Signature', 'Kids Favorite'],
+    badges: ['Best Seller', 'Kids Favorite', 'Mild', 'High Protein'],
     setContents: [
       'Vegetable fried rice',
       'Korean beef bulgogi',

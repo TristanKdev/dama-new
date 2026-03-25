@@ -74,6 +74,7 @@ export const SOCIAL = {
 export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
   { label: 'Build Your Own', href: '/build-your-own' },
+  { label: 'Grab & Go', href: '/grab-and-go' },
   { label: 'Subscribe', href: '/subscribe' },
   { label: 'Catering', href: '/catering' },
   { label: 'How It Works', href: '/how-it-works' },
