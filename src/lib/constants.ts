@@ -61,8 +61,8 @@ export const SERVICE_AREA = {
 // ============================================================
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/damajc2026/',
-  facebook: 'https://www.facebook.com/damajc', // TODO: Update with correct Facebook URL from client
-  tiktok: 'https://www.tiktok.com/@dama.jc', // TODO: Update with correct TikTok URL from client
+  facebook: 'https://www.facebook.com/damajc2026',
+  tiktok: 'https://www.tiktok.com/@damajc2026',
 } as const;
 
 // ============================================================
@@ -75,7 +75,6 @@ export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
   { label: 'Build Your Own', href: '/build-your-own' },
   { label: 'Grab & Go', href: '/grab-and-go' },
-  { label: 'Subscribe', href: '/subscribe' },
   { label: 'Catering', href: '/catering' },
   { label: 'How It Works', href: '/how-it-works' },
 ];
@@ -100,7 +99,6 @@ export const FOOTER_NAV: {
   navigation: [
     { label: 'Weekly Menu', href: '/menu' },
     { label: 'Build Your Own', href: '/build-your-own' },
-    { label: 'Subscribe', href: '/subscribe' },
     { label: 'Catering', href: '/catering' },
     { label: 'How It Works', href: '/how-it-works' },
     { label: 'About DAM:A', href: '/about' },

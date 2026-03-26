@@ -5,7 +5,6 @@ import { CredibilityBand } from '@/components/sections/CredibilityBand';
 import { HowItWorks } from '@/components/sections/HowItWorks';
 import { MenuPreview } from '@/components/sections/MenuPreview';
 import { EditorialBreak } from '@/components/sections/EditorialBreak';
-import { SubscriptionPitch } from '@/components/sections/SubscriptionPitch';
 import { BuildingCallout } from '@/components/sections/BuildingCallout';
 import { PreFooterCTA } from '@/components/sections/PreFooterCTA';
 import { VesselDivider } from '@/components/ui/VesselDivider';
@@ -48,8 +47,8 @@ const jsonLd = {
   },
   sameAs: [
     'https://www.instagram.com/damajc2026/',
-    'https://facebook.com/damajc', // TODO: Update with correct Facebook URL from client
-    'https://tiktok.com/@dama.jc', // TODO: Update with correct TikTok URL from client
+    'https://facebook.com/damajc2026',
+    'https://tiktok.com/@damajc2026',
   ],
 };
 
@@ -72,7 +71,6 @@ export default function HomePage() {
       <HowItWorks />
       <MenuPreview />
       <EditorialBreak />
-      <SubscriptionPitch />
       <VesselDivider />
       <BuildingCallout />
       <PreFooterCTA />

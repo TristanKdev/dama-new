@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { BUSINESS, SOCIAL, FOOTER_NAV } from '@/lib/constants';
-import { NewsletterForm } from './NewsletterForm';
 
 export function Footer() {
   return (
@@ -60,10 +59,6 @@ export function Footer() {
                   <path d="M9 5c2 0 4 1.5 5 3V2" />
                 </svg>
               </a>
-            </div>
-            <div className="mt-4">
-              <p className="mb-2 text-sm font-medium text-white/70">Stay in the loop</p>
-              <NewsletterForm />
             </div>
           </div>
 

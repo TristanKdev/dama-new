@@ -51,8 +51,8 @@ const aboutJsonLd = JSON.stringify({
   },
   sameAs: [
     'https://www.instagram.com/damajc2026/',
-    'https://facebook.com/damajc', // TODO: Update with correct Facebook URL from client
-    'https://tiktok.com/@dama.jc', // TODO: Update with correct TikTok URL from client
+    'https://facebook.com/damajc2026',
+    'https://tiktok.com/@damajc2026',
   ],
 });
 
