@@ -97,7 +97,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A light, grab-and-go dosirak featuring gimbap, inari sushi, and rolled omelet — perfect for picnics, outings, or a quick Korean lunch.',
     price: 12,
-    imageUrl: '/images/food/dosirak-picnic-mini.png',
+    imageUrl: '/images/food/dosirak-picnic-mini.jpg',
     badges: ['Kids Favorite', 'Mild'],
     setContents: [
       'Gimbap',
@@ -117,7 +117,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A curated variety box with gimbap, California roll, inari sushi, and fresh spring rolls — paired with seasonal fruits and salad.',
     price: 12,
-    imageUrl: '/images/food/dosirak-mini-variety.png',
+    imageUrl: '/images/food/dosirak-mini-variety.jpg',
     badges: ['Best Seller', 'Mild'],
     setContents: [
       'Gimbap',
@@ -139,7 +139,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A plant-forward dosirak built around japchae — sweet potato glass noodles with seasonal vegetables, egg garnish, kabocha salad, and optional kimchi.',
     price: 12,
-    imageUrl: '/images/food/dosirak-japchae.png',
+    imageUrl: '/images/food/dosirak-japchae.jpg',
     badges: ['Vegan', 'Best Seller'],
     setContents: [
       'Japchae (glass noodles)',
@@ -160,7 +160,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'A premium inari sushi platter featuring spicy pork, three-color namul, and beef bulgogi inari — served with rolled omelet and fresh seasonal fruits.',
     price: 12,
-    imageUrl: '/images/food/dosirak-k-inari.png',
+    imageUrl: '/images/food/dosirak-k-inari.jpg',
     badges: ['Best Seller', 'High Protein'],
     setContents: [
       'Spicy pork inari',
