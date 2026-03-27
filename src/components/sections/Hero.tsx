@@ -37,7 +37,7 @@ export function Hero() {
 
         {/* Right image — 40% */}
         <div className="mt-10 w-full md:mt-0 md:w-[40%]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg">
             <Image
               src="/images/hero.jpg"
               alt="Korean dosirak meal box with compartments of banchan, rice, and kimchi"
