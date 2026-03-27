@@ -29,8 +29,8 @@ const SETTING_GROUPS = [
     description: 'Update your social media profile links (shown in the footer).',
     fields: [
       { key: 'social_instagram', label: 'Instagram URL', placeholder: 'https://www.instagram.com/damajc2026/' },
-      { key: 'social_facebook', label: 'Facebook URL', placeholder: 'https://www.facebook.com/damajc2026' },
-      { key: 'social_tiktok', label: 'TikTok URL', placeholder: 'https://www.tiktok.com/@damajc2026' },
+      { key: 'social_facebook', label: 'Facebook URL', placeholder: 'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr' },
+      { key: 'social_tiktok', label: 'TikTok URL', placeholder: 'http://www.tiktok.com/@dama41770' },
     ],
   },
   {

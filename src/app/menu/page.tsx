@@ -48,7 +48,7 @@ const menuJsonLd = JSON.stringify({
         {
           '@type': 'MenuItem',
           name: 'Beef Bulgogi Dosirak',
-          description: 'Korean beef bulgogi with vegetable fried rice, japchae, kabocha salad, burdock root, kimchi, radish',
+          description: 'Korean beef bulgogi with vegetable fried rice, japchae, kabocha salad, lotus root, kimchi, radish',
           offers: { '@type': 'Offer', price: '20.00', priceCurrency: 'USD' },
         },
       ],

@@ -47,8 +47,8 @@ const jsonLd = {
   },
   sameAs: [
     'https://www.instagram.com/damajc2026/',
-    'https://facebook.com/damajc2026',
-    'https://tiktok.com/@damajc2026',
+    'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr',
+    'http://www.tiktok.com/@dama41770',
   ],
 };
 

@@ -21,7 +21,7 @@ export async function MenuPreview() {
         <div className="grid gap-6 md:grid-cols-3">
           {dosirakSets.map((set) => (
             <div key={set.id} className="group overflow-hidden rounded-2xl border border-dama-sand/50 bg-white transition-shadow hover:shadow-xl">
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden">
                 <Image
                   src={set.imageUrl}
                   alt={set.nameEn}

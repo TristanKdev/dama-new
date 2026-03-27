@@ -120,7 +120,7 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                     className="group flex flex-col overflow-hidden rounded-2xl border border-dama-sand/50 bg-white shadow-sm transition-all hover:shadow-xl"
                   >
                     {/* Image */}
-                    <div className="relative aspect-[4/3] w-full overflow-hidden">
+                    <div className="relative aspect-square w-full overflow-hidden">
                       <Image
                         src={set.imageUrl}
                         alt={set.nameEn}

@@ -14,7 +14,7 @@ function RegularCartRow({ item }: { item: RegularCartItem }) {
     <div className="flex items-center gap-4 p-4">
       <div className="flex-1">
         <h3 className="text-sm font-medium text-dama-charcoal">{item.menuItem.nameEn}</h3>
-        <p className="text-xs text-dama-charcoal/50">{item.menuItem.nameKo} · {item.menuItem.servingSize}</p>
+        <p className="text-xs text-dama-charcoal/50">{item.menuItem.nameKo}</p>
       </div>
       <QuantitySelector
         quantity={item.quantity}

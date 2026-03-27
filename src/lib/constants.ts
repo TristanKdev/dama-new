@@ -61,8 +61,8 @@ export const SERVICE_AREA = {
 // ============================================================
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/damajc2026/',
-  facebook: 'https://www.facebook.com/damajc2026',
-  tiktok: 'https://www.tiktok.com/@damajc2026',
+  facebook: 'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr',
+  tiktok: 'http://www.tiktok.com/@dama41770',
 } as const;
 
 // ============================================================
