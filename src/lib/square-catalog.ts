@@ -280,6 +280,17 @@ const ENRICHMENT_DATA: Record<string, EnrichmentEntry> = {
     pairsWellWith: 'Rice, bibimbap, barley tea',
     chefsNote: 'A wholesome, understated banchan. Mung bean sprouts seasoned simply to let the natural flavor come through.',
   },
+  'seasoned-fish-cake-odeng-muchim': {
+    dietaryTags: ['Spicy'],
+    spiceLevel: 2,
+    badges: ['Anju', 'Spicy', 'Drink Pairing'],
+    subcategory: 'muchim',
+    review: 'Perfect beer pairing for Korean palates. May be a new experience for those unfamiliar with dried seafood banchan \u2014 but worth the try.',
+    flavorProfile: 'Bold, spicy, and savory with gochujang-based seasoning.',
+    texture: 'Chewy and satisfying. Classic Korean bar food texture.',
+    pairsWellWith: 'Korean lager, soju, makgeolli \u2014 the definitive Korean anju',
+    chefsNote: 'Squid seasoned with a gochujang-based sauce, sesame, and aromatics. A beloved Korean bar snack (anju) that pairs perfectly with cold drinks.',
+  },
   'seasoned-squid-ojingeo-muchim': {
     dietaryTags: ['Spicy'],
     spiceLevel: 2,
