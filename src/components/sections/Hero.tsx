@@ -40,7 +40,7 @@ export function Hero() {
           <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
             <Image
               src="/images/hero.jpg"
-              alt="Person enjoying a colorful Korean dosirak lunchbox with chopsticks"
+              alt="Korean dosirak meal box with compartments of banchan, rice, and kimchi"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 40vw"
