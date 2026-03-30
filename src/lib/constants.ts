@@ -73,16 +73,15 @@ export const SOCIAL = {
 // Primary links shown in the desktop header nav
 export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
-  { label: 'Build Your Own', href: '/build-your-own' },
+  { label: 'Grab & Go', href: '/grab-and-go' },
   { label: 'Catering', href: '/catering' },
-  { label: 'Subscribe', href: '/subscribe' },
+  { label: 'About', href: '/about' },
   { label: 'How It Works', href: '/how-it-works' },
 ];
 
 // All links (primary + secondary) — used in mobile menu
 export const NAV_LINKS: { label: string; href: string }[] = [
   ...NAV_LINKS_PRIMARY,
-  { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '/faq' },
   { label: 'Contact', href: '/contact' },
@@ -99,9 +98,8 @@ export const FOOTER_NAV: {
 } = {
   navigation: [
     { label: 'Weekly Menu', href: '/menu' },
-    { label: 'Build Your Own', href: '/build-your-own' },
+    { label: 'Grab & Go', href: '/grab-and-go' },
     { label: 'Catering', href: '/catering' },
-    { label: 'Subscribe', href: '/subscribe' },
     { label: 'How It Works', href: '/how-it-works' },
     { label: 'About DAM:A', href: '/about' },
     { label: 'Blog', href: '/blog' },

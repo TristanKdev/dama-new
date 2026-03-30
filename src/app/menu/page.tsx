@@ -35,20 +35,20 @@ const menuJsonLd = JSON.stringify({
       hasMenuItem: [
         {
           '@type': 'MenuItem',
-          name: 'Sweet Chicken Dosirak',
-          description: 'Tender chicken stir-fried with rice cakes, cabbage, and sweet potato in a bold gochujang sauce. Chuncheon-style dakgalbi — spicy, satisfying, and deeply Korean.',
+          name: 'DAMA Chicken Set',
+          description: 'Korean sweet & tangy chicken with japchae, kabocha salad, braised burdock root, fresh cucumber kimchi, and seasonal namul.',
           offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
         {
           '@type': 'MenuItem',
-          name: 'Spicy Pork Dosirak',
-          description: 'Spicy pork stir-fry with multigrain rice, pan-fried jeon and mandu, kabocha, kimchi, fernbrake, radish',
+          name: 'DAMA Spicy Pork Set',
+          description: 'Spicy pork stir-fry with multigrain rice, kimchi & vegetable jeon, fried dumplings, kabocha salad, fernbrake, and braised burdock root.',
           offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
         {
           '@type': 'MenuItem',
-          name: 'Beef Bulgogi Dosirak',
-          description: 'Korean beef bulgogi with vegetable fried rice, japchae, kabocha salad, lotus root, kimchi, radish',
+          name: 'DAMA Beef Set',
+          description: 'Korean beef bulgogi with japchae, kabocha salad, fernbrake, braised burdock root, and fresh cucumber kimchi.',
           offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
       ],

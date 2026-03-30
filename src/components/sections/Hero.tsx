@@ -1,8 +1,31 @@
+'use client';
+
+import { useState, useEffect, useCallback } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/Button';
+import { cn } from '@/lib/utils';
+
+const HERO_IMAGES = [
+  { src: '/images/hero.jpg', alt: 'Korean dosirak meal box with compartments of banchan, rice, and kimchi' },
+  { src: '/images/food/dosirak-classic-box.jpg', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
+  { src: '/images/food/dosirak-premium-box.jpg', alt: 'DAMA Spicy Pork Set with multigrain rice and banchan' },
+  { src: '/images/food/dosirak-bulgogi-box.jpg', alt: 'DAMA Beef Set with bulgogi and seasonal banchan' },
+  { src: '/images/photo/full-spread-4items.jpg', alt: 'Full spread of DAM:A dosirak boxes and banchan' },
+];
 
 export function Hero() {
+  const [current, setCurrent] = useState(0);
+
+  const next = useCallback(() => {
+    setCurrent((c) => (c + 1) % HERO_IMAGES.length);
+  }, []);
+
+  useEffect(() => {
+    const timer = setInterval(next, 4000);
+    return () => clearInterval(timer);
+  }, [next]);
+
   return (
     <section className="relative overflow-hidden bg-dama-cream">
       <div className="mx-auto flex max-w-7xl flex-col items-center px-4 py-16 md:flex-row md:px-6 md:py-24">
@@ -35,17 +58,39 @@ export function Hero() {
           </p>
         </div>
 
-        {/* Right image — 40% */}
+        {/* Right image carousel — 40% */}
         <div className="mt-10 w-full md:mt-0 md:w-[40%]">
           <div className="relative aspect-square w-full overflow-hidden rounded-lg">
-            <Image
-              src="/images/hero.jpg"
-              alt="Korean dosirak meal box with compartments of banchan, rice, and kimchi"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 40vw"
-              priority
-            />
+            {HERO_IMAGES.map((img, i) => (
+              <Image
+                key={img.src}
+                src={img.src}
+                alt={img.alt}
+                fill
+                className={cn(
+                  'object-cover transition-opacity duration-700',
+                  i === current ? 'opacity-100' : 'opacity-0'
+                )}
+                sizes="(max-width: 768px) 100vw, 40vw"
+                priority={i === 0}
+              />
+            ))}
+            {/* Dots */}
+            <div className="absolute bottom-3 left-1/2 flex -translate-x-1/2 gap-1.5">
+              {HERO_IMAGES.map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setCurrent(i)}
+                  aria-label={`Show image ${i + 1}`}
+                  className={cn(
+                    'h-2 w-2 rounded-full transition-all',
+                    i === current
+                      ? 'bg-white w-4'
+                      : 'bg-white/50 hover:bg-white/70'
+                  )}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>

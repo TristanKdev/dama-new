@@ -108,8 +108,11 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                 <h2 className="font-cormorant text-2xl font-semibold text-dama-charcoal md:text-3xl">
                   Dosirak Sets
                 </h2>
+                <p className="mt-0.5 text-xs font-medium text-dama-green-600">
+                  Dosirak (도시락) — A Korean lunch box with rice, protein, and curated banchan sides in one balanced meal.
+                </p>
                 <p className="mt-1 text-sm text-dama-charcoal/50">
-                  Complete Korean meal boxes — rice, protein, banchan, and kimchi. Ready to enjoy.
+                  Complete Korean meal boxes — ready to enjoy.
                 </p>
               </div>
 
@@ -196,6 +199,9 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                   <h2 className="font-cormorant text-2xl font-semibold text-dama-charcoal">
                     Add Banchan Sides
                   </h2>
+                  <p className="mt-0.5 text-xs font-medium text-dama-green-600">
+                    Banchan (반찬) — Korean side dishes served alongside rice. Small portions, big flavor — the heart of a Korean table.
+                  </p>
                   <p className="mt-1 text-sm text-dama-charcoal/50">
                     Customize your order with extra banchan. 30 authentic Korean side dishes.
                   </p>

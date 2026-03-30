@@ -6,7 +6,7 @@ import { formatPrice } from '@/lib/utils';
 
 // Show only the 3 main dosirak sets on the homepage (not mini/variety items)
 const mainSets = dosirakSets.filter(s =>
-  s.id === 'dosirak-chicken-galbi' || s.id === 'dosirak-pork' || s.id === 'dosirak-bulgogi'
+  s.id === 'dosirak-chicken' || s.id === 'dosirak-pork' || s.id === 'dosirak-bulgogi'
 );
 
 export async function MenuPreview() {
