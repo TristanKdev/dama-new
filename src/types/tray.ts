@@ -1,6 +1,6 @@
 import type { MenuItem } from './menu';
 
-export type TraySize = 4 | 8 | 12;
+export type TraySize = 4 | 8;
 
 export interface TraySlot {
   index: number;
@@ -27,7 +27,6 @@ export interface TrayConfig {
 export const TRAY_CONFIGS: TrayConfig[] = [
   { size: 4, columns: 2, rows: 2, label: 'Pick 4', price: 'Starting at $18' },
   { size: 8, columns: 4, rows: 2, label: 'Pick 8', price: 'Starting at $36' },
-  { size: 12, columns: 4, rows: 3, label: 'Pick 12', price: 'Starting at $54' },
 ];
 
 // --- Grab & Go DnD types ---

@@ -23,11 +23,11 @@ export const dosirakSets: DosirakSet[] = [
   {
     id: 'dosirak-chicken-galbi',
     nameKo: '닭갈비 도시락',
-    nameEn: 'Chicken Galbi Dosirak',
+    nameEn: 'Sweet Chicken Dosirak',
     subtitle: 'Chuncheon-style spicy chicken',
     description:
       'Tender chicken stir-fried with rice cakes, cabbage, and sweet potato in a bold gochujang sauce. Chuncheon-style dakgalbi — spicy, satisfying, and deeply Korean.',
-    price: 18,
+    price: 24,
     imageUrl: '/images/food/dosirak-classic-box.jpg',
     badges: ['Spicy', 'Best Seller', 'High Protein'],
     setContents: [
@@ -50,7 +50,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Bold gochujang pork with multigrain rice',
     description:
       'Tender pork stir-fried in a fiery gochujang marinade, paired with Korean multigrain rice, pan-fried jeon, crispy mandu, and a full spread of banchan. The signature Korean working lunch.',
-    price: 18,
+    price: 24,
     imageUrl: '/images/food/dosirak-premium-box.jpg',
     badges: ['Spicy', 'Best Seller', 'High Protein'],
     setContents: [
@@ -73,7 +73,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Classic marinated beef with fried rice',
     description:
       'Thinly sliced beef bulgogi marinated in soy, sesame, and Asian pear — the most universally loved Korean main. Served with vegetable fried rice, japchae, kabocha, and an array of seasonal banchan.',
-    price: 20,
+    price: 24,
     imageUrl: '/images/food/dosirak-bulgogi-box.jpg',
     badges: ['Best Seller', 'Kids Favorite', 'Mild', 'High Protein'],
     setContents: [
@@ -93,16 +93,16 @@ export const dosirakSets: DosirakSet[] = [
     id: 'dosirak-picnic-mini',
     nameKo: '피크닉 미니 도시락',
     nameEn: 'Picnic Mini Dosirak',
-    subtitle: 'Gimbap, inari sushi & rolled omelet',
+    subtitle: 'Kimbap, rolled omelet & seasonal fruits',
     description:
-      'A light, grab-and-go dosirak featuring gimbap, inari sushi, and rolled omelet — perfect for picnics, outings, or a quick Korean lunch.',
+      'A light, grab-and-go dosirak featuring kimbap, rolled omelet, and seasonal fruits — perfect for picnics, outings, or a quick Korean lunch.',
     price: 12,
     imageUrl: '/images/food/dosirak-picnic-mini.jpg',
     badges: ['Kids Favorite', 'Mild'],
     setContents: [
-      'Gimbap',
-      'Inari sushi',
+      'Kimbap',
       'Rolled omelet (Gyeran Mari)',
+      'Japchae (glass noodles)',
       'Seasonal fruits',
     ],
     dietaryTags: [],
@@ -113,17 +113,17 @@ export const dosirakSets: DosirakSet[] = [
     id: 'dosirak-mini-variety',
     nameKo: '미니 도시락 모듬',
     nameEn: 'Mini Dosirak Variety',
-    subtitle: 'Gimbap, California Roll, Inari Sushi, Fresh Spring Rolls',
+    subtitle: 'Kimbap, Japchae, Fresh Spring Rolls & Seasonal Fruits',
     description:
-      'A curated variety box with gimbap, California roll, inari sushi, and fresh spring rolls — paired with seasonal fruits and salad.',
+      'A curated variety box with kimbap, japchae, fresh spring rolls, and seasonal fruits — paired with salad for a light Korean meal.',
     price: 12,
     imageUrl: '/images/food/dosirak-mini-variety.jpg',
     badges: ['Best Seller', 'Mild'],
     setContents: [
-      'Gimbap',
-      'California roll',
-      'Inari sushi',
+      'Kimbap',
+      'Japchae (glass noodles)',
       'Fresh spring rolls',
+      'Rolled omelet (Gyeran Mari)',
       'Seasonal fruits',
       'Salad',
     ],
@@ -147,27 +147,6 @@ export const dosirakSets: DosirakSet[] = [
       'Vegetables (carrot, spinach, shiitake, onion)',
       'Kabocha salad',
       'Kimchi (optional)',
-    ],
-    dietaryTags: [],
-    available: true,
-    soldOut: false,
-  },
-  {
-    id: 'dosirak-k-inari',
-    nameKo: '케이-이나리 스시 플래터',
-    nameEn: 'K-Inari Sushi Platter Dosirak',
-    subtitle: 'Three-flavor inari sushi platter',
-    description:
-      'A premium inari sushi platter featuring spicy pork, three-color namul, and beef bulgogi inari — served with rolled omelet and fresh seasonal fruits.',
-    price: 12,
-    imageUrl: '/images/food/dosirak-k-inari.jpg',
-    badges: ['Best Seller', 'High Protein'],
-    setContents: [
-      'Spicy pork inari',
-      'Three-color namul inari',
-      'Beef bulgogi inari',
-      'Rolled omelet (Tamagoyaki)',
-      'Fresh seasonal fruits (strawberry & orange)',
     ],
     dietaryTags: [],
     available: true,

@@ -57,7 +57,7 @@ export default function BuildYourOwnClient({ menuItems }: { menuItems: MenuItem[
               <rect x="1" y="1" width="16" height="16" rx="2" />
               <path d="M1 5h16M1 9h16M1 13h16M5 1v16M9 1v16M13 1v16" />
             </svg>
-            Banchan Tray (4 / 8 / 12)
+            Banchan Tray (4 / 8)
           </button>
         </div>
       </div>

@@ -378,7 +378,7 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                 Our kitchen uses soy, sesame, wheat, eggs, shellfish, fish, tree nuts, and peanuts. Cross-contact is possible.
                 If you have a food allergy or dietary restriction, please contact us at{' '}
                 <a href="mailto:hello@damajc.com" className="underline">hello@damajc.com</a>{' '}
-                or call (201) 630-0530 before ordering.
+                or call (201) 923-0773 before ordering.
               </p>
             </div>
 

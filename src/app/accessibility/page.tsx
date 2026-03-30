@@ -59,7 +59,7 @@ export default function AccessibilityPage() {
                 hello@damajc.com
               </a>
             </li>
-            <li>Phone: (201) 630-0530</li>
+            <li>Phone: (201) 923-0773</li>
           </ul>
           <p className="mt-2">
             We aim to respond to accessibility feedback within 2 business days.

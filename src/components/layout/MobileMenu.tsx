@@ -84,15 +84,6 @@ export function MobileMenu({ open, onClose }: MobileMenuProps) {
             ))}
             <li>
               <Link
-                href="/contact"
-                onClick={onClose}
-                className="block rounded-md px-3 py-3 text-base font-medium text-dama-charcoal transition-colors hover:bg-dama-green-50 hover:text-dama-green-600"
-              >
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/delivery-areas"
                 onClick={onClose}
                 className="block rounded-md px-3 py-3 text-base font-medium text-dama-charcoal transition-colors hover:bg-dama-green-50 hover:text-dama-green-600"

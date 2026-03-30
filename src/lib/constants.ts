@@ -10,7 +10,7 @@ export const BUSINESS = {
   tagline: 'Simply Wholesome',  // Shown on homepage hero
   description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Delivered in Jersey City.',
   email: 'hello@damajc.com',     // Contact email
-  phone: '(201) 630-0530',        // Contact phone number
+  phone: '(201) 923-0773',        // Contact phone number
   address: {
     street: '16 Bright Street',     // Street address
     city: 'Jersey City',
@@ -74,8 +74,8 @@ export const SOCIAL = {
 export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
   { label: 'Build Your Own', href: '/build-your-own' },
-  { label: 'Grab & Go', href: '/grab-and-go' },
   { label: 'Catering', href: '/catering' },
+  { label: 'Subscribe', href: '/subscribe' },
   { label: 'How It Works', href: '/how-it-works' },
 ];
 
@@ -85,6 +85,7 @@ export const NAV_LINKS: { label: string; href: string }[] = [
   { label: 'About', href: '/about' },
   { label: 'Blog', href: '/blog' },
   { label: 'FAQ', href: '/faq' },
+  { label: 'Contact', href: '/contact' },
 ];
 
 // ============================================================
@@ -100,6 +101,7 @@ export const FOOTER_NAV: {
     { label: 'Weekly Menu', href: '/menu' },
     { label: 'Build Your Own', href: '/build-your-own' },
     { label: 'Catering', href: '/catering' },
+    { label: 'Subscribe', href: '/subscribe' },
     { label: 'How It Works', href: '/how-it-works' },
     { label: 'About DAM:A', href: '/about' },
     { label: 'Blog', href: '/blog' },

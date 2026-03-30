@@ -47,18 +47,6 @@ export function Footer() {
                   <path d="M18 2H2v16h7v-6H7v-2h2V8a3 3 0 0 1 3-3h2v2h-2a1 1 0 0 0-1 1v2h3l-.5 2H11v6h7V2z" />
                 </svg>
               </a>
-              <a
-                href={SOCIAL.tiktok}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-dama-cream/50 transition-colors hover:text-dama-green-400"
-                aria-label="TikTok"
-              >
-                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M9 2v12a3 3 0 1 1-3-3" />
-                  <path d="M9 5c2 0 4 1.5 5 3V2" />
-                </svg>
-              </a>
             </div>
           </div>
 

@@ -16,7 +16,7 @@ const jsonLd = {
   alternateName: '담아',
   description: 'Handcrafted Korean dosirak meal boxes and banchan delivered to your building in Jersey City, NJ.',
   url: 'https://damajc.com',
-  telephone: '(201) 630-0530',
+  telephone: '(201) 923-0773',
   email: 'hello@damajc.com',
   image: 'https://damajc.com/images/food/dosirak-box-layout.jpg',
   logo: 'https://damajc.com/images/logo/logo-green.png',
@@ -48,7 +48,6 @@ const jsonLd = {
   sameAs: [
     'https://www.instagram.com/damajc2026/',
     'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr',
-    'http://www.tiktok.com/@dama41770',
   ],
 };
 

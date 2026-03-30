@@ -45,14 +45,13 @@ const aboutJsonLd = JSON.stringify({
   },
   contactPoint: {
     '@type': 'ContactPoint',
-    telephone: '+1-201-630-0530',
+    telephone: '+1-201-923-0773',
     email: 'hello@damajc.com',
     contactType: 'customer service',
   },
   sameAs: [
     'https://www.instagram.com/damajc2026/',
     'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr',
-    'http://www.tiktok.com/@dama41770',
   ],
 });
 

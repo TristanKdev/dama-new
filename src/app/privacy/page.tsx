@@ -59,7 +59,7 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="mb-3 text-lg font-semibold text-dama-charcoal">6. Contact</h2>
-            <p>For privacy-related questions, contact us at hello@damajc.com or (201) 630-0530.</p>
+            <p>For privacy-related questions, contact us at hello@damajc.com or (201) 923-0773.</p>
           </section>
         </div>
       </article>

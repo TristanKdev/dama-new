@@ -35,21 +35,21 @@ const menuJsonLd = JSON.stringify({
       hasMenuItem: [
         {
           '@type': 'MenuItem',
-          name: 'Chicken Galbi Dosirak',
+          name: 'Sweet Chicken Dosirak',
           description: 'Tender chicken stir-fried with rice cakes, cabbage, and sweet potato in a bold gochujang sauce. Chuncheon-style dakgalbi — spicy, satisfying, and deeply Korean.',
-          offers: { '@type': 'Offer', price: '18.00', priceCurrency: 'USD' },
+          offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
         {
           '@type': 'MenuItem',
           name: 'Spicy Pork Dosirak',
           description: 'Spicy pork stir-fry with multigrain rice, pan-fried jeon and mandu, kabocha, kimchi, fernbrake, radish',
-          offers: { '@type': 'Offer', price: '18.00', priceCurrency: 'USD' },
+          offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
         {
           '@type': 'MenuItem',
           name: 'Beef Bulgogi Dosirak',
           description: 'Korean beef bulgogi with vegetable fried rice, japchae, kabocha salad, lotus root, kimchi, radish',
-          offers: { '@type': 'Offer', price: '20.00', priceCurrency: 'USD' },
+          offers: { '@type': 'Offer', price: '24.00', priceCurrency: 'USD' },
         },
       ],
     },

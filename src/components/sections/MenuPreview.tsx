@@ -4,6 +4,11 @@ import { Button } from '@/components/ui/Button';
 import { dosirakSets } from '@/data/dosirak-sets';
 import { formatPrice } from '@/lib/utils';
 
+// Show only the 3 main dosirak sets on the homepage (not mini/variety items)
+const mainSets = dosirakSets.filter(s =>
+  s.id === 'dosirak-chicken-galbi' || s.id === 'dosirak-pork' || s.id === 'dosirak-bulgogi'
+);
+
 export async function MenuPreview() {
   return (
     <section className="bg-dama-cream py-16 md:py-24" aria-labelledby="menu-preview-heading">
@@ -19,7 +24,7 @@ export async function MenuPreview() {
         </div>
 
         <div className="grid gap-6 md:grid-cols-3">
-          {dosirakSets.map((set) => (
+          {mainSets.map((set) => (
             <div key={set.id} className="group overflow-hidden rounded-2xl border border-dama-sand/50 bg-white transition-shadow hover:shadow-xl">
               <div className="relative aspect-square w-full overflow-hidden">
                 <Image

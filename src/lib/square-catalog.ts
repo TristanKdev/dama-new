@@ -48,7 +48,7 @@ const ENRICHMENT_DATA: Record<string, EnrichmentEntry> = {
     pairsWellWith: 'Rice, sesame spinach, lettuce wraps (ssam), Korean beer or soju',
     chefsNote: 'Marinated sliced beef cooked until just caramelized. The most universally loved Korean main \u2014 approachable for all ages and first-time Korean food experiences.',
   },
-  'gimbap-korean-rice-roll': {
+  'kimbap-korean-rice-roll': {
     dietaryTags: [],
     spiceLevel: 0,
     badges: ['Best Seller', 'Kids Favorite'],
