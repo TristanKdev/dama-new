@@ -47,16 +47,8 @@ export function TrayBuilder({ menuItems: propItems }: TrayBuilderProps = {}) {
 
   const isTrayFull = filledCount === traySize;
 
-  const totalPrice = useMemo(
-    () =>
-      slots.reduce((sum, s) => {
-        if (s.menuItem && !s.isDoubleSecond) {
-          return sum + s.menuItem.price * (s.isDouble ? 2 : 1);
-        }
-        return sum;
-      }, 0),
-    [slots]
-  );
+  // Flat price based on tray size (not per-item)
+  const totalPrice = config.flatPrice;
 
   const handleSelectSize = (size: TraySize) => {
     setTraySize(size);

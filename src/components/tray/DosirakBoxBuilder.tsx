@@ -57,10 +57,8 @@ export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilder
   const filledCount = compartments.filter(c => c.menuItem !== null).length;
   const isFull = filledCount === compartments.length;
 
-  const totalPrice = useMemo(() =>
-    compartments.reduce((sum, c) => sum + (c.menuItem?.price || 0), 0),
-    [compartments]
-  );
+  // Flat price for a custom dosirak box (comparable to pre-built sets at $24)
+  const totalPrice = 28;
 
   // Items to show in picker based on which slot is active
   const pickerItems = useMemo(() => {
@@ -152,9 +150,12 @@ export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilder
           </div>
         </div>
 
-        <p className="mb-3 text-center text-sm text-dama-charcoal/50">
-          Tap a compartment below to fill it. Tap a filled compartment to remove it.
-        </p>
+        <div className="mb-3 text-center">
+          <p className="text-sm text-dama-charcoal/50">
+            Tap a compartment below to fill it. Tap a filled compartment to remove it.
+          </p>
+          <p className="mt-1 text-sm font-semibold text-dama-green-600">Custom Dosirak Box — $28.00</p>
+        </div>
 
         {/* Interactive box */}
         <div className="mx-auto max-w-md rounded-2xl border-4 border-amber-700/30 bg-amber-50/50 p-3">
@@ -196,7 +197,6 @@ export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilder
                       <p className="mt-1 text-center text-[10px] font-medium leading-tight text-dama-charcoal line-clamp-2">
                         {c.menuItem!.nameEn}
                       </p>
-                      <p className="text-[9px] text-dama-green-600">{formatPrice(c.menuItem!.price)}</p>
                     </div>
                   ) : (
                     <div className="flex h-full flex-col items-center justify-center">
@@ -311,7 +311,6 @@ export function DosirakBoxBuilder({ banchanItems, mainItems }: DosirakBoxBuilder
                         <div className="min-w-0 flex-1">
                           <div className="flex items-start justify-between gap-1">
                             <p className="text-xs font-semibold text-dama-charcoal">{item.nameEn}</p>
-                            <span className="shrink-0 text-xs font-bold text-dama-green-600">{formatPrice(item.price)}</span>
                           </div>
                           <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{item.nameKo}</p>
                           {item.badges && item.badges.length > 0 && (

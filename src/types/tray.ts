@@ -22,11 +22,12 @@ export interface TrayConfig {
   rows: number;
   label: string;
   price: string;
+  flatPrice: number;
 }
 
 export const TRAY_CONFIGS: TrayConfig[] = [
-  { size: 4, columns: 2, rows: 2, label: 'Pick 4', price: 'Starting at $18' },
-  { size: 8, columns: 4, rows: 2, label: 'Pick 8', price: 'Starting at $36' },
+  { size: 4, columns: 2, rows: 2, label: 'Pick 4', price: '$18', flatPrice: 18 },
+  { size: 8, columns: 4, rows: 2, label: 'Pick 8', price: '$36', flatPrice: 36 },
 ];
 
 // --- Grab & Go DnD types ---
