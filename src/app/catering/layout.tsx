@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Party DAM:A — Korean Catering for Events & Offices',
     description: 'Elevate your next event with authentic Korean banchan and dosirak catering. Custom menus for corporate lunches, birthday parties, and celebrations.',
-    images: [{ url: '/images/brand/catering.webp', width: 1200, height: 630, alt: 'DAM:A Korean catering spread for events' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'Party DAM:A — Korean Catering' }],
   },
   alternates: {
     canonical: '/catering',

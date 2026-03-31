@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'About DAM:A — Our Story & Mission',
     description: 'Korean wellness food rooted in the chilcheopbansang tradition. Fresh dosirak and banchan delivered to your building in Jersey City.',
-    images: [{ url: '/images/brand/storefront-new.jpg', width: 1200, height: 630, alt: 'DAM:A storefront at 16 Bright Street, Jersey City' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — About' }],
   },
   alternates: {
     canonical: '/about',

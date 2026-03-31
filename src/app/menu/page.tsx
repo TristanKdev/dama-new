@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: 'DAM:A Menu — Korean Dosirak Sets & Banchan',
     description:
       'Explore our curated Korean menu: Classic, Premium Galbi, and Garden (Vegan) dosirak boxes plus 30 authentic banchan sides. Order online for delivery in Jersey City.',
-    images: [{ url: '/images/food/dosirak-box-layout.jpg', width: 1200, height: 1200, alt: 'DAM:A Dosirak Box with 8 compartments of Korean banchan and rice' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — Korean Dosirak Sets & Banchan' }],
   },
   alternates: {
     canonical: '/menu',

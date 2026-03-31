@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: 'DAM:A',
     title: 'DAM:A — Simply Wholesome | Korean Wellness Food',
     description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Delivered in Jersey City.',
-    images: [{ url: '/images/hero.jpg', width: 1200, height: 630, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
   },
   twitter: {
     card: 'summary_large_image',
