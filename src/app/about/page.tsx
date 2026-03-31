@@ -61,14 +61,22 @@ export default function AboutPage() {
     <div className="bg-dama-cream">
       {/* JSON-LD: Static hardcoded organization data, safe to inline */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: aboutJsonLd }} />
-      {/* Text-only hero */}
-      <div className="py-16 md:py-24">
+      {/* Hero with logo */}
+      <div className="py-10 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-6">
+          <Image
+            src="/images/logo/logo-green.png"
+            alt="DAM:A logo"
+            width={200}
+            height={93}
+            className="mx-auto mb-6"
+            style={{ width: 'auto', height: 'auto' }}
+          />
           <p className="text-sm font-medium uppercase tracking-wider text-dama-green-600">Contain Wellness</p>
           <h1 className="mt-2 font-cormorant text-3xl font-semibold text-dama-charcoal md:text-5xl">
             About DAM:A
           </h1>
-          <p className="mt-6 text-lg leading-relaxed text-dama-charcoal/70">
+          <p className="mt-4 text-lg leading-relaxed text-dama-charcoal/70">
             DAM:A (담아) means &ldquo;to contain&rdquo; in Korean — the act of carefully filling a vessel
             with something precious. We contain wellness in every bite: balanced nutrition, seasonal ingredients,
             and the deep tradition of Korean home cooking.
@@ -76,42 +84,27 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Editorial founder story — 60/40 */}
-      <div className="mx-auto max-w-7xl px-4 pb-16 md:px-6 md:pb-24">
-        <div className="flex flex-col gap-12 md:flex-row">
-          <div className="w-full md:w-[60%]">
-            <h2 className="font-cormorant text-2xl font-semibold text-dama-charcoal md:text-3xl">
-              Premium Korean Wellness Food
-            </h2>
-            <div className="mt-6 space-y-4 text-base leading-relaxed text-dama-charcoal/70">
-              <p>
-                In Korean tradition, a well-set table tells a story of balance — flavors, textures, and nutrients
-                working in harmony. DAM:A was born from the belief that this balance should not be a luxury reserved
-                for special occasions. It should be part of your everyday life.
-              </p>
-              <p>
-                We prepare every meal with intention: seasonal ingredients, time-honored recipes, and the kind of care
-                that turns simple ingredients into nourishing food. From our signature dosirak sets to our curated
-                banchan selections, every item is designed to bring Korean wellness to your table.
-              </p>
-              <p>
-                Based in Jersey City, DAM:A delivers freshly prepared meals straight to your building — packed in
-                reusable glass containers, ready to eat. Because eating well should not require compromise.
-              </p>
-            </div>
-          </div>
-          <div className="w-full md:w-[40%]">
-            <div className="flex aspect-[3/4] w-full items-center justify-center rounded-lg bg-dama-cream">
-              <Image
-                src="/images/logo/logo-green.png"
-                alt="DAM:A logo"
-                width={280}
-                height={130}
-                className="w-3/4 max-w-[280px]"
-                style={{ width: 'auto', height: 'auto' }}
-              />
-            </div>
-          </div>
+      {/* Premium Korean Wellness Food */}
+      <div className="mx-auto max-w-4xl px-4 pb-12 md:px-6 md:pb-16">
+        <h2 className="font-cormorant text-2xl font-semibold text-dama-charcoal md:text-3xl">
+          Premium Korean Wellness Food
+        </h2>
+        <div className="mt-4 space-y-4 text-base leading-relaxed text-dama-charcoal/70">
+          <p>
+            In Korean tradition, a well-set table tells a story of balance — flavors, textures, and nutrients
+            working in harmony. DAM:A was born from the belief that this balance should not be a luxury reserved
+            for special occasions. It should be part of your everyday life.
+          </p>
+          <p>
+            We prepare every meal with intention: seasonal ingredients, time-honored recipes, and the kind of care
+            that turns simple ingredients into nourishing food. From our signature dosirak sets to our curated
+            banchan selections, every item is designed to bring Korean wellness to your table.
+          </p>
+          <p>
+            Based in Jersey City, DAM:A delivers freshly prepared meals straight to your building — packed in
+            reusable glass containers, ready to eat. Because eating well should not require compromise.
+          </p>
+        </div>
         </div>
       </div>
 
