@@ -111,8 +111,8 @@ export default function CateringPage() {
             <div className="w-full md:w-1/2">
               <div className="relative aspect-square w-full overflow-hidden rounded-lg">
                 <Image
-                  src="/images/photo/dama-full-spread.jpg"
-                  alt="DAM:A catering spread with dosirak box, banchan, japchae, and tteok"
+                  src="/images/photo/branded-box-overhead.jpg"
+                  alt="DAM:A branded dosirak box with banchan and rice"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
