@@ -102,8 +102,8 @@ export default function AboutPage() {
           <div className="w-full md:w-[40%]">
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
               <Image
-                src="/images/photo/full-spread-4items.jpg"
-                alt="Inside the DAM:A kitchen and banchan display"
+                src="/images/photo/dama-full-spread.jpg"
+                alt="DAM:A full spread with dosirak, banchan, and tteok"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 40vw"
@@ -185,7 +185,7 @@ export default function AboutPage() {
           <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
             <Image
               src="/images/photo/branded-box-angle.jpg"
-              alt="DAM:A Simply Wholesome storefront exterior"
+              alt="DAM:A Beef Set dosirak with bulgogi and seasonal banchan"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -194,7 +194,7 @@ export default function AboutPage() {
           <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
             <Image
               src="/images/photo/banchan-glass-trays.jpg"
-              alt="DAM:A branded eco tote bag with vegetable illustrations"
+              alt="DAM:A banchan selection in glass trays on white background"
               fill
               className="object-cover"
               sizes="(max-width: 768px) 100vw, 50vw"

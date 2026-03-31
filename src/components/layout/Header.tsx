@@ -38,7 +38,7 @@ export function Header() {
           scrolled && 'bg-dama-cream/95 backdrop-blur-md'
         )}
       >
-        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:h-[72px] lg:px-6">
+        <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 lg:h-[72px] lg:px-6 relative">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2" aria-label="DAM:A Home">
             <Image
@@ -52,8 +52,8 @@ export function Header() {
             />
           </Link>
 
-          {/* Desktop Nav */}
-          <nav className="hidden items-center gap-5 lg:flex xl:gap-7" aria-label="Main navigation">
+          {/* Desktop Nav — centered */}
+          <nav className="absolute left-1/2 top-1/2 hidden -translate-x-1/2 -translate-y-1/2 items-center gap-5 lg:flex xl:gap-7" aria-label="Main navigation">
             {NAV_LINKS_PRIMARY.map((link) => (
               <Link
                 key={link.href}

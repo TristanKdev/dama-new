@@ -95,28 +95,31 @@ export default function CateringPage() {
 
   return (
     <div className="bg-dama-cream">
-      {/* Hero with image */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0">
-          <Image
-            src="/images/photo/branded-box-overhead.jpg"
-            alt="A spread of Korean banchan dishes arranged for a catering event"
-            fill
-            className="object-cover"
-            sizes="100vw"
-            priority
-          />
-          <div className="absolute inset-0 bg-dama-charcoal/50" />
-        </div>
-        <div className="relative py-20 md:py-32">
-          <div className="mx-auto max-w-3xl px-4 text-center md:px-6">
-            <p className="text-sm font-medium uppercase tracking-wider text-dama-green-300">Party DAM:A</p>
-            <h1 className="mt-2 font-cormorant text-3xl font-semibold text-white md:text-5xl">
-              Korean Catering for Every Occasion
-            </h1>
-            <p className="mt-4 text-base text-white/80">
-              Party DAM:A is a premium Korean catering format. No buffet lines. No self-serve trays. A curated Korean table — individually packed, open-and-serve ready. We bring the full DAM:A experience to your event.
-            </p>
+      {/* Hero */}
+      <div className="bg-white">
+        <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-20">
+          <div className="flex flex-col items-center gap-10 md:flex-row">
+            <div className="w-full text-center md:w-1/2 md:text-left">
+              <p className="text-sm font-medium uppercase tracking-wider text-dama-green-600">Party DAM:A</p>
+              <h1 className="mt-2 font-cormorant text-3xl font-semibold text-dama-charcoal md:text-5xl">
+                Korean Catering for Every Occasion
+              </h1>
+              <p className="mt-4 text-base leading-relaxed text-dama-charcoal/70">
+                Party DAM:A is a premium Korean catering format. No buffet lines. No self-serve trays. A curated Korean table — individually packed, open-and-serve ready. We bring the full DAM:A experience to your event.
+              </p>
+            </div>
+            <div className="w-full md:w-1/2">
+              <div className="relative aspect-square w-full overflow-hidden rounded-lg">
+                <Image
+                  src="/images/photo/dama-full-spread.jpg"
+                  alt="DAM:A catering spread with dosirak box, banchan, japchae, and tteok"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -137,8 +140,8 @@ export default function CateringPage() {
       <div className="mx-auto max-w-5xl px-4 pt-10 md:px-6">
         <div className="relative aspect-[21/9] w-full overflow-hidden rounded-lg">
           <Image
-            src="/images/photo/full-spread-4items.jpg"
-            alt="DAM:A catering spread with individually packed Korean dishes"
+            src="/images/photo/banchan-glass-trays.jpg"
+            alt="DAM:A banchan selection in glass trays"
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 1024px"
