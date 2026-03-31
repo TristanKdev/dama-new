@@ -66,8 +66,8 @@ export function Hero() {
                 alt={img.alt}
                 fill
                 className={cn(
-                  'transition-opacity duration-700',
-                  i === 0 ? 'object-cover scale-90 object-center' : 'object-cover',
+                  'object-cover transition-opacity duration-700',
+                  i === 0 ? 'scale-[0.7] object-center' : '',
                   i === current ? 'opacity-100' : 'opacity-0'
                 )}
                 sizes="(max-width: 768px) 100vw, 45vw"
