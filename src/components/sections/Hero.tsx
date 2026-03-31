@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 const HERO_IMAGES = [
-  { src: '/images/food/dosirak-classic-box.jpg', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
+  { src: '/images/food/dosirak-classic-box.png', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
   { src: '/images/food/dosirak-premium-box.jpg', alt: 'DAMA Spicy Pork Set with multigrain rice and banchan' },
   { src: '/images/food/dosirak-bulgogi-box.jpg', alt: 'DAMA Beef Set with bulgogi and seasonal banchan' },
 ];
@@ -58,7 +58,7 @@ export function Hero() {
 
         {/* Right image carousel — 45% */}
         <div className="mt-8 w-full md:mt-0 md:w-[45%]">
-          <div className="relative aspect-[4/5] w-full overflow-hidden rounded-lg">
+          <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-dama-sand/30">
             {HERO_IMAGES.map((img, i) => (
               <Image
                 key={img.src}
@@ -66,8 +66,7 @@ export function Hero() {
                 alt={img.alt}
                 fill
                 className={cn(
-                  'object-cover transition-opacity duration-700',
-                  i === 0 ? 'scale-[0.7] object-center' : '',
+                  'object-contain transition-opacity duration-700',
                   i === current ? 'opacity-100' : 'opacity-0'
                 )}
                 sizes="(max-width: 768px) 100vw, 45vw"
