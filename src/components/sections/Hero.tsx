@@ -7,11 +7,9 @@ import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 const HERO_IMAGES = [
-  { src: '/images/hero.jpg', alt: 'Korean dosirak meal box with compartments of banchan, rice, and kimchi' },
   { src: '/images/food/dosirak-classic-box.jpg', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
   { src: '/images/food/dosirak-premium-box.jpg', alt: 'DAMA Spicy Pork Set with multigrain rice and banchan' },
   { src: '/images/food/dosirak-bulgogi-box.jpg', alt: 'DAMA Beef Set with bulgogi and seasonal banchan' },
-  { src: '/images/photo/full-spread-4items.jpg', alt: 'Full spread of DAM:A dosirak boxes and banchan' },
 ];
 
 export function Hero() {
