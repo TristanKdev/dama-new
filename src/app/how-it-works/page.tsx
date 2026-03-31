@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/Button';
 import { VesselDivider } from '@/components/ui/VesselDivider';
@@ -52,39 +51,6 @@ export default function HowItWorksPage() {
                 <div className="hidden flex-1 md:block" />
               </div>
             ))}
-          </div>
-        </div>
-      </div>
-
-      {/* Editorial image break */}
-      <div className="mx-auto max-w-5xl px-4 pb-16 md:px-6 md:pb-24">
-        <div className="grid gap-4 md:grid-cols-3">
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image
-              src="/images/photo/branded-box-angle.jpg"
-              alt="DAM:A Simply Wholesome branded paper bag"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image
-              src="/images/photo/dosirak-overhead-full.jpg"
-              alt="Freshly prepared dosirak box opened showing banchan"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
-          </div>
-          <div className="relative aspect-[4/3] overflow-hidden rounded-lg">
-            <Image
-              src="/images/photo/banchan-glass-trays.jpg"
-              alt="DAM:A branded eco tote bag with vegetable illustrations"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 33vw"
-            />
           </div>
         </div>
       </div>
