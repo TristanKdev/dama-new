@@ -110,12 +110,12 @@ export default function CateringPage() {
         </div>
         <div className="relative py-20 md:py-32">
           <div className="mx-auto max-w-3xl px-4 text-center md:px-6">
-            <p className="text-sm font-medium uppercase tracking-wider text-dama-green-300">Events & Parties</p>
+            <p className="text-sm font-medium uppercase tracking-wider text-dama-green-300">Party DAM:A</p>
             <h1 className="mt-2 font-cormorant text-3xl font-semibold text-white md:text-5xl">
-              Party DAM:A Catering
+              Korean Catering for Every Occasion
             </h1>
             <p className="mt-4 text-base text-white/80">
-              Premium Korean catering for corporate events, private parties, and cocktail hours. Individually packed, open-and-serve ready. 10+ guests.
+              Party DAM:A is a premium Korean catering format. No buffet lines. No self-serve trays. A curated Korean table — individually packed, open-and-serve ready. We bring the full DAM:A experience to your event.
             </p>
           </div>
         </div>
@@ -151,52 +151,62 @@ export default function CateringPage() {
         <h2 className="mb-8 text-center font-cormorant text-2xl font-semibold text-dama-charcoal md:text-3xl">
           Our Catering Packages
         </h2>
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-3">
           {/* Meeting DAM:A Box */}
           <div className="rounded-2xl border border-dama-sand/50 bg-white p-6">
-            <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-dama-green-100">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-dama-green-600">
-                <rect x="2" y="4" width="16" height="12" rx="2" />
-                <path d="M2 8h16" />
-              </svg>
-            </div>
             <h3 className="text-lg font-bold text-dama-charcoal">Meeting DAM:A Box</h3>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">Corporate &amp; Institutional</p>
+            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">For corporate offices and institutional meetings</p>
+            <p className="mt-1 text-sm font-semibold text-dama-charcoal">10 – 120 guests</p>
             <p className="mt-3 text-sm leading-relaxed text-dama-charcoal/60">
-              Perfect for corporate offices and institutional meetings. Individually packed dosirak sets with curated banchan — professional, clean, and ready to serve.
+              A clean, professional Korean meal format designed for the workplace. Individually packed dosirak boxes and curated banchan selections — no shared platters, no mess. Each guest receives their own complete Korean table. Ideal for corporate lunches, team meetings, and office events.
             </p>
-            <p className="mt-3 text-sm font-medium text-dama-charcoal">10–120 guests</p>
+            <div className="mt-4 rounded-lg bg-dama-cream/60 p-3">
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Included</p>
+              <ul className="space-y-0.5 text-xs text-dama-charcoal/70">
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Individual dosirak boxes per guest</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Curated banchan selection</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Dietary accommodations available</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Delivery to your building</li>
+              </ul>
+            </div>
           </div>
 
           {/* Party DAM:A Box */}
           <div className="rounded-2xl border border-dama-green-200 bg-dama-green-50/30 p-6">
-            <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-dama-green-100">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-dama-green-600">
-                <path d="M10 2l2 4h5l-4 3 1.5 5L10 11l-4.5 3L7 9 3 6h5z" />
-              </svg>
-            </div>
             <h3 className="text-lg font-bold text-dama-charcoal">Party DAM:A Box</h3>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">Private Events &amp; Celebrations</p>
+            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">For private events, birthdays, and rooftop parties</p>
+            <p className="mt-1 text-sm font-semibold text-dama-charcoal">10 – 150 guests</p>
             <p className="mt-3 text-sm leading-relaxed text-dama-charcoal/60">
-              For private events, birthdays, and rooftop parties. A full Korean table experience with our signature banchan spread and main dishes.
+              Our signature catering format for private celebrations. A full Korean table experience — curated banchan spreads, signature mains including our Beef Short Rib Galbi (Tteokgalbi / 떡갈비), and seasonal specialties. Individually packed and open-and-serve ready. Perfect for birthdays, housewarmings, rooftop gatherings, and private parties.
             </p>
-            <p className="mt-3 text-sm font-medium text-dama-charcoal">10–150 guests</p>
+            <div className="mt-4 rounded-lg bg-white/60 p-3">
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Included</p>
+              <ul className="space-y-0.5 text-xs text-dama-charcoal/70">
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Signature Tteokgalbi (Beef Short Rib Galbi)</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Full banchan spread</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Seasonal specialties</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Individually packed, open-and-serve ready</li>
+              </ul>
+            </div>
           </div>
 
           {/* Cocktail / Anju DAM:A Box */}
           <div className="rounded-2xl border border-dama-sand/50 bg-white p-6">
-            <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-dama-green-100">
-              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-dama-green-600">
-                <path d="M5 2l-2 8h14l-2-8H5z" />
-                <path d="M10 10v6M6 16h8" />
-              </svg>
-            </div>
             <h3 className="text-lg font-bold text-dama-charcoal">Cocktail / Anju DAM:A Box</h3>
-            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">Receptions &amp; Cocktail Hours</p>
+            <p className="mt-1 text-xs font-medium uppercase tracking-wider text-dama-green-600">For hotel receptions, gallery openings, and corporate cocktail hours</p>
+            <p className="mt-1 text-sm font-semibold text-dama-charcoal">10 – 150 guests</p>
             <p className="mt-3 text-sm leading-relaxed text-dama-charcoal/60">
-              For hotel receptions, gallery openings, and corporate cocktail hours. Elegant Korean anju (drinking snacks) paired with your event&apos;s beverage program.
+              A sophisticated Korean anju spread designed for cocktail-style events. Anju (안주) are Korean bar snacks — bold, flavorful bites that pair perfectly with drinks. Our cocktail format brings Korean bar culture to your reception, gallery opening, or corporate cocktail hour. Elegant, shareable, and deeply satisfying.
             </p>
-            <p className="mt-3 text-sm font-medium text-dama-charcoal">Custom guest count</p>
+            <div className="mt-4 rounded-lg bg-dama-cream/60 p-3">
+              <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Included</p>
+              <ul className="space-y-0.5 text-xs text-dama-charcoal/70">
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Korean anju selection (Jeon, Mandu, Seasoned Squid, and more)</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Seasonal small bites</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Presentation-ready packaging</li>
+                <li className="flex items-start gap-1.5"><span className="mt-0.5 text-dama-green-500">&#8226;</span>Pairs perfectly with any drink menu</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -205,7 +215,8 @@ export default function CateringPage() {
         <div className="flex flex-col gap-12 md:flex-row">
           {/* Form */}
           <div className="flex-1">
-            <h2 className="mb-6 font-cormorant text-2xl font-semibold text-dama-charcoal">Request a Quote</h2>
+            <h2 className="mb-2 font-cormorant text-2xl font-semibold text-dama-charcoal">Request a Catering Quote</h2>
+            <p className="mb-6 text-sm text-dama-charcoal/60">Tell us about your event and we&apos;ll get back to you within 24 hours.</p>
             <form onSubmit={handleSubmit} className="space-y-5">
               {error && (
                 <div className="rounded-md bg-red-50 p-3 text-sm text-dama-error">{error}</div>

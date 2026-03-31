@@ -44,12 +44,13 @@ export default function GrabAndGoClient({ menuItems }: GrabAndGoClientProps) {
       {/* Hero */}
       <div className="border-b border-dama-sand bg-white">
         <div className="mx-auto max-w-7xl px-4 py-8 md:px-6 md:py-12">
-          <p className="font-noto-kr text-sm text-dama-green-600">포장</p>
+          <p className="text-sm font-medium uppercase tracking-wider text-dama-green-600">Pickup Only</p>
           <h1 className="mt-1 font-cormorant text-3xl font-semibold text-dama-charcoal md:text-4xl">
-            Grab &amp; Go — Build Your Banchan
+            Build Your Banchan
           </h1>
-          <p className="mt-2 max-w-2xl text-base text-dama-charcoal/60">
-            Pick up individual banchan portions fresh from our kitchen. Mix and match from our full selection of 30 authentic Korean side dishes.
+          <p className="mt-0.5 font-noto-kr text-sm text-dama-charcoal/40">포장 반찬</p>
+          <p className="mt-3 max-w-2xl text-base text-dama-charcoal/60">
+            Fresh Korean banchan available for same-day pickup at our Jersey City kitchen. Choose your sides, place your order by 10 PM the night before, and pick up at 16 Bright Street Unit H.
           </p>
         </div>
       </div>
@@ -67,8 +68,12 @@ export default function GrabAndGoClient({ menuItems }: GrabAndGoClientProps) {
               <p className="mt-1 text-sm text-dama-charcoal">Tuesday, Thursday, Saturday</p>
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-wider text-dama-green-700">All Banchan</p>
-              <p className="mt-1 text-sm text-dama-charcoal">$5–$6 per portion</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-dama-green-700">Order Cutoff</p>
+              <p className="mt-1 text-sm text-dama-charcoal">10 PM the night before</p>
+            </div>
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-wider text-dama-green-700">Minimum</p>
+              <p className="mt-1 text-sm text-dama-charcoal">No minimum for pickup</p>
             </div>
           </div>
         </div>

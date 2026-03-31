@@ -13,6 +13,33 @@ import { DELIVERY } from '@/lib/constants';
 import type { MenuItem, DietaryTag } from '@/types/menu';
 import type { DosirakSet } from '@/data/dosirak-sets';
 
+// Korean food term explanations (per Sylvia's glossary)
+const KOREAN_TERMS: Record<string, string> = {
+  'Namul': 'Seasoned Korean vegetable side dish, dressed with sesame oil, garlic, and soy sauce.',
+  'Kimbap': 'Korean rice rolls — seasoned rice and fillings wrapped in roasted seaweed, sliced into rounds.',
+  'Japchae': 'Korean glass noodles — sweet potato starch noodles stir-fried with vegetables and sesame soy sauce.',
+  'Tteok': 'Korean rice cake — soft, chewy cake made from pounded glutinous rice.',
+  'Jeon': 'Korean savory pancake — crispy, pan-fried with green onion, kimchi, or seafood.',
+  'Mandu': 'Korean dumplings — pan-fried or steamed, filled with seasoned meat and vegetables.',
+  'Tteokgalbi': 'Korean grilled short rib patties — minced beef short rib, savory and juicy.',
+  'Dakgalbi': 'Spicy Korean stir-fried chicken — gochujang marinade with rice cakes, cabbage, and sweet potato.',
+  'Jeyuk Bokkeum': 'Spicy Korean pork stir-fry — thinly sliced pork in a bold gochujang marinade.',
+  'Yubu Chobap': 'Seasoned rice stuffed inside sweet fried tofu pockets — soft, slightly sweet.',
+  'Dotori Muk': 'Traditional Korean cold side — firm, silky acorn starch jelly with soy-sesame dressing.',
+  'Kabocha': 'A sweet, dense pumpkin variety widely used in Korean cooking — naturally creamy.',
+  'Kkakdugi': 'Cubed radish kimchi — bite-sized Korean radish fermented with gochugaru and aromatics.',
+  'Baek Kimchi': 'White kimchi — non-spicy, fermented without chili. Mild and refreshing.',
+  'Burdock': 'Braised burdock root — slow-cooked in a sweet soy glaze until caramelized and tender.',
+  'Wakame': 'Seasoned Korean seaweed salad — tossed with sesame oil and light vinegar dressing.',
+};
+
+function getTermExplanation(name: string): string | null {
+  for (const [term, explanation] of Object.entries(KOREAN_TERMS)) {
+    if (name.toLowerCase().includes(term.toLowerCase())) return explanation;
+  }
+  return null;
+}
+
 interface MenuClientProps {
   menuItems: MenuItem[];
   dosirakSets: DosirakSet[];
@@ -296,6 +323,9 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                               <div className="min-w-0">
                                 <p className="text-sm font-semibold text-dama-charcoal">{item.nameEn}</p>
                                 <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{item.nameKo}</p>
+                                {getTermExplanation(item.nameEn) && (
+                                  <p className="text-[10px] italic leading-snug text-dama-green-600/70">{getTermExplanation(item.nameEn)}</p>
+                                )}
                               </div>
                               <span className="shrink-0 text-sm font-bold text-dama-green-600">{formatPrice(item.price)}</span>
                             </div>
