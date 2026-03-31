@@ -20,6 +20,7 @@ export interface MenuItem {
   spiceLevel?: 0 | 1 | 2 | 3;
   subcategory?: BanchanSubcategory;
   badges?: string[];
+  glossary?: string;
   upgradePrice?: number;
   setContents?: string[];
   note?: string;

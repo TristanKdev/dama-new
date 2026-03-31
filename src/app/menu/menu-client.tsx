@@ -323,8 +323,8 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                               <div className="min-w-0">
                                 <p className="text-sm font-semibold text-dama-charcoal">{item.nameEn}</p>
                                 <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{item.nameKo}</p>
-                                {getTermExplanation(item.nameEn) && (
-                                  <p className="text-[10px] italic leading-snug text-dama-green-600/70">{getTermExplanation(item.nameEn)}</p>
+                                {(item.glossary || getTermExplanation(item.nameEn)) && (
+                                  <p className="text-[10px] italic leading-snug text-dama-green-600/70">{item.glossary || getTermExplanation(item.nameEn)}</p>
                                 )}
                               </div>
                               <span className="shrink-0 text-sm font-bold text-dama-green-600">{formatPrice(item.price)}</span>
