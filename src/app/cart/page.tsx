@@ -203,9 +203,8 @@ export default function CartPage() {
                 </div>
                 {(() => {
                   const sub = getSubtotal();
-                  const belowMinimum = sub < DELIVERY.minimumOrder;
                   const needsAddress = deliveryMethod === 'building-delivery' && !deliveryAddress.trim();
-                  const canCheckout = !!deliveryDate && !belowMinimum && !needsAddress;
+                  const canCheckout = !!deliveryDate && !needsAddress;
                   return (
                     <>
                       <Link href={canCheckout ? '/checkout' : '#'} onClick={(e) => !canCheckout && e.preventDefault()}>
@@ -218,18 +217,11 @@ export default function CartPage() {
                           Checkout
                         </Button>
                       </Link>
+                      <Link href="/menu" className="mt-2 block text-center text-sm font-medium text-dama-green-600 hover:underline">
+                        Continue Shopping &rarr;
+                      </Link>
                       {!deliveryDate && (
                         <p className="mt-2 text-center text-xs text-dama-error">Please select a delivery date</p>
-                      )}
-                      {belowMinimum && (
-                        <div className="mt-2 text-center">
-                          <p className="text-xs text-dama-error">
-                            Minimum order is {formatPrice(DELIVERY.minimumOrder)} (add {formatPrice(DELIVERY.minimumOrder - sub)} more)
-                          </p>
-                          <Link href="/menu" className="mt-2 inline-block text-sm font-medium text-dama-green-600 hover:underline">
-                            Continue Shopping &rarr;
-                          </Link>
-                        </div>
                       )}
                       {needsAddress && deliveryDate && (
                         <p className="mt-2 text-center text-xs text-dama-error">Please enter a delivery address</p>

@@ -40,7 +40,7 @@ export const DELIVERY = {
   cutoffNote: 'Order by 10 PM the night before your delivery date.',
   freeDeliveryMinimum: 30,   // Orders above this amount ($) get free delivery
   deliveryFee: 3,            // Delivery fee in dollars for orders below the minimum
-  minimumOrder: 15,          // Minimum order amount ($)
+  minimumOrder: 0,           // No minimum order
 } as const;
 
 // ============================================================

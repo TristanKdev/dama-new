@@ -152,14 +152,7 @@ export async function POST(request: Request) {
         subtotal: itemSubtotalCents / 100,
       });
     }
-    // Enforce minimum order amount
     const verifiedSubtotalDollars = verifiedSubtotalCents / 100;
-    if (verifiedSubtotalDollars < DELIVERY.minimumOrder) {
-      return NextResponse.json(
-        { error: `Minimum order is $${DELIVERY.minimumOrder}` },
-        { status: 400 }
-      );
-    }
 
     // Recompute delivery fee server-side (don't trust client value)
     let computedDeliveryFee = 0;

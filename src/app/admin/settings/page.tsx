@@ -45,9 +45,8 @@ const SETTING_GROUPS = [
   },
   {
     title: 'Order Settings',
-    description: 'Note: Minimum order amount is set in code (src/lib/constants.ts) and requires a redeploy to take effect.',
+    description: 'Configure order limits and cutoff times.',
     fields: [
-      { key: 'min_order_amount', label: 'Minimum Order ($)', placeholder: '15.00' },
       { key: 'order_cutoff_hours', label: 'Order Cutoff (hours before)', placeholder: '24' },
       { key: 'max_orders_per_day', label: 'Max Orders Per Day', placeholder: '50' },
     ],
