@@ -105,7 +105,6 @@ export default function AboutPage() {
             reusable glass containers, ready to eat. Because eating well should not require compromise.
           </p>
         </div>
-        </div>
       </div>
 
       <VesselDivider />
