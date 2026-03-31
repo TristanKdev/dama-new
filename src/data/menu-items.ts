@@ -281,7 +281,7 @@ export const banchanItems: MenuItem[] = [
   {
     id: 'ueong-jorim',
     nameKo: '우엉조림',
-    nameEn: 'Lotus Root Stir-Fry',
+    nameEn: 'Braised Burdock Root',
     description: 'Burdock root in glossy soy glaze. Crisp-chewy, earthy, uniquely Korean.',
     price: 5,
     category: 'banchan',
@@ -469,7 +469,7 @@ export const banchanItems: MenuItem[] = [
   },
   {
     id: 'kkakdugi',
-    nameKo: '총김치',
+    nameKo: '깍두기',
     nameEn: 'Radish Kimchi / Kkakdugi',
     description: 'Cubed radish kimchi with a satisfying crunch. Bold, fermented flavor with a texture that keeps you coming back.',
     price: 5,
