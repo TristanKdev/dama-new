@@ -6,7 +6,6 @@ import { QuantitySelector } from '@/components/ui/QuantitySelector';
 import { Button } from '@/components/ui/Button';
 import { Calendar } from '@/components/ui/Calendar';
 import { formatPrice } from '@/lib/utils';
-import { DELIVERY } from '@/lib/constants';
 
 function RegularCartRow({ item }: { item: RegularCartItem }) {
   const { removeItem, updateQuantity } = useCartStore();
@@ -202,7 +201,6 @@ export default function CartPage() {
                   </div>
                 </div>
                 {(() => {
-                  const sub = getSubtotal();
                   const needsAddress = deliveryMethod === 'building-delivery' && !deliveryAddress.trim();
                   const canCheckout = !!deliveryDate && !needsAddress;
                   return (
