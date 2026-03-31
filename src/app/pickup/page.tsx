@@ -3,8 +3,9 @@ import Image from 'next/image';
 import { BUSINESS, DELIVERY } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Pickup Location',
-  description: 'Pick up your DAM:A order from our kitchen at 16 Bright Street Unit H, Jersey City, NJ 07302. Available Tue, Thu, Sat.',
+  title: 'Pickup Location — DAM:A Kitchen Jersey City',
+  description: 'Pick up your DAM:A Korean food order from our kitchen at 16 Bright Street Unit H, Jersey City, NJ 07302. Available Tue, Thu, Sat.',
+  alternates: { canonical: '/pickup' },
 };
 
 export default function PickupPage() {

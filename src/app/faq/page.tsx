@@ -4,8 +4,9 @@ import { faqItems as staticFaqItems, faqCategories as staticFaqCategories } from
 import type { FAQRow } from '@/types/database';
 
 export const metadata: Metadata = {
-  title: 'FAQ',
-  description: 'Frequently asked questions about DAM:A — ordering, delivery, subscriptions, food quality, and more.',
+  title: 'FAQ — DAM:A Korean Food Delivery Questions',
+  description: 'Frequently asked questions about DAM:A — ordering, delivery, subscriptions, food quality, and more. Korean meal delivery in Jersey City.',
+  alternates: { canonical: '/faq' },
 };
 
 export const revalidate = 3600; // Revalidate FAQ every hour

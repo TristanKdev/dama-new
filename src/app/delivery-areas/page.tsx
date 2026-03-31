@@ -4,8 +4,9 @@ import { eligibleBuildings as staticBuildings, deliveryNeighborhoods as staticNe
 import { createServiceRoleClient } from '@/lib/supabase';
 
 export const metadata: Metadata = {
-  title: 'Delivery Areas',
-  description: 'Check if DAM:A delivers to your building in Jersey City. We serve Downtown, Waterfront, Journal Square, and more.',
+  title: 'Delivery Areas — Korean Food Delivery in Jersey City',
+  description: 'Check if DAM:A delivers to your building in Jersey City. We serve Downtown, Waterfront, Journal Square, and more. Korean banchan and dosirak delivery.',
+  alternates: { canonical: '/delivery-areas' },
 };
 
 interface Building {

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
-      disallow: ['/api/', '/account/'],
+      disallow: ['/api/', '/account/', '/admin/', '/cart/', '/checkout/', '/login/', '/signup/', '/grab-and-go/'],
     },
     sitemap: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://damajc.com'}/sitemap.xml`,
   };

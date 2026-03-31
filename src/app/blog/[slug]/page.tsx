@@ -36,6 +36,15 @@ export async function generateMetadata({
   return {
     title: `${post.title} — DAM:A Blog`,
     description: post.excerpt,
+    alternates: { canonical: `/blog/${slug}` },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      type: 'article',
+      publishedTime: post.date,
+      authors: [post.author || 'DAM:A'],
+      images: post.image ? [{ url: post.image, width: 1200, height: 630, alt: post.title }] : undefined,
+    },
   };
 }
 
@@ -56,8 +65,42 @@ export default async function BlogPostPage({
     .filter((p) => p.category === post.category && p.slug !== post.slug)
     .slice(0, 2);
 
+  // Static JSON-LD structured data — built from hardcoded blog-posts.ts, no user input
+  const breadcrumbJsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://damajc.com' },
+      { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://damajc.com/blog' },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `https://damajc.com/blog/${slug}` },
+    ],
+  });
+
+  const blogPostJsonLd = JSON.stringify({
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image ? `https://damajc.com${post.image}` : undefined,
+    datePublished: post.date,
+    author: {
+      '@type': 'Organization',
+      name: post.author || 'DAM:A',
+      url: 'https://onyxxmediagroup.com',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'DAM:A',
+      logo: { '@type': 'ImageObject', url: 'https://damajc.com/images/logo/logo-green.png' },
+    },
+    mainEntityOfPage: { '@type': 'WebPage', '@id': `https://damajc.com/blog/${slug}` },
+  });
+
   return (
     <div className="bg-dama-cream">
+      {/* JSON-LD: Static blog post data from blog-posts.ts, safe to inline (no user input) */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: breadcrumbJsonLd }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: blogPostJsonLd }} />
       {/* Header */}
       <div className="bg-dama-green-50 py-12 md:py-16">
         <div className="mx-auto max-w-3xl px-4 md:px-6">

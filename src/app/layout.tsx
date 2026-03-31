@@ -24,6 +24,11 @@ export const metadata: Metadata = {
     'Korean meal prep', 'authentic Korean food delivery', 'Korean food 07302',
     'DAM:A', 'damajc', 'Korean restaurant Jersey City', 'banchan subscription',
     'weekly Korean meals', 'Korean office lunch delivery', 'building delivery Korean food',
+    'kimchi Jersey City', 'Korean food delivery 07302 07304 07306 07310',
+    'Korean royal catering', 'SURA catering', 'kimchi class Jersey City',
+    'Korean food hoboken', 'banchan near me', 'Korean dosirak NJ',
+    'Korean food delivery downtown Jersey City', 'Korean food waterfront JC',
+    'Party DAM:A catering', 'Korean wellness meals', 'Korean home cooking delivery',
   ],
   authors: [{ name: 'DAM:A' }],
   openGraph: {

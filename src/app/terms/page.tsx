@@ -3,6 +3,8 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms of Service',
   description: 'DAM:A terms of service — the terms and conditions governing your use of our services.',
+  alternates: { canonical: '/terms' },
+  robots: { index: false, follow: true },
 };
 
 export default function TermsPage() {

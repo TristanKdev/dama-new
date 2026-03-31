@@ -4,8 +4,14 @@ import { Button } from '@/components/ui/Button';
 import { VesselDivider } from '@/components/ui/VesselDivider';
 
 export const metadata: Metadata = {
-  title: 'How It Works',
-  description: 'Learn how DAM:A delivers fresh Korean banchan to your building in Jersey City. Order online, we deliver Tue/Thu/Sat.',
+  title: 'How It Works — Korean Meal Delivery in Jersey City',
+  description: 'Learn how DAM:A delivers fresh Korean banchan and dosirak to your building in Jersey City. Order online, we deliver Tue/Thu/Sat.',
+  alternates: { canonical: '/how-it-works' },
+  openGraph: {
+    title: 'How DAM:A Works — Korean Meal Delivery',
+    description: 'Browse, order, we prepare, you enjoy. Fresh Korean meals delivered to your building in Jersey City.',
+    images: [{ url: '/images/photo/branded-box-overhead.jpg', width: 1200, height: 630, alt: 'DAM:A delivery process' }],
+  },
 };
 
 const timelineSteps = [

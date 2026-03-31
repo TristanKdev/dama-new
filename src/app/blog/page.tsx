@@ -6,6 +6,12 @@ import { blogPosts } from '@/data/blog-posts';
 export const metadata: Metadata = {
   title: 'Blog — Korean Food, Culture & Recipes',
   description: 'Explore the world of Korean banchan, home cooking traditions, and how DAM:A brings authentic flavors to Jersey City.',
+  alternates: { canonical: '/blog' },
+  openGraph: {
+    title: 'The DAM:A Blog — Korean Food, Culture & Recipes',
+    description: 'Stories about Korean food, banchan culture, and the flavors that bring us together.',
+    images: [{ url: '/images/photo/dosirak-closeup-warm.jpg', width: 1200, height: 630, alt: 'DAM:A Korean food blog' }],
+  },
 };
 
 export const revalidate = 3600; // Revalidate blog every hour
