@@ -109,7 +109,7 @@ export default function CateringPage() {
               </p>
             </div>
             <div className="w-full md:w-1/2">
-              <div className="relative aspect-square w-full overflow-hidden rounded-lg">
+              <div className="relative aspect-[3/2] w-full overflow-hidden rounded-lg">
                 <Image
                   src="/images/photo/branded-box-overhead.jpg"
                   alt="DAM:A branded dosirak box with banchan and rice"

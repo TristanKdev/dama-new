@@ -101,13 +101,14 @@ export default function AboutPage() {
             </div>
           </div>
           <div className="w-full md:w-[40%]">
-            <div className="relative aspect-[3/4] w-full overflow-hidden rounded-lg">
+            <div className="flex aspect-[3/4] w-full items-center justify-center rounded-lg bg-dama-cream">
               <Image
-                src="/images/photo/dama-full-spread.jpg"
-                alt="DAM:A full spread with dosirak, banchan, and tteok"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 40vw"
+                src="/images/logo/logo-green.png"
+                alt="DAM:A logo"
+                width={280}
+                height={130}
+                className="w-3/4 max-w-[280px]"
+                style={{ width: 'auto', height: 'auto' }}
               />
             </div>
           </div>
