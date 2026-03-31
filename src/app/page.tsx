@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     title: 'DAM:A — Simply Wholesome | Korean Wellness Food',
     description: 'Thoughtfully prepared Korean meals, curated for your everyday balance. Delivered in Jersey City.',
     url: 'https://damajc.com',
-    images: [{ url: '/images/photo/dama-full-spread.jpg', width: 1200, height: 630, alt: 'DAM:A Korean dosirak and banchan spread' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
   },
 };
 

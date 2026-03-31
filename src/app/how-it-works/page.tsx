@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'How DAM:A Works — Korean Meal Delivery',
     description: 'Browse, order, we prepare, you enjoy. Fresh Korean meals delivered to your building in Jersey City.',
-    images: [{ url: '/images/photo/branded-box-overhead.jpg', width: 1200, height: 630, alt: 'DAM:A delivery process' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
   },
 };
 

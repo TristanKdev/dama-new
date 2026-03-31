@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The DAM:A Blog — Korean Food, Culture & Recipes',
     description: 'Stories about Korean food, banchan culture, and the flavors that bring us together.',
-    images: [{ url: '/images/photo/dosirak-closeup-warm.jpg', width: 1200, height: 630, alt: 'DAM:A Korean food blog' }],
+    images: [{ url: '/images/logo/logo-green.png', width: 1200, height: 560, alt: 'DAM:A — Simply Wholesome Korean Meals' }],
   },
 };
 
