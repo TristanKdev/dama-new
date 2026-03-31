@@ -102,7 +102,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Korean stuffed tofu pockets, kimbap & rolled omelet',
     description:
       'A light dosirak featuring yubu chobap (Korean-style seasoned rice in fried tofu pockets), kimbap rolls, and rolled omelet — perfect for picnics, outings, or a quick Korean lunch.',
-    price: 12,
+    price: 10,
     imageUrl: '/images/food/dosirak-picnic-mini.jpg',
     badges: ['Kids Favorite', 'Mild'],
     setContents: [
@@ -122,7 +122,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Kimbap, fresh spring rolls & yubu chobap',
     description:
       'A curated variety box with kimbap, fresh spring rolls, and yubu chobap — paired with seasonal fruits and salad for a light Korean meal.',
-    price: 12,
+    price: 11,
     imageUrl: '/images/food/dosirak-mini-variety.jpg',
     badges: ['Best Seller', 'Mild'],
     setContents: [
@@ -143,7 +143,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Glass noodle stir-fry with vegetables',
     description:
       'A plant-forward box built around japchae — sweet potato glass noodles with seasonal vegetables, egg garnish, kabocha salad, and optional kimchi.',
-    price: 12,
+    price: 9,
     imageUrl: '/images/food/dosirak-japchae.jpg',
     badges: ['Vegan', 'Best Seller'],
     setContents: [
@@ -164,7 +164,7 @@ export const dosirakSets: DosirakSet[] = [
     subtitle: 'Three-flavor Korean stuffed tofu pockets',
     description:
       'A premium yubu chobap platter featuring spicy pork, three-color namul, and beef bulgogi fillings — served with rolled omelet and fresh seasonal fruits. Korean-style seasoned rice in fried tofu pockets.',
-    price: 12,
+    price: 10,
     imageUrl: '/images/food/dosirak-k-yubu-chobap.jpg',
     badges: ['Best Seller', 'High Protein'],
     setContents: [

@@ -109,36 +109,6 @@ export default function AboutPage() {
 
       <VesselDivider />
 
-      {/* Founder Story */}
-      <div className="py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-4 md:px-6">
-          <h2 className="text-center font-cormorant text-2xl font-semibold text-dama-charcoal md:text-3xl">
-            Meet Sylvia Kim
-          </h2>
-          <div className="mt-6 space-y-4 text-base leading-relaxed text-dama-charcoal/70">
-            <p>
-              DAM:A was founded by Sylvia Kim, a Korean American chef and food entrepreneur who grew up watching
-              her mother and grandmother set the table with seven dishes every evening — not because they had to,
-              but because that was what it meant to nourish a family. Those tables were not elaborate. They were intentional.
-            </p>
-            <p>
-              After years in food service and product development, Sylvia returned to those roots. She launched
-              DAM:A in Jersey City with a simple mission: bring the Korean wellness table to everyday life, one
-              dosirak at a time. Every recipe is developed with balance in mind — seasonal vegetables, slow-fermented
-              kimchi, wholesome grains, and proteins that satisfy without excess.
-            </p>
-            <p>
-              Why Jersey City? Because this is a city built on community, diversity, and neighbors who show up
-              for each other. DAM:A is not a restaurant — it is a kitchen that delivers to your building, packed
-              in reusable glass, ready to eat. Sylvia believes that good food should not require compromise, and
-              that Korean home cooking is among the most balanced, nourishing food traditions in the world.
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <VesselDivider />
-
       {/* Chilcheopbansang Tradition */}
       <div className="bg-dama-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4 text-center md:px-6">
@@ -173,27 +143,28 @@ export default function AboutPage() {
         </div>
       </div>
 
-      {/* Editorial image row */}
+      {/* Menu images grid */}
       <div className="mx-auto max-w-7xl px-4 md:px-6">
-        <div className="grid gap-4 md:grid-cols-2">
-          <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
-            <Image
-              src="/images/photo/branded-box-angle.jpg"
-              alt="DAM:A Beef Set dosirak with bulgogi and seasonal banchan"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
-          <div className="relative aspect-[3/2] overflow-hidden rounded-lg">
-            <Image
-              src="/images/photo/banchan-glass-trays.jpg"
-              alt="DAM:A banchan selection in glass trays on white background"
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 100vw, 50vw"
-            />
-          </div>
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+          {[
+            { src: '/images/food/dosirak-classic-box.jpg', alt: 'DAM:A Chicken Set dosirak' },
+            { src: '/images/food/dosirak-premium-box.jpg', alt: 'DAM:A Spicy Pork Set dosirak' },
+            { src: '/images/food/dosirak-bulgogi-box.jpg', alt: 'DAM:A Beef Set dosirak' },
+            { src: '/images/food/dosirak-japchae.jpg', alt: 'DAM:A Japchae dosirak' },
+            { src: '/images/food/dosirak-k-yubu-chobap.jpg', alt: 'DAM:A K-Yubu Chobap' },
+            { src: '/images/food/dosirak-k-inari.jpg', alt: 'DAM:A K-Inari dosirak' },
+            { src: '/images/food/dosirak-lunch.jpg', alt: 'DAM:A lunch dosirak spread' },
+          ].map((img) => (
+            <div key={img.src} className="relative aspect-square overflow-hidden rounded-lg">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
+              />
+            </div>
+          ))}
         </div>
       </div>
 
@@ -243,31 +214,6 @@ export default function AboutPage() {
         </div>
       </div>
 
-      <VesselDivider />
-
-      {/* Dado Day */}
-      <div className="bg-dama-black py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-4 text-center md:px-6">
-          <h2 className="font-cormorant text-2xl font-semibold text-dama-cream md:text-4xl">
-            Dado Day: The Weekend Tea Ritual
-          </h2>
-          <p className="mt-6 text-base leading-relaxed text-dama-cream/70">
-            In Korean tradition, dado (다도) is the practice of tea — not just drinking it, but preparing,
-            sharing, and savoring it with intention. At DAM:A, we celebrate Dado Day every weekend as an
-            invitation to slow down. Pair our steamed rice cakes (tteok) or assorted flavored rice cakes
-            with a pot of barley tea or Korean green tea. It is a moment of quiet nourishment — for yourself,
-            for your family, for anyone who joins you at the table.
-          </p>
-          <div className="mt-8">
-            <Link
-              href="/menu"
-              className="inline-block text-sm font-medium uppercase tracking-wider text-dama-green-400 hover:text-dama-green-300"
-            >
-              Explore Our Tteok Selection &rarr;
-            </Link>
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

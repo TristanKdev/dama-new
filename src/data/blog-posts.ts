@@ -28,6 +28,199 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: 'oyul-kimchi-lab-learn-kimchi-with-oh-yul',
+    title: 'OYUL Kimchi Lab: Learn Kimchi the Way It Was Meant to Be Learned',
+    excerpt: 'A hands-on kimchi class in Jersey City taught by Oh Yul — artist, fermentation specialist, and the woman who learned kimchi from her grandmother\'s hands. Two hours. One jar. A 1,500-year-old story.',
+    date: '2026-03-31',
+    readTime: '8 min read',
+    category: 'Community',
+    author: 'Onyxx Media Group',
+    image: '/images/food/banchan/baechu-kimchi.jpg',
+    content: `Most kimchi classes teach you a recipe. OYUL Kimchi Lab teaches you why the recipe works — and what it feels like to make kimchi the way it has been made for fifteen centuries: with your hands, not a measuring cup.
+
+Hosted at DAM:A in Jersey City, OYUL Kimchi Lab is a two-hour, hands-on session led by Oh Yul — artist, fermentation specialist, and the creator of the OYUL method. Every class is capped at 30 guests. You leave with a jar of kimchi you made yourself, Yul's recipe card, a fermentation cheat sheet, and knowledge you will not forget.
+
+## Meet Oh Yul
+
+Oh Yul did not learn kimchi from a cookbook. She learned it from watching her grandmother's hands — the same ritual every morning before the restaurant doors opened. Salt the cabbage. Wring out the water. Build the paste. Mix by hand. No measurements. No timer. Just knowledge that lived in the body.
+
+In middle school, she spent her afternoons in a cooking club, and something shifted. She started seeing kimchi not as food but as form — color, texture, the visual logic of each ingredient. She was an art student learning to see. That perspective never left her.
+
+Traditional kimchi was too heavy for Yul to eat every day. The weight of the jeotgal. The heat that never softens. She loved it, but it was not designed for a Tuesday lunch. So she made something that was. Cleaner. Lighter. Crisp through weeks of fermentation. The kind that disappears beside bossam before you notice.
+
+Her grandfather spent forty years researching natural mineral and calcium-rich compounds. She applied his science to every batch — fermentation that holds, texture that lasts, nutrition intact. His research. Her grandmother's hands. Her eye. That is what you learn in this class.
+
+## What You Actually Learn in Two Hours
+
+The class is structured around four pillars, and none of them are "follow this recipe."
+
+**1. Culture — 1,500 Years in 10 Minutes**
+
+Why kimchi is not a trend. The UNESCO recognition of Kimjang — the collective Korean tradition of making kimchi together. Why South Korea has one of the world's highest life expectancies. The story you will tell someone tonight. Yul learned this the way all Koreans do — not from a textbook, but from sitting beside someone who knew. That is how she teaches it.
+
+**2. Science — Why Fermentation Works**
+
+Lactobacillus. Osmosis. Why you salt the cabbage first. What the sugar actually does (it is not for sweetness). How live probiotics form, and why homemade kimchi is fundamentally different from store-bought. Yul's grandfather spent forty years on this question. She grew up asking it. Now you will too.
+
+**3. Ingredients — Six Ingredients, Every One With a Reason**
+
+Garlic sliced, not crushed — and why that changes the flavor. Ginger grated by hand. Gochugaru chosen for depth, not aggression. Fish sauce as fermentation fuel, not seasoning. This is Yul's version — the one she developed because traditional kimchi was too heavy for every day. Lighter. Cleaner. Still completely Korean.
+
+**4. Technique — Hands In**
+
+You make one full head yourself. How to read the cabbage before you start. Building the paste by feel, not measurement. Coating every leaf, layer by layer, base to tip. Packing the jar. By the end, your hands know something your brain did not know an hour ago.
+
+## How the Evening Flows
+
+The session runs from 7:30 to 9:30 PM. You arrive to sikhye — traditional sweet rice drink — and introductions. Yul walks you through the cultural and scientific foundation. Then comes the chef demo: watching Yul build the yangnyeom paste ingredient by ingredient, explaining why each one is there and what happens without it.
+
+Then your hands go in. One full head of napa cabbage. Your paste. Your jar. Name label on the lid. There is a friendly contest — Best Look, Most Unique, Spiciest — because competition makes better kimchi.
+
+After the work, the table opens. Bossam, fresh kimchi tasting, one complimentary oyster, and makgeolli. Strangers become neighbors. A kimchi culture quiz with real prizes. A raffle. Traditional Korean games. A surprise welcome gift for every guest.
+
+You leave with your jar, Yul's recipe card, a seasoning paste sample, a day-by-day fermentation cheat sheet, and a story worth knowing.
+
+## Why This Class Is Different
+
+There are plenty of cooking classes in the NYC metro area. What makes OYUL different is the person teaching it.
+
+Oh Yul is not a chef performing for an audience. She is an artist who sees food the way a painter sees color — with intention, with restraint, and with the understanding that what you leave out matters as much as what you put in. The kimchi she teaches you to make is the kimchi she actually eats: clean, light, crisp, and designed for everyday life.
+
+The class is $55 per person, capped at 30 guests, and held at DAM:A in Jersey City. Private sessions for corporate teams, birthday groups, and events are available.
+
+## Book Your Session
+
+OYUL Kimchi Lab sessions are posted monthly. Follow DAM:A on Instagram for upcoming dates, or contact us directly to book a private session for your group.
+
+My grandmother never measured anything. She knew by touch. That is what you are learning here — not a recipe, but a feel.`,
+  },
+  {
+    slug: 'sura-by-dama-korean-royal-catering',
+    title: 'Introducing SURA by DAM:A — Korean Royal Catering for Hotels and Venues',
+    excerpt: 'SURA brings the Korean royal table to your venue. Once prepared for a king, now set before someone just as precious. A premium catering experience rooted in five centuries of Joseon court cuisine.',
+    date: '2026-03-31',
+    readTime: '7 min read',
+    category: 'Behind the Scenes',
+    author: 'Onyxx Media Group',
+    image: '/images/photo/dama-full-spread.jpg',
+    content: `In the Joseon Dynasty, preparing the King's meal — called 수라 (Sura) — was not a kitchen task. It was a state act. One hundred hands prepared it. Twelve hours of intention preceded it. The finest ingredients from every province of Korea arrived daily at the palace gate. Nothing was arbitrary. Five flavors. Five colors. Five elements. The meal expressed the harmony of the universe — on a single table, for a single moment.
+
+SURA by DAM:A brings that tradition to the modern event table. It is a premium Korean catering format designed exclusively for hotels, venues, and private events across the NYC metro area. Not a buffet. Not a catering menu. A complete dining narrative — from the first passed bite to the final ceremonial sweet.
+
+## The Philosophy Behind SURA
+
+Korean royal cuisine is the most rigorously designed food culture in the world. The Joseon court employed dedicated culinary scholars whose sole purpose was to refine, document, and protect the tradition across five hundred years of continuous rule.
+
+Each dish carried meaning. Lotus root symbolized integrity. Abalone — longevity. The arrangement of color on the table was itself a prayer. Every element on the royal table existed for a reason, and SURA honors that principle in every event we produce.
+
+The guiding idea is simple: once prepared for a king, now set before someone just as precious. Your guests will not just remember the food — they will remember they were treated like royalty, and that your venue made it possible.
+
+## Six Chapters of the Royal Table
+
+Every SURA event is structured as a narrative. Each course is a chapter, and together they form a complete experience.
+
+**I. The Arrival** — A curated reception course. The first gesture of the royal welcome. Passed bites that open the palate and open the conversation.
+
+**II. The Table** — Full multi-course Korean dining. Artisan box presentation built on the five-color philosophy — visually arresting before a single bite is taken.
+
+**III. The Story Card** — At every seat, a printed narrative. The history and intention behind each dish. A conversation piece that transforms dinner into cultural memory.
+
+**IV. The Ceremony** — Traditional Korean confections and seasonal sweets close the experience. Not an afterthought — a final chapter with intention.
+
+**V. The Curation** — Dietary accommodations, advance tastings, seamless day-of logistics. Every detail considered before your team is asked to think about it.
+
+**VI. The Cultural Moment** — Optional: a live cultural narrative presentation that transforms the dining experience into the signature moment your venue offers — and no other does.
+
+## Three Service Tiers
+
+SURA offers three tiers, each built for a different type of event.
+
+**SURA Reception (수라 리셉션)** — Curated passed bites, a Korean-style reception station, a dessert array, and brand story display. Designed for cocktail receptions, art openings, and venue previews.
+
+**SURA Signature (수라 시그니처)** — The full experience. Multi-course curated menu, artisan box presentation, dessert and sweets included, a story card at every seat, and full dietary accommodation. Built for corporate galas, VIP dinners, and cultural receptions.
+
+**SURA Grand (수라 그랜드)** — Everything in Signature, plus ceremonial plated service, an advance tasting session, a cultural collateral package, and a dedicated event liaison. Reserved for weddings, milestone galas, and seated celebrations.
+
+## A Venue-First Partnership
+
+SURA is designed as a venue-first program. We supply at wholesale — you present to your clients at your price point. The Signature tier adds $2,750 to $3,750 in net margin on a 50-guest event, with zero kitchen or staffing overhead on your end.
+
+There are zero competing royal Korean catering brands in the NYC–NJ metro area. The first venue to own this category defines it.
+
+We currently serve W Hoboken, Westin Jersey City, Envue Autograph Collection, Canopy by Hilton Arts District, Hudson House, The Atelier on the Hudson, and select partners across the NYC metro.
+
+Two partnership models are available. In the wholesale supply model, SURA invoices the venue at supply price — you mark up 30 to 40 percent and bill your client. In the revenue share model, SURA invoices the client directly and pays the venue 15 to 20 percent of total — zero billing involvement from your team.
+
+## The Invitation
+
+SURA begins with a complimentary tasting. No commitment, no paperwork — just 45 minutes to experience the royal table for yourselves.
+
+If you are a venue, hotel, or event planner in the NYC metro area and you want to offer your clients something no other venue can — a dining experience rooted in five centuries of Korean royal tradition — we would love to set the table for you.
+
+Contact DAM:A to schedule your tasting.`,
+  },
+  {
+    slug: 'kimchi-the-heart-of-korean-cooking',
+    title: 'Kimchi: The Heart of Korean Cooking',
+    excerpt: 'Kimchi is more than a side dish — it is the soul of the Korean table. From centuries-old fermentation traditions to modern health science, here is everything you need to know about Korea\'s most iconic food.',
+    date: '2026-03-31',
+    readTime: '7 min read',
+    category: 'Korean Food 101',
+    author: 'Onyxx Media Group',
+    image: '/images/food/banchan/baechu-kimchi.jpg',
+    content: `Kimchi is the single most important food in Korean cuisine. It appears at every meal — breakfast, lunch, and dinner — and no Korean table is complete without it. But kimchi is far more than a condiment or a side dish. It is a living food, a fermentation tradition that stretches back over two thousand years, and a cornerstone of Korean identity.
+
+## What Is Kimchi?
+
+At its simplest, kimchi is salted and fermented vegetables seasoned with chili flakes, garlic, ginger, and fish sauce. The most familiar version is baechu-kimchi, made with napa cabbage, but there are over 200 documented varieties of kimchi in Korea — radish kimchi (kkakdugi), cucumber kimchi (oi-sobagi), white kimchi (baek-kimchi), young radish kimchi (chonggak-kimchi), and dozens more.
+
+What they all share is the process of lacto-fermentation. The vegetables are salted, seasoned, and packed tightly so that beneficial lactic acid bacteria can do their work. Over days or weeks, these bacteria transform raw vegetables into something tangy, complex, and deeply flavorful.
+
+## A Brief History
+
+Koreans have been fermenting vegetables for preservation since at least the Three Kingdoms period (37 BC – 668 AD). Early kimchi was simple — salted vegetables, sometimes with garlic or ginger. The fiery red color we associate with kimchi today did not arrive until the 17th or 18th century, when chili peppers were introduced to Korea from the Americas via trade routes through Japan.
+
+The practice of kimjang — the communal autumn preparation of kimchi for winter — became so culturally significant that UNESCO recognized it as an Intangible Cultural Heritage of Humanity in 2013. Families would gather in late November to salt hundreds of heads of cabbage, prepare the seasoning paste, and pack enough kimchi to last through the cold months.
+
+## Why Kimchi Is a Superfood
+
+Modern nutrition science has caught up to what Korean grandmothers always knew: kimchi is extraordinarily good for you.
+
+**Probiotics** — The lactic acid bacteria produced during fermentation (primarily Lactobacillus) are powerful probiotics that support gut health, digestion, and immune function.
+
+**Vitamins and minerals** — Kimchi is rich in vitamins A, B, and C, along with iron, calcium, and selenium. The fermentation process actually increases the bioavailability of many nutrients.
+
+**Low calorie, high fiber** — A serving of kimchi is virtually fat-free, low in calories, and packed with dietary fiber from the vegetables.
+
+**Anti-inflammatory compounds** — Garlic, ginger, and chili peppers all contain compounds with documented anti-inflammatory and antioxidant properties.
+
+## How Kimchi Ages
+
+Fresh kimchi (geotjeori) is crisp, bright, and barely tangy — almost like a spicy salad. As it ferments over days and weeks, the flavor deepens. At one to two weeks, it hits a sweet spot of tang and crunch that most people love. After a month or more, it becomes what Koreans call mugeun-ji — aged kimchi with a deep, sour complexity that is perfect for stews, fried rice, and pancakes.
+
+The key is temperature. Kimchi ferments faster at room temperature and slower in the refrigerator. Traditional Korean households used onggi (earthenware crocks) buried in the ground to maintain a cool, consistent temperature. Today, many Korean families own a dedicated kimchi refrigerator — a specialized appliance that maintains the ideal fermentation temperature.
+
+## Kimchi in the Kitchen
+
+Kimchi is incredibly versatile. Fresh kimchi is a perfect side dish alongside rice and any protein. But aged kimchi opens up an entirely different world of cooking:
+
+1. **Kimchi-jjigae (kimchi stew)** — The most iconic use of aged kimchi. Simmered with pork, tofu, and scallions, it is the ultimate Korean comfort food.
+
+2. **Kimchi bokkeumbap (kimchi fried rice)** — Chopped aged kimchi stir-fried with rice, sesame oil, and a fried egg on top. Simple, satisfying, and endlessly customizable.
+
+3. **Kimchi-jeon (kimchi pancake)** — Thinly sliced aged kimchi mixed into a flour batter and pan-fried until crispy. Best enjoyed on a rainy day with a cold drink.
+
+4. **Budae-jjigae (army stew)** — A hearty, funky stew that combines kimchi with ramen noodles, spam, sausage, and American cheese — a dish born from post-war resourcefulness that has become a modern classic.
+
+## Kimchi at DAM:A
+
+At DAM:A, kimchi is central to everything we do. Our baechu-kimchi is made in small batches using traditional methods — napa cabbage salted by hand, seasoned with our house-made gochugaru paste, and fermented slowly for optimal flavor and probiotic content. You will find it in every dosirak set and as a standalone banchan option.
+
+We also rotate seasonal kimchi varieties throughout the year — kkakdugi (cubed radish) in summer, baek-kimchi (white kimchi without chili) for those who prefer milder flavors, and oi-sobagi (stuffed cucumber kimchi) when cucumbers are at their peak.
+
+Because at DAM:A, we believe that great kimchi is not just a side dish — it is the foundation of a well-set Korean table.`,
+  },
+  {
     slug: 'spring-banchan-korean-seasonal-eating',
     title: 'Spring Banchan: What Korean Grandmothers Cook When the Snow Melts',
     excerpt: 'Spring in Korea means an entirely different banchan spread. Wild greens, tender shoots, and light preparations replace the heavy braises of winter. Here is what that looks like on the table.',

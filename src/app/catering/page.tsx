@@ -100,9 +100,9 @@ export default function CateringPage() {
         <div className="mx-auto max-w-7xl px-4 py-12 md:px-6 md:py-20">
           <div className="flex flex-col items-center gap-10 md:flex-row">
             <div className="w-full text-center md:w-1/2 md:text-left">
-              <p className="text-sm font-medium uppercase tracking-wider text-dama-green-600">Party DAM:A</p>
+              <p className="text-sm font-medium uppercase tracking-wider text-dama-green-600">Catering / Party DAM:A</p>
               <h1 className="mt-2 font-cormorant text-3xl font-semibold text-dama-charcoal md:text-5xl">
-                Korean Catering for Every Occasion
+                Catering / Party DAM:A
               </h1>
               <p className="mt-4 text-base leading-relaxed text-dama-charcoal/70">
                 Party DAM:A is a premium Korean catering format. No buffet lines. No self-serve trays. A curated Korean table — individually packed, open-and-serve ready. We bring the full DAM:A experience to your event.

@@ -91,7 +91,9 @@ export default async function BlogPostPage({
             {post.author && (
               <>
                 <span>&middot;</span>
-                <span>{post.author}</span>
+                <a href="https://onyxxmediagroup.com" target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-dama-green-600">
+                  {post.author}
+                </a>
               </>
             )}
           </div>
