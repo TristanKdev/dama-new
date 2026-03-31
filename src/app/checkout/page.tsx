@@ -210,7 +210,10 @@ export default function CheckoutPage() {
 
   // Initialize Square card form when SDK is ready and we're on payment step
   const initSquareCard = useCallback(async () => {
-    if (!window.Square) return;
+    if (!window.Square) {
+      setPaymentError('Payment system failed to load. Please refresh the page.');
+      return;
+    }
 
     const appId = process.env.NEXT_PUBLIC_SQUARE_APPLICATION_ID;
     const locationId = process.env.NEXT_PUBLIC_SQUARE_LOCATION_ID;
@@ -235,7 +238,17 @@ export default function CheckoutPage() {
     if (step === 'payment' && sdkReady) {
       initSquareCard();
     }
+    // If SDK hasn't loaded after 10 seconds on payment step, show error
+    let timeout: NodeJS.Timeout | undefined;
+    if (step === 'payment' && !sdkReady) {
+      timeout = setTimeout(() => {
+        if (!sdkReady) {
+          setPaymentError('Payment system is taking too long to load. Please refresh the page.');
+        }
+      }, 10000);
+    }
     return () => {
+      clearTimeout(timeout);
       if (cardRef.current) {
         cardRef.current.destroy().catch(() => {});
         cardRef.current = null;
@@ -348,6 +361,7 @@ export default function CheckoutPage() {
         src={squareSdkUrl}
         strategy="afterInteractive"
         onLoad={() => setSdkReady(true)}
+        onError={() => setPaymentError('Payment system failed to load. Please refresh the page.')}
       />
 
       <div className="mx-auto max-w-3xl px-4 py-8 md:px-6 md:py-12">
@@ -464,7 +478,7 @@ export default function CheckoutPage() {
                   ) : (
                     <>
                       <div id="square-card-container" className="min-h-[90px]" />
-                      {!cardReady && step === 'payment' && sdkReady && (
+                      {!cardReady && !paymentError && (
                         <div className="flex items-center justify-center py-4 text-sm text-dama-charcoal/50">
                           <svg className="mr-2 h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
@@ -567,8 +581,10 @@ export default function CheckoutPage() {
                   <span className="font-medium">{formatPrice(subtotal)}</span>
                 </div>
                 <div className="flex justify-between">
-                  <span className="text-dama-charcoal/60">Delivery</span>
-                  <span className="font-medium">{deliveryFee === 0 ? 'Free' : formatPrice(deliveryFee)}</span>
+                  <span className="text-dama-charcoal/60">{deliveryMethod === 'pickup' ? 'Pickup' : 'Delivery'}</span>
+                  <span className="font-medium">
+                    {deliveryMethod === 'pickup' ? 'Free' : deliveryFee === 0 ? 'Free' : formatPrice(deliveryFee)}
+                  </span>
                 </div>
                 {promoDiscount > 0 && (
                   <div className="flex justify-between text-sm text-dama-green-600">

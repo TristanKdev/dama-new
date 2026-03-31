@@ -188,8 +188,10 @@ export default function CartPage() {
                     <span className="font-medium">{formatPrice(getSubtotal())}</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-dama-charcoal/60">Delivery</span>
-                    <span className="font-medium">{getDeliveryFee() === 0 ? 'Free' : formatPrice(getDeliveryFee())}</span>
+                    <span className="text-dama-charcoal/60">{deliveryMethod === 'pickup' ? 'Pickup' : 'Delivery'}</span>
+                    <span className="font-medium">
+                      {deliveryMethod === 'pickup' ? 'Free' : getDeliveryFee() === 0 ? 'Free' : formatPrice(getDeliveryFee())}
+                    </span>
                   </div>
                   {getSubtotal() > 0 && getSubtotal() < 30 && deliveryMethod === 'building-delivery' && (
                     <p className="text-xs text-dama-green-600">Add {formatPrice(30 - getSubtotal())} more for free delivery</p>
