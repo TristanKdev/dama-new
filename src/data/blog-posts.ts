@@ -35,7 +35,7 @@ export const blogPosts: BlogPost[] = [
     readTime: '8 min read',
     category: 'Community',
     author: 'Onyxx Media Group',
-    image: '/images/food/banchan/baechu-kimchi.jpg',
+    image: '/images/logo/logo-green.png',
     content: `Most kimchi classes teach you a recipe. OYUL Kimchi Lab teaches you why the recipe works — and what it feels like to make kimchi the way it has been made for fifteen centuries: with your hands, not a measuring cup.
 
 Hosted at DAM:A in Jersey City, OYUL Kimchi Lab is a two-hour, hands-on session led by Oh Yul — artist, fermentation specialist, and the creator of the OYUL method. Every class is capped at 30 guests. You leave with a jar of kimchi you made yourself, Yul's recipe card, a fermentation cheat sheet, and knowledge you will not forget.
