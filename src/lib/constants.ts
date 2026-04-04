@@ -62,7 +62,6 @@ export const SERVICE_AREA = {
 export const SOCIAL = {
   instagram: 'https://www.instagram.com/damajc2026/',
   facebook: 'https://www.facebook.com/share/1LYk6cb6X6/?mibextid=wwXIfr',
-  tiktok: 'https://www.tiktok.com/@damajc2026',
 } as const;
 
 // ============================================================
@@ -73,10 +72,10 @@ export const SOCIAL = {
 // Primary links shown in the desktop header nav
 export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
-  { label: 'Catering/Party DAM:A', href: '/catering' },
+  { label: 'Grab & Go', href: '/grab-and-go' },
+  { label: 'Catering', href: '/catering' },
+  { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
   { label: 'About', href: '/about' },
-  { label: 'How It Works', href: '/how-it-works' },
-  { label: 'Blog', href: '/blog' },
 ];
 
 // All links (primary + secondary) — used in mobile menu
@@ -97,10 +96,10 @@ export const FOOTER_NAV: {
 } = {
   navigation: [
     { label: 'Weekly Menu', href: '/menu' },
-    { label: 'Catering/Party DAM:A', href: '/catering' },
-    { label: 'How It Works', href: '/how-it-works' },
+    { label: 'Grab & Go', href: '/grab-and-go' },
+    { label: 'Catering', href: '/catering' },
+    { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
     { label: 'About DAM:A', href: '/about' },
-    { label: 'Blog', href: '/blog' },
     { label: 'FAQ', href: '/faq' },
   ],
   contact: [

@@ -27,7 +27,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'Crispy Korean-style sweet and tangy chicken pieces served with japchae, kabocha salad, braised burdock root, fresh cucumber kimchi, and seasonal namul.',
     price: 24,
-    imageUrl: '/images/food/dosirak-classic-box.png',
+    imageUrl: '/images/food/dosirak-classic-box.jpg',
     badges: ['Best Seller', 'High Protein'],
     setContents: [
       'Steamed white rice',
