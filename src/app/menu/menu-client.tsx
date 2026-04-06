@@ -59,6 +59,8 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
   const banchanItems = useMemo(() =>
     menuItems.filter(item => {
       if (item.category !== 'banchan') return false;
+      // Exclude catering/party items from banchan grid
+      if (item.nameEn.toLowerCase().includes('party') && item.nameEn.toLowerCase().includes('dam')) return false;
       if (selectedDiet && !item.dietaryTags.includes(selectedDiet)) return false;
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();
@@ -143,7 +145,7 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                 </p>
               </div>
 
-              <div className="grid gap-3 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
+              <div className="grid gap-4 grid-cols-2 md:grid-cols-3">
                 {dosirakSets.map((set) => (
                   <article
                     key={set.id}
