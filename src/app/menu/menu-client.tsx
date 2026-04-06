@@ -185,7 +185,7 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                       </p>
 
                       {/* What's Inside */}
-                      <div className="mt-2 rounded-md bg-dama-cream/60 p-2">
+                      <div className="mt-2 flex-1 rounded-md bg-dama-cream/60 p-2">
                         <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Inside</p>
                         <ul className="space-y-0">
                           {set.setContents.map((content, i) => (
@@ -198,7 +198,7 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                       </div>
 
                       {/* Price + CTA */}
-                      <div className="mt-2 flex items-center justify-between">
+                      <div className="mt-2 flex items-center justify-between pt-2 border-t border-dama-sand/30">
                         <div>
                           <span className="text-lg font-bold text-dama-green-600">{formatPrice(set.price)}</span>
                           {set.upgradePrice && (
