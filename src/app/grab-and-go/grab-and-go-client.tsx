@@ -49,6 +49,7 @@ export default function GrabAndGoClient({ menuItems }: GrabAndGoClientProps) {
   const banchanItems = useMemo(() =>
     menuItems.filter(item => {
       if (item.category !== 'banchan') return false;
+      if (item.nameEn.toLowerCase().includes('party') && item.nameEn.toLowerCase().includes('dam')) return false;
       if (selectedDiet && !item.dietaryTags.includes(selectedDiet)) return false;
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase();

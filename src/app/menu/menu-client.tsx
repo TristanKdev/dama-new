@@ -221,6 +221,36 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
               </div>
             </section>
 
+            {/* ═══ PARTY DAM:A CTA ═══ */}
+            <section className="mb-12">
+              <a
+                href="/catering"
+                className="block overflow-hidden rounded-xl border border-dama-sand/50 bg-white transition-shadow hover:shadow-lg"
+              >
+                <div className="flex flex-col items-center gap-6 p-6 md:flex-row md:p-8">
+                  <div className="relative h-40 w-40 shrink-0 overflow-hidden rounded-lg md:h-48 md:w-48">
+                    <Image
+                      src="/images/photo/branded-box-overhead.jpg"
+                      alt="Party DAM:A catering box"
+                      fill
+                      className="object-cover"
+                      sizes="192px"
+                    />
+                  </div>
+                  <div className="text-center md:text-left">
+                    <p className="text-xs font-semibold uppercase tracking-wider text-dama-green-600">Catering / Party</p>
+                    <h3 className="mt-1 font-cormorant text-2xl font-semibold text-dama-charcoal">Party DAM:A</h3>
+                    <p className="mt-2 max-w-md text-sm leading-relaxed text-dama-charcoal/60">
+                      Hosting an event? Party DAM:A brings the Korean table to your occasion — individually packed, open-and-serve ready. Starting at 10 guests.
+                    </p>
+                    <span className="mt-3 inline-block rounded-full bg-dama-green-500 px-5 py-2 text-sm font-semibold text-white">
+                      Request a Quote →
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </section>
+
             {/* ═══ BANCHAN ADD-ONS ═══ */}
             <section className="mb-12">
               <div className="mb-4 flex flex-wrap items-end justify-between gap-4">
