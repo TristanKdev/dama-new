@@ -32,12 +32,12 @@ export function Hero() {
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-dama-green-600">
             Simply Wholesome
           </p>
-          <h1 className="font-cormorant text-5xl font-bold leading-[1.1] text-dama-charcoal md:text-6xl lg:text-7xl">
+          <h1 className="font-cormorant text-6xl font-bold leading-[1.05] text-dama-charcoal md:text-7xl lg:text-8xl">
             Balanced Korean
             <br />
             Meals That
             <br />
-            <span className="text-dama-green-500">Nourish Your Day</span>
+            <span className="text-dama-green-500">Nourish.</span>
           </h1>
           <p className="mt-5 max-w-lg text-lg leading-relaxed text-dama-charcoal/70">
             DAM:A (담아) means &ldquo;to contain&rdquo; — we contain wellness in every bite.
