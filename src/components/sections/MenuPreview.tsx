@@ -26,12 +26,12 @@ export async function MenuPreview() {
         <div className="grid gap-6 md:grid-cols-3">
           {mainSets.map((set) => (
             <div key={set.id} className="group overflow-hidden rounded-2xl border border-dama-sand/50 bg-white transition-shadow hover:shadow-xl">
-              <div className="relative aspect-[4/3] w-full overflow-hidden">
+              <div className="relative aspect-square w-full overflow-hidden bg-dama-ivory p-5">
                 <Image
                   src={set.imageUrl}
                   alt={set.nameEn}
                   fill
-                  className="object-cover object-[center_top] transition-transform duration-500 group-hover:scale-105"
+                  className="object-contain transition-transform duration-500 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
                 <div className="absolute left-3 top-3 flex gap-1.5">
