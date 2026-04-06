@@ -26,24 +26,24 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-dama-cream">
-      <div className="mx-auto flex max-w-7xl flex-col items-center px-4 py-10 md:flex-row md:gap-6 md:px-6 md:py-16">
+      <div className="mx-auto flex max-w-7xl flex-col items-center px-4 py-12 md:flex-row md:gap-10 md:px-6 md:py-20">
         {/* Left text — 55% */}
-        <div className="w-full md:w-[55%] md:text-right md:pr-2">
-          <p className="mb-2 text-sm font-medium uppercase tracking-wider text-dama-green-600">
+        <div className="w-full md:w-[55%]">
+          <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-dama-green-600">
             Simply Wholesome
           </p>
-          <h1 className="font-cormorant text-4xl font-semibold leading-tight text-dama-charcoal md:text-5xl lg:text-6xl">
+          <h1 className="font-cormorant text-5xl font-bold leading-[1.1] text-dama-charcoal md:text-6xl lg:text-7xl">
             Balanced Korean
             <br />
             Meals That
             <br />
             <span className="text-dama-green-500">Nourish Your Day</span>
           </h1>
-          <p className="mt-4 max-w-lg text-lg leading-relaxed text-dama-charcoal/70 md:ml-auto">
+          <p className="mt-5 max-w-lg text-lg leading-relaxed text-dama-charcoal/70">
             DAM:A (담아) means &ldquo;to contain&rdquo; — we contain wellness in every bite.
             Fresh banchan and dosirak, thoughtfully prepared and delivered to your door in Jersey City.
           </p>
-          <div className="mt-6 flex flex-col gap-3 sm:flex-row md:justify-end">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link href="/menu">
               <Button size="lg">View This Week&apos;s Menu</Button>
             </Link>
@@ -51,7 +51,7 @@ export function Hero() {
               <Button variant="secondary" size="lg">How It Works</Button>
             </Link>
           </div>
-          <p className="mt-4 text-xs text-dama-charcoal/50 md:text-right">
+          <p className="mt-5 text-xs text-dama-charcoal/50">
             Delivering to select buildings in Downtown JC, Waterfront &amp; Journal Square
           </p>
         </div>
