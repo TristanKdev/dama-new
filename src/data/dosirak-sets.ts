@@ -27,7 +27,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'Crispy Korean-style sweet and tangy chicken pieces served with japchae, kabocha salad, braised burdock root, fresh cucumber kimchi, and seasonal namul.',
     price: 24,
-    imageUrl: '/images/food/dosirak-classic-box.jpg',
+    imageUrl: '/images/food/dosirak-chicken-set.jpg',
     badges: ['Best Seller', 'High Protein'],
     setContents: [
       'Steamed white rice',
@@ -51,7 +51,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'Tender pork stir-fried in a fiery gochujang marinade, paired with Korean multigrain rice, kimchi & vegetable jeon, fried dumplings, and a full spread of banchan.',
     price: 24,
-    imageUrl: '/images/food/dosirak-premium-box.jpg',
+    imageUrl: '/images/food/dosirak-pork-set.jpg',
     badges: ['Spicy', 'Best Seller', 'High Protein'],
     setContents: [
       'Multigrain rice (잡곡밥)',
@@ -78,7 +78,7 @@ export const dosirakSets: DosirakSet[] = [
     description:
       'Thinly sliced beef bulgogi marinated in soy, sesame, and Asian pear — the most universally loved Korean main. Served with japchae, kabocha salad, braised burdock root, and seasonal banchan.',
     price: 24,
-    imageUrl: '/images/food/dosirak-bulgogi-box.jpg',
+    imageUrl: '/images/food/dosirak-beef-set.jpg',
     badges: ['Best Seller', 'Kids Favorite', 'Mild', 'High Protein'],
     setContents: [
       'Steamed white rice',
