@@ -25,10 +25,10 @@
 html{scroll-behavior:smooth;}
 body{background:var(--navy);color:var(--ivory);font-family:'Cormorant Garamond',Georgia,serif;-webkit-font-smoothing:antialiased;overflow-x:hidden;}
 
-/* ── NAV ── */
+/* ── NAV — matches main DAM:A site header ── */
 nav{
   position:fixed;top:0;left:0;right:0;z-index:100;
-  padding:20px 60px;
+  padding:0 48px;height:72px;
   display:flex;align-items:center;justify-content:space-between;
   background:rgba(13,24,41,0);
   transition:background .5s, backdrop-filter .5s;
@@ -38,29 +38,27 @@ nav.scrolled{
   backdrop-filter:blur(12px);
   border-bottom:1px solid var(--rule2);
 }
-.nav-logo{
-  font-family:'Playfair Display',serif;
-  font-size:28px;font-weight:900;color:var(--ivory);
-  text-decoration:none;letter-spacing:-.01em;
-}
-.nav-logo .dot{color:var(--gold);}
-.nav-by{font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.35em;color:var(--gold);text-transform:uppercase;margin-top:2px;}
-.nav-links{display:flex;gap:36px;align-items:center;}
+.nav-logo{display:flex;align-items:center;flex-shrink:0;text-decoration:none;}
+.nav-logo img{height:48px;width:auto;}
+.nav-links{display:flex;gap:28px;align-items:center;}
 .nav-links a{
   font-family:'Tenor Sans',sans-serif;font-size:11px;
-  letter-spacing:.25em;text-transform:uppercase;
+  letter-spacing:.15em;text-transform:uppercase;
   color:rgba(247,242,234,.65);text-decoration:none;
-  transition:color .2s;
+  font-weight:500;transition:color .2s;
 }
 .nav-links a:hover{color:var(--gold2);}
+.nav-links a.active{color:var(--gold);font-weight:600;}
+.nav-right{display:flex;align-items:center;gap:16px;}
 .nav-cta{
   font-family:'Tenor Sans',sans-serif;font-size:10px;
-  letter-spacing:.25em;text-transform:uppercase;
+  letter-spacing:.2em;text-transform:uppercase;
   color:var(--navy);background:var(--gold);
-  padding:10px 22px;text-decoration:none;
+  padding:10px 24px;text-decoration:none;border-radius:4px;
   transition:background .2s, color .2s;
 }
 .nav-cta:hover{background:var(--gold2);}
+.nav-cta-mobile{display:none;}
 
 /* ── HERO ── */
 .hero{
@@ -407,26 +405,312 @@ footer{
 .reveal-delay-4{transition-delay:.4s;}
 .reveal-delay-5{transition-delay:.5s;}
 
-/* ── RESPONSIVE ── */
-@media(max-width:900px){
-  nav{padding:16px 24px;}
-  .nav-links{display:none;}
-  .hero{grid-template-columns:1fr;height:auto;min-height:100vh;}
-  .hero-left{padding:100px 28px 60px;}
-  .hero-right{height:50vw;min-height:300px;}
-  .hero-img-overlay{background:linear-gradient(180deg,var(--navy) 0%,rgba(13,24,41,.2) 40%,transparent 70%);}
-  .hero-title{font-size:64px;}
-  .hero-title-ko{font-size:32px;}
+/* ── HAMBURGER MENU (hidden by default, shown via media queries) ── */
+.nav-toggle-cb{display:none;}
+.nav-hamburger{
+  display:none;
+  flex-direction:column;justify-content:center;align-items:center;
+  width:36px;height:36px;cursor:pointer;
+  position:relative;z-index:110;
+}
+.nav-hamburger span{
+  display:block;width:22px;height:2px;
+  background:var(--ivory);
+  margin:3px 0;
+  transition:transform .3s ease, opacity .3s ease;
+}
+/* Hamburger → X animation when checked */
+.nav-toggle-cb:checked ~ .nav-hamburger span:nth-child(1){
+  transform:translateY(8px) rotate(45deg);
+}
+.nav-toggle-cb:checked ~ .nav-hamburger span:nth-child(2){
+  opacity:0;
+}
+.nav-toggle-cb:checked ~ .nav-hamburger span:nth-child(3){
+  transform:translateY(-8px) rotate(-45deg);
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — TABLET (max-width: 1024px)
+   ══════════════════════════════════════════════ */
+@media(max-width:1024px){
+  /* Nav */
+  nav{padding:18px 36px;}
+  .nav-links{gap:20px;}
+  .nav-links a{font-size:10px;letter-spacing:.18em;}
+  .nav-cta{padding:8px 16px;font-size:9px;}
+
+  /* Hero */
+  .hero-left{padding:100px 48px 64px;}
+  .hero-title{font-size:68px;}
+  .hero-title-ko{font-size:36px;}
+  .hero-desc{font-size:18px;max-width:360px;}
+  .hero-scroll{left:48px;}
+
+  /* Containers & Sections */
+  .container{padding:0 36px;}
+  section{padding:80px 0;}
+
+  /* Story */
+  .story-grid{gap:48px;}
+  .story-number{font-size:120px;}
+  .story-h3{font-size:28px;}
+
+  /* Experience */
+  .exp-grid{grid-template-columns:repeat(2,1fr);}
+  .exp-intro .sec-h2{font-size:38px;}
+
+  /* Photo Feature */
+  .photo-feature-content{padding:56px 48px;}
+  .feature-quote{font-size:26px;}
+
+  /* Tiers */
+  .tier-grid{grid-template-columns:repeat(2,1fr);}
+
+  /* Venue */
+  .venue-inner{gap:48px;}
+  .stat-num{font-size:36px;}
+
+  /* CTA */
+  .cta-section{padding:80px 36px;}
+  .cta-h2{font-size:42px;}
+
+  /* Section Headings */
+  .sec-h2{font-size:42px;}
+
+  /* Footer */
+  footer{padding:28px 36px;}
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — MOBILE (max-width: 768px)
+   ══════════════════════════════════════════════ */
+@media(max-width:768px){
+  /* ── Mobile Nav + Hamburger ── */
+  nav{padding:14px 20px;}
+  .nav-hamburger{display:flex;}
+  .nav-links{
+    display:none;
+    flex-direction:column;
+    position:fixed;
+    top:0;left:0;right:0;bottom:0;
+    background:rgba(13,24,41,0.97);
+    backdrop-filter:blur(16px);
+    padding:100px 32px 40px;
+    gap:0;
+    z-index:105;
+    align-items:stretch;
+    overflow-y:auto;
+  }
+  .nav-toggle-cb:checked ~ .nav-links{
+    display:flex;
+  }
+  .nav-links a{
+    font-size:14px;letter-spacing:.2em;
+    color:var(--ivory);
+    padding:18px 0;
+    border-bottom:1px solid var(--rule2);
+    text-align:center;
+  }
+  .nav-links a:last-child{border-bottom:none;}
+  .nav-right{display:none;}
+  .nav-cta-mobile{display:block !important;}
+  .nav-links a.nav-cta-mobile{
+    margin-top:20px;
+    text-align:center;
+    padding:16px 24px;
+    font-size:12px;
+    background:var(--gold);
+    color:var(--navy);
+    letter-spacing:.2em;
+    text-transform:uppercase;
+    border-bottom:none;
+  }
+
+  /* ── Hero ── */
+  .hero{
+    grid-template-columns:1fr;
+    height:auto;min-height:auto;
+  }
+  .hero-left{
+    padding:90px 24px 48px;
+    order:2;
+  }
+  .hero-right{
+    height:50vw;min-height:260px;
+    order:1;
+  }
+  .hero-img-overlay{
+    background:linear-gradient(180deg,var(--navy) 0%,rgba(13,24,41,.2) 30%,transparent 60%);
+  }
+  .hero-title{font-size:48px;line-height:.92;}
+  .hero-title-ko{font-size:26px;margin-bottom:24px;}
+  .hero-eyebrow{font-size:9px;letter-spacing:.35em;margin-bottom:20px;}
+  .hero-desc{
+    font-size:16px;line-height:1.6;
+    max-width:100%;margin-bottom:32px;
+    padding-left:14px;
+  }
+  .hero-actions{flex-direction:column;gap:12px;align-items:stretch;}
+  .btn-primary,.btn-ghost{
+    text-align:center;padding:14px 24px;
+    font-size:11px;
+  }
   .hero-scroll{display:none;}
-  .container{padding:0 28px;}
-  section{padding:72px 0;}
-  .story-grid,.photo-feature-inner,.venue-inner{grid-template-columns:1fr;}
-  .photo-feature-img{height:60vw;min-height:280px;}
-  .exp-grid{grid-template-columns:1fr;}
-  .tier-grid{grid-template-columns:1fr;}
-  .cta-h2{font-size:36px;}
-  .cta-buttons{flex-direction:column;align-items:center;}
-  footer{flex-direction:column;gap:12px;text-align:center;}
+
+  /* ── Containers & Sections ── */
+  .container{padding:0 20px;}
+  section{padding:56px 0;}
+
+  /* ── Section Headings ── */
+  .sec-h2{font-size:32px;margin-bottom:16px;}
+  .sec-label{font-size:9px;letter-spacing:.35em;}
+
+  /* ── Story ── */
+  .story-grid{grid-template-columns:1fr;gap:32px;}
+  .story-number{font-size:100px;margin-bottom:-28px;}
+  .story-h3{font-size:26px;}
+  .story-body{font-size:15px;line-height:1.85;}
+  .story-right{padding-top:0;}
+  .pull{font-size:20px;padding-left:18px;margin:24px 0;}
+  .story-card{padding:22px 24px;}
+
+  /* ── Experience ── */
+  .exp-intro .sec-h2{font-size:32px;}
+  .exp-body{font-size:15px;}
+  .exp-intro{margin-bottom:40px;}
+  .exp-grid{grid-template-columns:1fr;gap:1px;}
+  .exp-card{padding:28px 22px 30px;}
+  .exp-title{font-size:20px;}
+  .exp-desc{font-size:13px;}
+
+  /* ── Photo Feature ── */
+  .photo-feature-inner{grid-template-columns:1fr;}
+  .photo-feature-img{height:55vw;min-height:240px;}
+  .photo-feature-content{padding:40px 24px;}
+  .feature-quote{font-size:22px;line-height:1.45;}
+  .feature-quote::before{font-size:56px;}
+  .feature-sub{font-size:15px;}
+
+  /* ── Tiers ── */
+  .tier-grid{grid-template-columns:1fr;gap:12px;margin-top:32px;}
+  .tier-card{padding:28px 22px 32px;}
+  .tier-name{font-size:23px;}
+  .tier-list li{font-size:13px;}
+
+  /* ── Venue ── */
+  .venue-inner{grid-template-columns:1fr;gap:40px;}
+  .venue-stats{grid-template-columns:1fr 1fr;gap:2px;margin-top:28px;}
+  .stat-num{font-size:32px;}
+  .stat-label{font-size:12px;}
+  .model-item{grid-template-columns:1fr;gap:8px;}
+  .model-label{padding-top:0;}
+  .model-text{font-size:13px;}
+
+  /* ── CTA ── */
+  .cta-section{padding:64px 20px;}
+  .cta-h2{font-size:32px;}
+  .cta-sub{font-size:16px;margin-bottom:32px;}
+  .cta-buttons{flex-direction:column;align-items:stretch;}
+  .cta-buttons .btn-primary,
+  .cta-buttons .btn-ghost{text-align:center;}
+  .cta-contact{margin-top:36px;padding-top:28px;}
+  .cta-contact-grid{gap:24px;flex-direction:column;align-items:center;}
+  .cta-bg-char{font-size:200px;}
+
+  /* ── Footer ── */
+  footer{
+    flex-direction:column;gap:12px;
+    text-align:center;padding:24px 20px;
+  }
+  .footer-logo{font-size:18px;}
+  .footer-copy{font-size:9px;}
+
+  /* ── Dividers ── */
+  .gold-divider{margin:20px 0;}
+}
+
+/* ══════════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE (max-width: 480px)
+   ══════════════════════════════════════════════ */
+@media(max-width:480px){
+  /* Nav */
+  nav{padding:12px 16px;}
+  .nav-logo{font-size:22px;}
+  .nav-by{font-size:8px;}
+
+  /* Hero */
+  .hero-left{padding:80px 16px 36px;}
+  .hero-title{font-size:36px;}
+  .hero-title-ko{font-size:22px;margin-bottom:18px;}
+  .hero-eyebrow{font-size:8px;letter-spacing:.3em;margin-bottom:16px;}
+  .hero-desc{font-size:14px;line-height:1.55;padding-left:12px;margin-bottom:24px;}
+  .btn-primary,.btn-ghost{padding:12px 20px;font-size:10px;}
+
+  /* Containers & Sections */
+  .container{padding:0 16px;}
+  section{padding:44px 0;}
+
+  /* Section Headings */
+  .sec-h2{font-size:26px;}
+  .sec-label{font-size:8px;letter-spacing:.3em;}
+
+  /* Story */
+  .story-number{font-size:72px;margin-bottom:-20px;}
+  .story-h3{font-size:22px;}
+  .story-body{font-size:14px;}
+  .pull{font-size:18px;padding-left:14px;}
+  .story-card{padding:18px 18px;}
+  .story-card-ko{font-size:15px;}
+  .story-card-en{font-size:14px;}
+
+  /* Experience */
+  .exp-intro .sec-h2{font-size:26px;}
+  .exp-card{padding:22px 18px 24px;}
+  .exp-title{font-size:18px;}
+  .exp-desc{font-size:12px;}
+
+  /* Photo Feature */
+  .photo-feature-content{padding:32px 16px;}
+  .feature-quote{font-size:19px;}
+  .feature-quote::before{font-size:44px;margin-bottom:10px;}
+  .feature-sub{font-size:14px;}
+  .feature-attr{font-size:8px;letter-spacing:.3em;}
+
+  /* Tiers */
+  .tier-card{padding:22px 18px 26px;}
+  .tier-name{font-size:20px;}
+  .tier-badge{font-size:8px;}
+  .tier-list li{font-size:12px;padding:4px 0 4px 14px;}
+  .tier-ko{font-size:11px;}
+  .tier-for{font-size:8.5px;}
+  .tier-card.featured::before{font-size:7.5px;letter-spacing:.2em;padding:4px 12px;}
+
+  /* Venue */
+  .venue-stats{grid-template-columns:1fr;gap:2px;}
+  .stat-box{padding:18px 16px;}
+  .stat-num{font-size:28px;}
+  .stat-label{font-size:11px;}
+  .model-item{padding:16px 18px;}
+  .model-text{font-size:12px;}
+
+  /* CTA */
+  .cta-section{padding:48px 16px;}
+  .cta-h2{font-size:26px;}
+  .cta-sub{font-size:14px;line-height:1.6;margin-bottom:28px;}
+  .cta-eyebrow{font-size:9px;letter-spacing:.35em;}
+  .cta-bg-char{font-size:120px;}
+  .contact-item-label{font-size:8px;}
+  .contact-item-val{font-size:13px;}
+
+  /* Footer */
+  footer{padding:20px 16px;}
+  .footer-logo{font-size:16px;}
+  .footer-copy{font-size:8px;letter-spacing:.1em;}
+
+  /* Mobile Nav overlay adjustments */
+  .nav-links{padding:80px 24px 32px;}
+  .nav-links a{font-size:13px;padding:16px 0;}
 }
 </style>
 </head>
@@ -434,16 +718,21 @@ footer{
 
 <!-- NAV -->
 <nav id="nav">
-  <a href="#" class="nav-logo">
-    SURA<span class="dot">.</span>
-    <div class="nav-by">by DAM:A</div>
-  </a>
+  <a href="/" class="nav-logo"><img src="/images/logo/logo-white.png" alt="DAM:A" height="48"></a>
+  <input type="checkbox" id="nav-toggle" class="nav-toggle-cb" aria-label="Toggle navigation">
+  <label for="nav-toggle" class="nav-hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </label>
   <div class="nav-links">
-    <a href="#story">Story</a>
-    <a href="#experience">Experience</a>
-    <a href="#tiers">Tiers</a>
-    <a href="#venue">Venue Partners</a>
-    <a href="#contact" class="nav-cta">Request Tasting</a>
+    <a href="/menu">Menu</a>
+    <a href="/grab-and-go">Grab &amp; Go</a>
+    <a href="/catering">Catering / Party</a>
+    <a href="/oyul-kimchi-lab.html">OYUL Kimchi Lab</a>
+    <a href="/about">About</a>
+    <a href="/menu" class="nav-cta-mobile">Order Now</a>
+  </div>
+  <div class="nav-right">
+    <a href="/menu" class="nav-cta">Order Now</a>
   </div>
 </nav>
 
@@ -668,18 +957,18 @@ footer{
     <h2 class="cta-h2">Ready to bring<br><em>the royal table</em><br>to your venue?</h2>
     <p class="cta-sub">Let's begin with a tasting. No commitment, no paperwork — just 45 minutes to experience SURA for yourselves.</p>
     <div class="cta-buttons">
-      <a href="mailto:hello@damausa.com?subject=SURA Venue Partnership Inquiry" class="btn-primary">Request a Tasting →</a>
-      <a href="mailto:hello@damausa.com" class="btn-ghost">General Inquiry</a>
+      <a href="mailto:hello@damajc.com?subject=SURA Venue Partnership Inquiry" class="btn-primary">Request a Tasting →</a>
+      <a href="mailto:hello@damajc.com" class="btn-ghost">General Inquiry</a>
     </div>
     <div class="cta-contact">
       <div class="cta-contact-grid">
         <div class="contact-item">
           <span class="contact-item-label">Email</span>
-          <div class="contact-item-val">hello@damausa.com</div>
+          <div class="contact-item-val"><a href="mailto:hello@damajc.com" style="color:inherit;text-decoration:none;">hello@damajc.com</a></div>
         </div>
         <div class="contact-item">
           <span class="contact-item-label">Website</span>
-          <div class="contact-item-val">www.damausa.com</div>
+          <div class="contact-item-val"><a href="/" style="color:inherit;text-decoration:none;">damajc.com</a></div>
         </div>
         <div class="contact-item">
           <span class="contact-item-label">Studio</span>
@@ -697,10 +986,15 @@ footer{
 <!-- FOOTER -->
 <footer>
   <div>
-    <div class="footer-logo">SURA<span style="color:rgba(201,169,110,.5)">.</span></div>
-    <div style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-top:4px;">by DAM:A · K-Lush LLC</div>
+    <a href="/" class="footer-logo" style="text-decoration:none;color:var(--ivory);">DAM:A</a>
+    <div style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.3em;color:var(--mid);text-transform:uppercase;margin-top:4px;">SURA by DAM:A</div>
   </div>
-  <div class="footer-copy">© 2026 K-Lush LLC · All Rights Reserved · Fort Lee, NJ</div>
+  <div style="display:flex;gap:24px;align-items:center;">
+    <a href="/menu" style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;">Menu</a>
+    <a href="/catering" style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;">Catering</a>
+    <a href="/contact" style="font-family:'Tenor Sans',sans-serif;font-size:9px;letter-spacing:.2em;color:var(--mid);text-decoration:none;text-transform:uppercase;">Contact</a>
+  </div>
+  <div class="footer-copy">© 2026 K-Lush LLC · All Rights Reserved · Jersey City, NJ</div>
 </footer>
 
 <script>
@@ -719,10 +1013,12 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 reveals.forEach(r => observer.observe(r));
 
-// Smooth nav click
+// Smooth nav click + close mobile menu
+const navToggle = document.getElementById('nav-toggle');
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
+    if(navToggle) navToggle.checked = false;
     const el = document.querySelector(a.getAttribute('href'));
     if(el) el.scrollIntoView({ behavior:'smooth', block:'start' });
   });

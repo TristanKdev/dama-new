@@ -73,7 +73,7 @@ export const SOCIAL = {
 export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Menu', href: '/menu' },
   { label: 'Grab & Go', href: '/grab-and-go' },
-  { label: 'Catering', href: '/catering' },
+  { label: 'Catering / Party', href: '/catering' },
   { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
   { label: 'About', href: '/about' },
 ];
@@ -97,7 +97,7 @@ export const FOOTER_NAV: {
   navigation: [
     { label: 'Weekly Menu', href: '/menu' },
     { label: 'Grab & Go', href: '/grab-and-go' },
-    { label: 'Catering', href: '/catering' },
+    { label: 'Catering / Party', href: '/catering' },
     { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
     { label: 'About DAM:A', href: '/about' },
     { label: 'FAQ', href: '/faq' },
