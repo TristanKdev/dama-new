@@ -143,31 +143,31 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                 </p>
               </div>
 
-              <div className="flex flex-col gap-4">
+              <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {dosirakSets.map((set) => (
                   <article
                     key={set.id}
-                    className="group flex flex-col overflow-hidden rounded-2xl border border-dama-sand/50 bg-white shadow-sm transition-all hover:shadow-xl md:flex-row"
+                    className="group flex flex-col overflow-hidden rounded-xl border border-dama-sand/50 bg-white shadow-sm transition-all hover:shadow-lg"
                   >
                     {/* Image */}
-                    <div className="relative aspect-[4/3] w-full overflow-hidden bg-dama-ivory md:aspect-auto md:w-72 md:shrink-0">
+                    <div className="relative aspect-square w-full overflow-hidden bg-dama-ivory">
                       <Image
                         src={set.imageUrl}
                         alt={set.nameEn}
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-105"
-                        sizes="(max-width: 768px) 100vw, 288px"
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
                         priority
                       />
                       {set.soldOut && (
                         <div className="absolute inset-0 flex items-center justify-center bg-dama-charcoal/60">
-                          <span className="rounded-full bg-white px-4 py-1.5 text-sm font-bold text-dama-charcoal">Sold Out</span>
+                          <span className="rounded-full bg-white px-3 py-1 text-xs font-bold text-dama-charcoal">Sold Out</span>
                         </div>
                       )}
                       {/* Badges */}
-                      <div className="absolute left-3 top-3 flex flex-wrap gap-1.5">
+                      <div className="absolute left-2 top-2 flex flex-wrap gap-1">
                         {set.badges.map(badge => (
-                          <span key={badge} className="rounded-full bg-dama-green-600 px-2.5 py-0.5 text-xs font-semibold text-white shadow-lg">
+                          <span key={badge} className="rounded-full bg-dama-green-600 px-2 py-0.5 text-[10px] font-semibold text-white shadow-lg">
                             {badge}
                           </span>
                         ))}
@@ -175,21 +175,21 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                     </div>
 
                     {/* Content */}
-                    <div className="flex flex-1 flex-col p-5">
-                      <p className="font-noto-kr text-xs text-dama-charcoal/40">{set.nameKo}</p>
-                      <h3 className="text-lg font-bold text-dama-charcoal">{set.nameEn}</h3>
-                      <p className="mt-0.5 text-xs font-medium text-dama-green-600">{set.subtitle}</p>
+                    <div className="flex flex-1 flex-col p-3">
+                      <p className="font-noto-kr text-[10px] text-dama-charcoal/40">{set.nameKo}</p>
+                      <h3 className="text-sm font-bold text-dama-charcoal">{set.nameEn}</h3>
+                      <p className="mt-0.5 text-[10px] font-medium text-dama-green-600">{set.subtitle}</p>
 
-                      <p className="mt-2 text-sm leading-relaxed text-dama-charcoal/60">
+                      <p className="mt-1.5 line-clamp-2 text-xs leading-relaxed text-dama-charcoal/60">
                         {set.description}
                       </p>
 
                       {/* What's Inside */}
-                      <div className="mt-3 rounded-lg bg-dama-cream/60 p-3">
-                        <p className="mb-1.5 text-xs font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Inside</p>
-                        <ul className="columns-2 gap-x-4 space-y-0.5">
+                      <div className="mt-2 rounded-md bg-dama-cream/60 p-2">
+                        <p className="mb-1 text-[10px] font-semibold uppercase tracking-wider text-dama-charcoal/50">What&apos;s Inside</p>
+                        <ul className="space-y-0">
                           {set.setContents.map((content, i) => (
-                            <li key={i} className="flex items-start gap-1.5 text-xs text-dama-charcoal/70">
+                            <li key={i} className="flex items-start gap-1 text-[11px] text-dama-charcoal/70">
                               <span className="mt-0.5 text-dama-green-500">&#8226;</span>
                               {content}
                             </li>
@@ -198,11 +198,11 @@ export default function MenuClient({ menuItems, dosirakSets }: MenuClientProps) 
                       </div>
 
                       {/* Price + CTA */}
-                      <div className="mt-3 flex items-center justify-between">
+                      <div className="mt-2 flex items-center justify-between">
                         <div>
-                          <span className="text-2xl font-bold text-dama-green-600">{formatPrice(set.price)}</span>
+                          <span className="text-lg font-bold text-dama-green-600">{formatPrice(set.price)}</span>
                           {set.upgradePrice && (
-                            <p className="text-xs font-medium text-amber-600">Galbi upgrade +${set.upgradePrice}</p>
+                            <p className="text-[10px] font-medium text-amber-600">Galbi upgrade +${set.upgradePrice}</p>
                           )}
                         </div>
                         <Button
