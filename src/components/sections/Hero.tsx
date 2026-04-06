@@ -7,9 +7,9 @@ import { Button } from '@/components/ui/Button';
 import { cn } from '@/lib/utils';
 
 const HERO_IMAGES = [
-  { src: '/images/food/dosirak-classic-box.png', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
-  { src: '/images/food/dosirak-premium-box.jpg', alt: 'DAMA Spicy Pork Set with multigrain rice and banchan' },
-  { src: '/images/food/dosirak-bulgogi-box.jpg', alt: 'DAMA Beef Set with bulgogi and seasonal banchan' },
+  { src: '/images/food/dosirak-chicken-set.jpg', alt: 'DAMA Chicken Set with sweet & tangy chicken and banchan' },
+  { src: '/images/food/dosirak-pork-set.jpg', alt: 'DAMA Spicy Pork Set with multigrain rice and banchan' },
+  { src: '/images/food/dosirak-beef-set.jpg', alt: 'DAMA Beef Set with bulgogi and seasonal banchan' },
 ];
 
 export function Hero() {
@@ -58,7 +58,7 @@ export function Hero() {
 
         {/* Right image carousel — 45% */}
         <div className="mt-8 w-full md:mt-0 md:w-[45%]">
-          <div className="relative aspect-square w-full overflow-hidden rounded-lg bg-dama-sand/30">
+          <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl bg-dama-sand/20 p-4">
             {HERO_IMAGES.map((img, i) => (
               <Image
                 key={img.src}
@@ -66,7 +66,7 @@ export function Hero() {
                 alt={img.alt}
                 fill
                 className={cn(
-                  'object-contain transition-opacity duration-700',
+                  'object-contain p-3 transition-opacity duration-700',
                   i === current ? 'opacity-100' : 'opacity-0'
                 )}
                 sizes="(max-width: 768px) 100vw, 45vw"
