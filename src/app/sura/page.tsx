@@ -185,8 +185,8 @@ export default function SuraPage() {
         </div>
         <div className="sura-hero-right">
           <Image
-            src="/images/photo/dama-full-spread.jpg"
-            alt="SURA Korean royal catering spread"
+            src="/images/photo/dosirak-closeup-warm.jpg"
+            alt="SURA Korean royal catering — artisan dosirak presentation"
             fill
             className="sura-hero-img"
             sizes="50vw"
@@ -319,8 +319,8 @@ export default function SuraPage() {
         <div className="sura-photo-feature-inner">
           <div className="sura-photo-feature-img">
             <Image
-              src="/images/photo/branded-box-overhead.jpg"
-              alt="SURA artisan Korean box presentation"
+              src="/images/photo/dosirak-angled-dark.jpg"
+              alt="SURA Korean royal dosirak — multi-course box presentation"
               fill
               className="object-cover object-center"
               sizes="50vw"
