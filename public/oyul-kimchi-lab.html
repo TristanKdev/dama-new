@@ -30,9 +30,15 @@ nav{background:var(--white);border-bottom:1px solid var(--mist);padding:0 48px;d
 
 /* ── HERO ── */
 .hero{display:flex;min-height:100vh;}
-.hero-l{background:var(--green);padding:80px 80px 60px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;width:100%;}
+.hero-l{background:var(--green);padding:80px 80px 60px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;width:55%;}
 .hero-l::after{content:'김치';font-family:"Playfair Display",serif;font-size:18rem;font-weight:700;color:rgba(255,255,255,0.03);position:absolute;bottom:-40px;right:40px;line-height:1;pointer-events:none;}
-.hero-r{display:none;}
+.hero-r{width:45%;position:relative;overflow:hidden;display:flex;flex-direction:column;}
+.hero-r .hr-top{flex:1;position:relative;overflow:hidden;}
+.hero-r .hr-top img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;}
+.name-pill{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(0,0,0,0.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px 20px;border-radius:8px;}
+.np-n{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--white);margin-bottom:2px;}
+.np-r{font-family:"DM Mono",monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
+.hr-bottom{display:none;}
 .hl-eye{font-family:"DM Mono",monospace;font-size:0.58rem;letter-spacing:0.26em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:22px;}
 .hl-main{position:relative;z-index:1}
 .hl-main .hl-kicker{font-family:"Playfair Display",serif;font-size:1.2rem;font-style:italic;color:rgba(255,255,255,0.5);margin-bottom:12px;}
@@ -45,7 +51,7 @@ nav{background:var(--white);border-bottom:1px solid var(--mist);padding:0 48px;d
 .stat .st-n{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:500;color:var(--white);line-height:1;margin-bottom:4px;}
 .stat .st-l{font-family:"DM Mono",monospace;font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
 
-/* hero-r hidden — full-width green hero */
+/* hero-r — Oh Yul headshot */
 
 /* ── WHY THIS CLASS IS DIFFERENT ── */
 .why-strip{background:var(--ink);padding:36px 56px;}
@@ -182,7 +188,8 @@ footer{background:var(--ink);padding:24px 56px;display:flex;justify-content:spac
   nav{padding:0 28px;}
   .nav-links{gap:18px;}
   .hero{min-height:90vh;}
-  .hero-l{padding:60px 48px 48px;}
+  .hero-l{padding:60px 48px 48px;width:55%;}
+  .hero-r{width:45%;}
   .hl-main h1{font-size:3.4rem;}
   .hl-main h1 em{font-size:2.6rem;}
   .hero-l::after{font-size:8rem;}
@@ -224,8 +231,9 @@ footer{background:var(--ink);padding:24px 56px;display:flex;justify-content:spac
   .nav-cta-mobile{display:block !important;background:var(--green);color:var(--white);text-align:center;padding:12px 20px;font-weight:600;font-size:0.85rem;margin-top:8px;border-radius:6px;border-bottom:none !important;}
 
   /* Hero */
-  .hero{min-height:85vh;}
-  .hero-l{padding:40px 24px 32px;}
+  .hero{min-height:auto;flex-direction:column-reverse;}
+  .hero-l{padding:40px 24px 32px;width:100%;}
+  .hero-r{width:100%;height:340px;}
   .hero-l::after{font-size:8rem;bottom:-20px;}
   .hl-main h1{font-size:2.6rem;}
   .hl-main h1 em{font-size:2rem;}
@@ -295,7 +303,8 @@ footer{background:var(--ink);padding:24px 56px;display:flex;justify-content:spac
   .nav-logo img{height:36px;}
 
   /* Hero */
-  .hero-l{padding:32px 16px 24px;}
+  .hero-l{padding:32px 16px 24px;width:100%;}
+  .hero-r{width:100%;height:260px;}
   .hero-l::after{font-size:6rem;}
   .hl-main h1{font-size:2rem;}
   .hl-main h1 em{font-size:1.5rem;}
