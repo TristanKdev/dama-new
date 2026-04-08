@@ -1,0 +1,299 @@
+/* OYUL Kimchi Lab — scoped styles */
+.oyul-page {
+  --green:#2D5A3D;--green2:#3A7050;--red:#C8612F;
+  --cream:#FAF8F3;--ink:#1A1A1A;--stone:#6B6B6B;
+  --mist:#E8E4DC;--pale:#F3F0E8;--white:#FFFFFF;
+  font-family:"Inter",sans-serif;font-weight:300;color:var(--ink);
+  font-size:15px;
+}
+
+/* ── HERO ── */
+.oyul-page .hero{display:flex;min-height:100vh;}
+.oyul-page .hero-l{background:var(--green);padding:80px 80px 60px;display:flex;flex-direction:column;justify-content:center;position:relative;overflow:hidden;width:55%;}
+.oyul-page .hero-l::after{content:'김치';font-family:"Playfair Display",serif;font-size:18rem;font-weight:700;color:rgba(255,255,255,0.03);position:absolute;bottom:-40px;right:40px;line-height:1;pointer-events:none;}
+.oyul-page .hero-r{width:45%;position:relative;overflow:hidden;display:flex;flex-direction:column;}
+.oyul-page .hero-r .hr-top{flex:1;position:relative;overflow:hidden;}
+.oyul-page .hero-r .hr-top img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block;}
+.oyul-page .name-pill{position:absolute;bottom:20px;left:20px;right:20px;background:rgba(0,0,0,0.65);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);padding:14px 20px;border-radius:8px;}
+.oyul-page .np-n{font-family:"Playfair Display",serif;font-size:1.1rem;color:var(--white);margin-bottom:2px;}
+.oyul-page .np-r{font-family:"DM Mono",monospace;font-size:0.55rem;letter-spacing:0.18em;text-transform:uppercase;color:rgba(255,255,255,0.55);}
+.oyul-page .hr-bottom{display:none;}
+.oyul-page .hl-eye{font-family:"DM Mono",monospace;font-size:0.58rem;letter-spacing:0.26em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:22px;}
+.oyul-page .hl-main{position:relative;z-index:1}
+.oyul-page .hl-main .hl-kicker{font-family:"Playfair Display",serif;font-size:1.2rem;font-style:italic;color:rgba(255,255,255,0.5);margin-bottom:12px;}
+.oyul-page .hl-main h1{font-family:"Playfair Display",serif;font-size:4.5rem;font-weight:500;line-height:1.05;color:var(--white);margin-bottom:20px;}
+.oyul-page .hl-main h1 em{font-style:italic;color:rgba(255,255,255,0.6);display:block;font-size:3.4rem;}
+.oyul-page .hl-main .hl-desc{font-size:1.1rem;color:rgba(255,255,255,0.55);line-height:1.9;max-width:560px;}
+.oyul-page .hl-bottom{position:relative;z-index:1}
+.oyul-page .stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:rgba(255,255,255,0.1);max-width:560px;margin-top:48px;}
+.oyul-page .stat{padding:18px 14px;text-align:center;}
+.oyul-page .stat .st-n{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:500;color:var(--white);line-height:1;margin-bottom:4px;}
+.oyul-page .stat .st-l{font-family:"DM Mono",monospace;font-size:0.5rem;letter-spacing:0.12em;text-transform:uppercase;color:rgba(255,255,255,0.4);}
+
+/* ── WHY THIS CLASS IS DIFFERENT ── */
+.oyul-page .why-strip{background:var(--ink);padding:36px 56px;}
+.oyul-page .ws-label{font-family:"DM Mono",monospace;font-size:0.57rem;letter-spacing:0.26em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:16px;}
+.oyul-page .ws-stmt{font-family:"Playfair Display",serif;font-size:1.6rem;font-style:italic;color:var(--white);line-height:1.55;max-width:700px;margin-bottom:28px;}
+.oyul-page .ws-stmt strong{color:var(--green2);font-style:normal;font-weight:500}
+.oyul-page .ws-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.08);}
+.oyul-page .ws-item{padding:24px 22px;}
+.oyul-page .ws-item .wi-n{font-family:"DM Mono",monospace;font-size:0.52rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--green2);margin-bottom:8px;}
+.oyul-page .ws-item .wi-t{font-family:"Playfair Display",serif;font-size:1.05rem;font-weight:500;color:var(--white);margin-bottom:7px;}
+.oyul-page .ws-item .wi-b{font-size:0.82rem;color:rgba(255,255,255,0.45);line-height:1.7;}
+
+/* ── KIMJANG ── */
+.oyul-page .kimjang{position:relative;height:220px;overflow:hidden}
+.oyul-page .kimjang img{width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block;filter:brightness(0.5) contrast(1.1);}
+.oyul-page .kj-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:24px;}
+.oyul-page .kj-label{font-family:"DM Mono",monospace;font-size:0.57rem;letter-spacing:0.28em;text-transform:uppercase;color:rgba(255,255,255,0.4);margin-bottom:12px;}
+.oyul-page .kj-q{font-family:"Playfair Display",serif;font-size:1.5rem;font-style:italic;color:var(--white);line-height:1.45;max-width:560px;}
+
+/* ── SECTIONS ── */
+.oyul-page .sec{padding:48px 56px}
+.oyul-page .sec.alt{background:var(--pale)}
+.oyul-page .sec-eye{font-family:"DM Mono",monospace;font-size:0.57rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--green);margin-bottom:12px;}
+.oyul-page h2{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:500;color:var(--ink);line-height:1.15;margin-bottom:0;}
+
+/* ── MEET YUL ── */
+.oyul-page .yul-grid{display:grid;grid-template-columns:280px 1fr;gap:36px;margin-top:32px;align-items:start;}
+.oyul-page .yul-img img{width:100%;display:block;object-fit:cover;height:340px;}
+.oyul-page .yul-cap{background:var(--green);padding:14px 18px;}
+.oyul-page .yc-n{font-family:"Playfair Display",serif;font-size:0.95rem;font-weight:500;color:var(--white);margin-bottom:1px;}
+.oyul-page .yc-r{font-family:"DM Mono",monospace;font-size:0.5rem;letter-spacing:0.12em;color:rgba(255,255,255,0.45);text-transform:uppercase;}
+.oyul-page .yul-text .yt-intro{font-family:"Playfair Display",serif;font-size:1.25rem;font-style:italic;color:var(--green);line-height:1.7;margin-bottom:22px;padding-bottom:22px;border-bottom:1px solid var(--mist);}
+.oyul-page .yul-text p{font-size:0.9rem;color:var(--stone);line-height:1.95;margin-bottom:14px;}
+.oyul-page .yul-text p strong{color:var(--ink);font-weight:500}
+.oyul-page .yul-text .sep{display:flex;align-items:center;gap:12px;margin:18px 0;}
+.oyul-page .yul-text .sep .sl{flex:1;height:1px;background:var(--mist)}
+.oyul-page .yul-text .sep .sd{width:5px;height:5px;background:var(--green);border-radius:50%;flex-shrink:0}
+
+/* ── WHAT YOU LEARN ── */
+.oyul-page .learn-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--mist);margin-top:32px;}
+.oyul-page .learn-item{background:var(--white);padding:24px 24px;}
+.oyul-page .li-num{font-family:"Playfair Display",serif;font-size:2rem;font-weight:700;color:var(--mist);line-height:1;margin-bottom:8px;}
+.oyul-page .li-label{font-family:"DM Mono",monospace;font-size:0.52rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--green);margin-bottom:6px;}
+.oyul-page .li-title{font-family:"Playfair Display",serif;font-size:1.15rem;font-weight:500;color:var(--ink);margin-bottom:10px;line-height:1.2;}
+.oyul-page .li-body{font-size:0.84rem;color:var(--stone);line-height:1.75;}
+.oyul-page .li-body strong{color:var(--ink);font-weight:500}
+
+/* Connected to Yul's story */
+.oyul-page .li-connect{
+  margin-top:12px;padding:10px 14px;
+  background:rgba(45,90,61,0.06);
+  border-left:2px solid var(--green);
+  font-size:0.78rem;font-style:italic;color:var(--green);line-height:1.6;
+}
+
+/* ── CLASS FLOW ── */
+.oyul-page .flow{margin-top:44px;}
+.oyul-page .flow-steps{display:flex;flex-direction:column;gap:0;}
+.oyul-page .flow-step{
+  display:grid;grid-template-columns:80px 1fr;gap:0;
+  border-bottom:1px solid var(--mist);
+}
+.oyul-page .flow-step:last-child{border-bottom:none}
+.oyul-page .fs-time{
+  padding:20px 16px;
+  font-family:"DM Mono",monospace;font-size:0.62rem;
+  letter-spacing:0.1em;color:var(--green);font-weight:500;
+  border-right:1px solid var(--mist);
+  display:flex;align-items:flex-start;padding-top:22px;
+}
+.oyul-page .fs-body{padding:18px 24px;}
+.oyul-page .fs-title{font-size:0.88rem;font-weight:500;color:var(--ink);margin-bottom:3px;}
+.oyul-page .fs-desc{font-size:0.8rem;color:var(--stone);line-height:1.6;}
+.oyul-page .fs-tag{
+  display:inline-block;margin-top:6px;
+  font-family:"DM Mono",monospace;font-size:0.5rem;
+  letter-spacing:0.14em;text-transform:uppercase;
+  color:var(--green);border:1px solid rgba(45,90,61,0.25);padding:2px 8px;
+}
+
+/* ── TAKEHOME ── */
+.oyul-page .take-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--mist);margin-top:32px;}
+.oyul-page .take-item{background:var(--white);padding:26px 22px;}
+.oyul-page .take-item .ti-e{font-size:1.6rem;display:block;margin-bottom:8px;}
+.oyul-page .take-item .ti-t{font-size:0.85rem;font-weight:500;color:var(--ink);margin-bottom:4px;}
+.oyul-page .take-item .ti-b{font-size:0.78rem;color:var(--stone);line-height:1.6;}
+
+/* ── BOOKING CTA ── */
+.oyul-page .booking{
+  background:var(--green);padding:44px 56px;
+  display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center;
+}
+.oyul-page .booking h2{font-family:"Playfair Display",serif;font-size:1.8rem;font-weight:500;color:var(--white);line-height:1.15;margin-bottom:10px;}
+.oyul-page .booking .bk-desc{font-size:0.9rem;color:rgba(255,255,255,0.65);line-height:1.75;max-width:480px;}
+.oyul-page .bk-right{flex-shrink:0}
+.oyul-page .bk-price{
+  background:rgba(255,255,255,0.1);padding:24px 32px;margin-bottom:14px;text-align:center;
+}
+.oyul-page .bk-price .bp-n{font-family:"Playfair Display",serif;font-size:2.2rem;font-weight:500;color:var(--white);line-height:1;}
+.oyul-page .bk-price .bp-l{font-family:"DM Mono",monospace;font-size:0.55rem;letter-spacing:0.14em;color:rgba(255,255,255,0.45);text-transform:uppercase;margin-top:4px;}
+.oyul-page .btn-book{
+  display:block;background:var(--white);color:var(--green);
+  padding:15px 32px;font-size:0.82rem;font-weight:600;
+  letter-spacing:0.06em;text-decoration:none;text-align:center;
+  width:100%;
+}
+.oyul-page .btn-inquire{
+  display:block;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.7);
+  padding:13px 32px;font-size:0.78rem;letter-spacing:0.05em;
+  text-decoration:none;text-align:center;width:100%;margin-top:10px;
+}
+.oyul-page .bk-detail{font-family:"DM Mono",monospace;font-size:0.52rem;letter-spacing:0.12em;color:rgba(255,255,255,0.35);text-align:center;margin-top:10px;line-height:1.8;text-transform:uppercase;}
+
+/* ── PULL ── */
+.oyul-page .pull-dark{background:var(--ink);padding:36px 56px;text-align:center;}
+.oyul-page .pd-q{font-family:"Playfair Display",serif;font-size:1.4rem;font-style:italic;color:rgba(255,255,255,0.75);line-height:2;max-width:640px;margin:0 auto 16px;}
+.oyul-page .pd-q span{display:block}
+.oyul-page .pd-attr{font-family:"DM Mono",monospace;font-size:0.52rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--green2);}
+
+/* ── RESPONSIVE: TABLET (max-width: 1024px) ── */
+@media(max-width:1024px){
+  .oyul-page .hero{min-height:90vh;}
+  .oyul-page .hero-l{padding:60px 48px 48px;width:55%;}
+  .oyul-page .hero-r{width:45%;}
+  .oyul-page .hl-main h1{font-size:3.4rem;}
+  .oyul-page .hl-main h1 em{font-size:2.6rem;}
+  .oyul-page .hero-l::after{font-size:8rem;}
+  .oyul-page .why-strip{padding:28px 36px;}
+  .oyul-page .ws-stmt{font-size:1.4rem;}
+  .oyul-page .sec{padding:40px 36px;}
+  .oyul-page .booking{padding:36px 36px;}
+  .oyul-page .pull-dark{padding:28px 36px;}
+  .oyul-page .yul-grid{grid-template-columns:240px 1fr;gap:28px;}
+  .oyul-page h2{font-size:1.6rem;}
+  .oyul-page .booking h2{font-size:1.6rem;}
+  .oyul-page .kj-q{font-size:1.35rem;}
+}
+
+/* ── RESPONSIVE: MOBILE (max-width: 768px) ── */
+@media(max-width:768px){
+  .oyul-page{font-size:14px;}
+
+  /* Hero */
+  .oyul-page .hero{min-height:auto;flex-direction:column-reverse;}
+  .oyul-page .hero-l{padding:40px 24px 32px;width:100%;}
+  .oyul-page .hero-r{width:100%;height:340px;}
+  .oyul-page .hero-l::after{font-size:8rem;bottom:-20px;}
+  .oyul-page .hl-main h1{font-size:2.6rem;}
+  .oyul-page .hl-main h1 em{font-size:2rem;}
+  .oyul-page .hl-main .hl-desc{font-size:0.9rem;}
+  .oyul-page .stats-bar{grid-template-columns:repeat(2,1fr);max-width:none;}
+
+  /* Why strip */
+  .oyul-page .why-strip{padding:32px 20px;}
+  .oyul-page .ws-stmt{font-size:1.35rem;margin-bottom:28px;}
+  .oyul-page .ws-grid{grid-template-columns:1fr;gap:0;background:none;}
+  .oyul-page .ws-item{padding:18px 0;border-bottom:1px solid rgba(255,255,255,0.08);}
+  .oyul-page .ws-item:last-child{border-bottom:none;}
+
+  /* Kimjang */
+  .oyul-page .kimjang{height:220px;}
+  .oyul-page .kj-q{font-size:1.3rem;}
+  .oyul-page .kj-label{font-size:0.5rem;}
+
+  /* Sections */
+  .oyul-page .sec{padding:40px 20px;}
+  .oyul-page h2{font-size:1.7rem;}
+
+  /* Meet Yul grid - stack */
+  .oyul-page .yul-grid{grid-template-columns:1fr;gap:28px;margin-top:32px;}
+  .oyul-page .yul-img img{height:300px;}
+  .oyul-page .yul-text .yt-intro{font-size:1.1rem;}
+
+  /* Learn grid - stack */
+  .oyul-page .learn-grid{grid-template-columns:1fr;margin-top:32px;}
+  .oyul-page .learn-item{padding:24px 20px;}
+  .oyul-page .li-num{font-size:2rem;}
+
+  /* Class flow */
+  .oyul-page .flow-step{grid-template-columns:64px 1fr;}
+  .oyul-page .fs-time{padding:16px 10px;font-size:0.58rem;}
+  .oyul-page .fs-body{padding:14px 16px;}
+
+  /* Take home grid - stack */
+  .oyul-page .take-grid{grid-template-columns:1fr;margin-top:32px;}
+  .oyul-page .take-item{padding:20px 18px;}
+
+  /* Booking CTA - stack */
+  .oyul-page .booking{grid-template-columns:1fr;padding:40px 20px;gap:28px;text-align:center;}
+  .oyul-page .booking h2{font-size:1.7rem;}
+  .oyul-page .booking .bk-desc{max-width:none;}
+  .oyul-page .bk-price{padding:20px 24px;}
+  .oyul-page .bk-price .bp-n{font-size:2.2rem;}
+
+  /* Pull quote */
+  .oyul-page .pull-dark{padding:32px 20px;}
+  .oyul-page .pd-q{font-size:1.15rem;line-height:1.8;}
+
+  /* Prevent horizontal overflow */
+  .oyul-page img{max-width:100%;height:auto;}
+}
+
+/* ── RESPONSIVE: SMALL MOBILE (max-width: 480px) ── */
+@media(max-width:480px){
+  .oyul-page{font-size:13px;}
+
+  /* Hero */
+  .oyul-page .hero-l{padding:32px 16px 24px;width:100%;}
+  .oyul-page .hero-r{width:100%;height:260px;}
+  .oyul-page .hero-l::after{font-size:6rem;}
+  .oyul-page .hl-main h1{font-size:2rem;}
+  .oyul-page .hl-main h1 em{font-size:1.5rem;}
+  .oyul-page .hl-main .hl-desc{font-size:0.8rem;}
+  .oyul-page .hl-main .hl-kicker{font-size:0.85rem;}
+  .oyul-page .stats-bar{grid-template-columns:repeat(2,1fr);max-width:none;}
+  .oyul-page .stat .st-n{font-size:1.2rem;}
+  .oyul-page .stat .st-l{font-size:0.42rem;}
+
+  /* Why strip */
+  .oyul-page .why-strip{padding:24px 16px;}
+  .oyul-page .ws-stmt{font-size:1.15rem;}
+  .oyul-page .ws-item .wi-t{font-size:0.95rem;}
+  .oyul-page .ws-item .wi-b{font-size:0.78rem;}
+
+  /* Kimjang */
+  .oyul-page .kimjang{height:180px;}
+  .oyul-page .kj-q{font-size:1.1rem;}
+
+  /* Sections */
+  .oyul-page .sec{padding:32px 16px;}
+  .oyul-page h2{font-size:1.45rem;}
+
+  /* Meet Yul */
+  .oyul-page .yul-grid{gap:20px;margin-top:24px;}
+  .oyul-page .yul-img img{height:240px;}
+  .oyul-page .yul-text .yt-intro{font-size:1rem;}
+  .oyul-page .yul-text p{font-size:0.84rem;}
+
+  /* Learn */
+  .oyul-page .learn-grid{margin-top:24px;}
+  .oyul-page .learn-item{padding:20px 16px;}
+  .oyul-page .li-title{font-size:1.05rem;}
+  .oyul-page .li-body{font-size:0.8rem;}
+  .oyul-page .li-connect{font-size:0.74rem;padding:8px 12px;}
+
+  /* Flow */
+  .oyul-page .flow-step{grid-template-columns:56px 1fr;}
+  .oyul-page .fs-time{font-size:0.55rem;padding:14px 8px;}
+  .oyul-page .fs-body{padding:12px 12px;}
+  .oyul-page .fs-title{font-size:0.82rem;}
+  .oyul-page .fs-desc{font-size:0.76rem;}
+
+  /* Take home */
+  .oyul-page .take-item{padding:16px 14px;}
+  .oyul-page .take-item .ti-t{font-size:0.8rem;}
+  .oyul-page .take-item .ti-b{font-size:0.74rem;}
+
+  /* Booking */
+  .oyul-page .booking{padding:32px 16px;gap:24px;}
+  .oyul-page .booking h2{font-size:1.45rem;}
+  .oyul-page .bk-price .bp-n{font-size:1.9rem;}
+  .oyul-page .btn-book{padding:13px 24px;font-size:0.78rem;}
+  .oyul-page .btn-inquire{padding:11px 24px;font-size:0.74rem;}
+
+  /* Pull quote */
+  .oyul-page .pull-dark{padding:24px 16px;}
+  .oyul-page .pd-q{font-size:1rem;}
+}

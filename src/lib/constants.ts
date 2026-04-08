@@ -75,7 +75,7 @@ export const NAV_LINKS_PRIMARY: { label: string; href: string }[] = [
   { label: 'Grab & Go', href: '/grab-and-go' },
   { label: 'Catering / Party', href: '/catering' },
   { label: 'SURA Catering', href: '/sura' },
-  { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
+  { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab' },
   { label: 'About', href: '/about' },
 ];
 
@@ -100,7 +100,7 @@ export const FOOTER_NAV: {
     { label: 'Grab & Go', href: '/grab-and-go' },
     { label: 'Catering / Party', href: '/catering' },
     { label: 'SURA Royal Catering', href: '/sura' },
-    { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab.html' },
+    { label: 'OYUL Kimchi Lab', href: '/oyul-kimchi-lab' },
     { label: 'About DAM:A', href: '/about' },
     { label: 'FAQ', href: '/faq' },
   ],
