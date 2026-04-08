@@ -578,12 +578,12 @@ const suraStyles = `
 
 /* ── HERO ── */
 .sura-hero {
-  min-height: 85vh; display: grid; grid-template-columns: 1fr 1fr;
+  min-height: 75vh; display: grid; grid-template-columns: 1fr 1fr;
   position: relative; overflow: hidden;
 }
 .sura-hero-left {
   display: flex; flex-direction: column; justify-content: center;
-  padding: 120px 72px 80px; position: relative; z-index: 2;
+  padding: 80px 72px 60px; position: relative; z-index: 2;
 }
 .sura-hero-eyebrow {
   font-family: var(--font-dm-sans), 'Tenor Sans', sans-serif;
@@ -855,6 +855,14 @@ const suraStyles = `
 
 @media (prefers-reduced-motion: reduce) {
   .sura-reveal { opacity: 1; transform: none; transition: none; }
+}
+
+/* ── BODY/MAIN OVERRIDES (kill cream background bleed) ── */
+html.sura-page body {
+  background: #0d1829 !important;
+}
+html.sura-page #main-content {
+  background: #0d1829;
 }
 
 /* ── HEADER OVERRIDES (when on SURA page) ── */
