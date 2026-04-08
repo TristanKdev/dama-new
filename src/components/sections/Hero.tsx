@@ -26,7 +26,7 @@ export function Hero() {
 
   return (
     <section className="relative overflow-hidden bg-dama-cream">
-      <div className="mx-auto flex max-w-7xl flex-col items-center px-4 py-6 md:flex-row md:gap-4 md:px-6 md:py-10">
+      <div className="mx-auto flex max-w-7xl flex-col items-center px-4 py-4 md:flex-row md:gap-2 md:px-6 md:py-6">
         {/* Left text — 55% */}
         <div className="flex w-full flex-col items-center text-center md:w-[55%]">
           <p className="mb-3 text-sm font-semibold uppercase tracking-widest text-dama-green-600">
